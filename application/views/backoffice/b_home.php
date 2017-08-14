@@ -1,0 +1,1 @@
+<img src="<?php echo site_url().'static/backoffice/images/soon.jpg';?>" alt="imagen" />
