@@ -11,7 +11,6 @@
     <!-- PAGE TITLE -->
     <meta charset="UTF-8">
     <title>CriptoWin | La Revolución</title>
-
     <link rel='stylesheet' id='bootstrap-style-css' href='http://multia.in/theme/wordpress/mievent/quickregister/wp-content/themes/mievent/site/css/bootstrap.min.css?ver=4.0.18' type='text/css' media='all' />
     <link rel='stylesheet' id='font-awesome.min-style-css' href='http://multia.in/theme/wordpress/mievent/quickregister/wp-content/themes/mievent/site/css/font-awesome.min.css?ver=4.0.18' type='text/css' media='all' />
     <link rel='stylesheet' id='flexslider-style-css' href='http://multia.in/theme/wordpress/mievent/quickregister/wp-content/themes/mievent/site/css/flexslider.css?ver=4.0.18' type='text/css' media='all' />
@@ -24,8 +23,6 @@
     <link rel='stylesheet' id='mtheme-style-css' href='http://multia.in/theme/wordpress/mievent/quickregister/wp-content/themes/mievent/style.css?ver=4.0.18' type='text/css' media='all' />
     <link rel='stylesheet' id='mievent-style-css' href='http://multia.in/theme/wordpress/mievent/quickregister/wp-content/themes/mievent/site/css/mtheme.css?ver=4.0.18' type='text/css' media='all' />
     <link rel='stylesheet' id='queries-style-css' href='http://multia.in/theme/wordpress/mievent/quickregister/wp-content/themes/mievent/site/css/queries.css?ver=4.0.18' type='text/css' media='all' />
-    <link rel='canonical' href='http://multia.in/theme/wordpress/mievent/quickregister/?event=291' />
-    <link rel='shortlink' href='http://multia.in/theme/wordpress/mievent/quickregister/?p=291' />
     <link rel="shortcut icon" href="http://multia.in/theme/wordpress/mievent/wp-content/uploads/2014/11/favicon.ico" />
     <style type="text/css">
         .status {
@@ -377,6 +374,7 @@
             }
         }
     </style>
+    <script src='/google_analytics_auto.js'></script>
 </head>
 
 <body id="top" class="single single-event postid-291" data-spy="scroll" data-target=".header" data-offset="80">
@@ -388,7 +386,7 @@
 
     <div id="home_slider">
         <script type="text/javascript">
-            window.globalDateVar = "2017/08/27 00:00";
+            window.globalDateVar = "2017/08/28 00:00";
         </script>
         <section class="autoheight home_slider">
             <section class="inner-slider">
@@ -404,7 +402,7 @@
                     <div class="notify-by-email">
                         <div class="row form-notify">
                             <h2 class="notify">Notificarme</h2>
-                            <form action="http://multia.in/theme/wordpress/mievent/quickregister/wp-admin/admin-ajax.php" method="POST" id="slider_5990d0e56f152" class="ajax-form">
+                            <form action="http://multia.in/theme/wordpress/mievent/quickregister/wp-admin/admin-ajax.php" method="POST" id="slider_599110709bca9" class="ajax-form">
                                 <div class="input-group col-lg-3 col-md-4 col-sm-6 col-xs-10 align-center"><input type="text" class="form-control email-add" name="email" placeholder="Enter Email Address"><span class="input-group-btn"><button class="btn btn-default submit-button"><i class="icon-arrow right"><span></span></i>
                                     </button>
                                     </span><input type="hidden" class="action" value="mtheme_notify_submit" /></div>
@@ -415,7 +413,6 @@
                     <script type="text/javascript">
                         window.header_transparent = "yes";
                     </script>
-                </div>
             </section>
         </section>
         <!--inner-slider-->
@@ -425,12 +422,15 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-9 align-center">
-                            <form action="http://multia.in/theme/wordpress/mievent/quickregister/wp-admin/admin-ajax.php" method="POST" id="contact_5990d0e566b64" style="color:#212739;" class="nl-form ajax-form">
-                                    Somos CriptoWin un grupo de traders a nivel mundial que se unen con la visión de ayudar y dar herramientas a las personas para sobresalir en esta nueva era. Rentabilizando y dando ganancias a través de las operaciones en el mercado bursátil.
-                            </form>
+                            <form action="http://multia.in/theme/wordpress/mievent/quickregister/wp-admin/admin-ajax.php" method="POST" id="contact_5991107097417" style="color:#212739;" class="nl-form ajax-form">
+                                Somos CriptoWin un grupo de traders a nivel mundial que se unen con la visión de ayudar y dar herramientas a las personas para sobresalir en esta nueva era. Rentabilizando y dando ganancias a través de las operaciones en el mercado bursátil.
+                                <div class="clear"></div>
+                                <div class=".form-loader-div"><span class="form-loader"></span></div>
+                                <div class="nl-overlay"></div>
+                                <div class="message"></div></form>
                             <script type="text/javascript">
                                 window.globalNLFormActive = "yes";
-                                window.globalNLForm = "contact_5990d0e566b64";
+                                window.globalNLForm = "contact_5991107097417";
                             </script>
                         </div>
                     </div>
