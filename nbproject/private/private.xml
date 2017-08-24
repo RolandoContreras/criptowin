@@ -3,9 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp/www/criptowin/application/views/welcome_message.php</file>
-            <file>file:/C:/wamp/www/criptowin/application/templates/admin_tmp.php</file>
-            <file>file:/C:/wamp/www/criptowin/application/config/config.php</file>
+            <file>file:/C:/wamp/www/criptowin/application/views/footer.php</file>
+            <file>file:/C:/wamp/www/criptowin/static/page_front/css/style.css</file>
+            <file>file:/C:/wamp/www/criptowin/application/views/head.php</file>
+            <file>file:/C:/wamp/www/criptowin/application/views/nav.php</file>
+            <file>file:/C:/wamp/www/criptowin/application/views/home.php</file>
         </group>
     </open-files>
 </project-private>

@@ -391,10 +391,10 @@
         <section class="autoheight home_slider">
             <section class="inner-slider">
                 <div class="image_overlay" style="background-image:url('http://multia.in/theme/wordpress/mievent/quickregister/wp-content/themes/mievent/site/img/backgrounds/bg_pattern.png');"></div>
-                <div class="image-bg" style="background-image:url('http://multia.in/theme/wordpress/mievent/quickregister/wp-content/themes/mievent/site/img/backgrounds/bg1.jpg');"></div>
+                <div class="image-bg" style="background-image:url('<?php echo site_url().'static/page_front/images/bolsa.jpeg'?>');"></div>
                 <div class="col-lg-12 coming-landing-text-pos image_content align-center">
                     <a class="coming-brand" >
-                        <img src="<?php echo site_url().'static/page_front/images/logo_cripto_letter.png';?>" width="300" alt="logo"/>
+                        <img src="<?php echo site_url().'static/page_front/images/logo_asset.png';?>" width="300" alt="logo"/>
                     </a>
                     <h1 class="wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="1s" style="color:#FFFFFF">Venimos Pronto</h1>
                     <hr id="title_hr" />
