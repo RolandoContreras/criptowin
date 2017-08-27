@@ -11,14 +11,14 @@
 				<li class="selected">
 					<div class="cd-full-width">
 						<div class="container">
-							<h2>Good Work
+							<h2>Rentabilizamos 
 							<br>
-							Takes <span class="color-default">Hard Work</span></h2>
+							Tus<span class="color-default">Fondos</span></h2>
 							<p>
-								Finding your next Financial Advisor is as easy as counting from one to five.
+								con los mejores trader del mercado bursátil.
 							</p>
-							<a href="about-us.html" class="btn bluebtn hvr-bounce-to-right-reverse" data-text="READ MORE">read more</a>
-							<a href="contact-us.html" class="btn whitebtn btn-default hvr-bounce-to-right" data-text="Contact Us">Contact Us</a>
+                                                        <a href="<?php echo site_url().'about';?>" class="btn bluebtn hvr-bounce-to-right-reverse" data-text="READ MORE"><?php echo replace_vocales_voculeshtml("Ver Más");?></a>
+                                                        <a href="<?php echo site_url().'contact';?>" class="btn whitebtn btn-default hvr-bounce-to-right" data-text="Contact Us"><?php echo replace_vocales_voculeshtml("Contáctenos");?></a>
 						</div>
 					</div>
 				</li>
@@ -26,15 +26,10 @@
 				<li>
 					<div class="cd-full-width">
 						<div class="container text-center">
-							<h2>Advice you can
+							<h2>Solidez, Transparencia 
 							<br>
-							<span class="color-default">Count on</span></h2>
-							<p class="color-white">
-								Etiam iaculis rhoncus velit, sit amet aliquet sem euismod at
-								<br>
-								integer consequat velit ac ultrices commodo.
-							</p>
-							<a href="about-us.html" class="btn bluebtn hvr-bounce-to-right-reverse" data-text="READ MORE">see more</a>
+							<span class="color-default">Y Tecnología para tus inversiones.</span></h2>
+                                                        <a href="<?php echo site_url().'about';?>" class="btn bluebtn hvr-bounce-to-right-reverse" data-text="READ MORE"><?php echo replace_vocales_voculeshtml("Ver Más");?></a>
 						</div>
 					</div>
 				</li>
@@ -42,14 +37,14 @@
 				<li>
 					<div class="cd-full-width">
 						<div class="container">
-							<h2 class="color-white">Become a <span class="color-default">Client</span></h2>
+                                                    <h2 class="color-white"><?php echo replace_vocales_voculeshtml("Conviértase en un ");?><span class="color-default">cliente</span></h2>
 							<p>
-								Etiam iaculis rhoncus velit, sit amet aliquet sem euismod at
+								Únete y sé parte de la revolución más grande 
 								<br>
-								aliquet sem integer consequat velit ac ultrices commodo.
+								del trading de este siglo.
 							</p>
-							<a href="about-us.html" class="btn bluebtn hvr-bounce-to-right-reverse" data-text="READ MORE">read more</a>
-							<a href="contact-us.html" class="btn whitebtn btn-default hvr-bounce-to-right" data-text="Contact Us">Contact Us</a>
+                                                        <a href="<?php echo site_url().'register';?>" class="btn bluebtn hvr-bounce-to-right-reverse" data-text="READ MORE"><?php echo replace_vocales_voculeshtml("Regístrese");?></a>
+							<a href="<?php echo site_url().'contact';?>" class="btn whitebtn btn-default hvr-bounce-to-right" data-text="Contact Us">Contact Us</a>
 						</div>
 					</div>
 				</li>
@@ -57,15 +52,13 @@
 				<li>
 					<div class="cd-full-width">
 						<div class="container text-right">
-							<h2>Testing
+							<h2>	Hacemos al
 							<br>
-							<span class="color-default">and Executing</span></h2>
+							<span class="color-default">Al inversionista</span></h2>
 							<p>
-								Etiam iaculis rhoncus velit, sit amet aliquet
-								<br>
-								integer consequat velit ac ultrices commodo.
+								El centro de nuestro negocio. 
 							</p>
-							<a href="about-us.html" class="btn bluebtn hvr-bounce-to-right-reverse" data-text="READ MORE">read more</a>
+                                                        <a href="<?php echo site_url().'about';?>" class="btn bluebtn hvr-bounce-to-right-reverse" data-text="READ MORE"><?php echo replace_vocales_voculeshtml("Ver Más");?></a>
 						</div>
 					</div>
 				</li>
@@ -83,8 +76,8 @@
 								1
 							</div>
 							<p>
-								Good Work
-							</p><span>Finding your Next Advisor</span></a>
+								Ganancias diarias
+							</p><span>Obtén una cuenta en CW</span></a>
 						</li>
 						<li class="">
 							<a href="#0">
@@ -92,8 +85,8 @@
 								2
 							</div>
 							<p>
-								Advice you can Count on
-							</p><span>Export Financial Advice</span></a>
+								Asesoramientos
+                                                        </p><span><?php echo replace_vocales_voculeshtml("Consejos Financieros de Exportación");?></span></a>
 						</li>
 						<li class="">
 							<a href="#0">
@@ -101,8 +94,8 @@
 								3
 							</div>
 							<p>
-								Become a Client
-							</p><span>We have 15 Years Experience</span></a>
+								<?php echo replace_vocales_voculeshtml("Sé un cliente.");?>
+							</p><span><?php echo replace_vocales_voculeshtml("Más de 10 años de experiencia.");?></span></a>
 						</li>
 						<li class="">
 							<a href="#0">
@@ -110,8 +103,8 @@
 								4
 							</div>
 							<p>
-								Testing and Executing
-							</p><span>Doing the right thing</span></a>
+								Nuestra piedra angular
+							</p><span>Son nuestros asociados.</span></a>
 						</li>
 					</ul>
 				</nav>
@@ -129,41 +122,95 @@
 							<?php echo replace_vocales_voculeshtml("Somos un grupo de analistas del mercado bursátil que laboraban para la reconocida firma estadounidense Empire Capital Holdings; con la visión de ayudar a las personas su horizonte de inversión en el mercado existente, estudiaron el entorno económico de mayor recaudación y como fruto de ese esfuerzo nace Criptowin, una plataforma donde las personas tendrán la capacidad de tomar el control sobre sus comisiones y empezar a disfrutar de lo mejor que ofrece el mundo de las acciones e intercambios.");?> 
 						</p>
 						<ul>
-							<li>
-								<i class="fa fa-star" aria-hidden="true"></i>
-
-								Fully responsive so your content will always look good on any screen size
-							</li>
-							<li>
-								<i class="fa fa-star" aria-hidden="true"></i>
-
-								Awesome sliders give you the opportunity to showcase your content
-							</li>
-							<li>
-								<i class="fa fa-star" aria-hidden="true"></i>
-
-								Advanced theme options panel to easily customize your website
-							</li>
 						</ul>
-						<a class="btn btn-default hvr-bounce-to-right" href="#" data-text="read-more">READ MORE</a>
+                                                <a class="btn btn-default hvr-bounce-to-right" href="<?php echo site_url().'about';?>" data-text="read-more"><?php echo replace_vocales_voculeshtml("Ver Más");?></a>
 					</div>
 					<div class="col-md-6">
 						<div class="video_gallery_container">
-							<img class="img-responsive" src="img/video.jpg" alt="perfect video"/>
-							<a class="btn-play fancybox-media"  href="https://www.youtube.com/embed/fviFNrWKzZ8"><i class="fa fa-play"></i></a>
+							
+                                                    <img class="img-responsive" src="<?php echo site_url().'static/page_front/images/trader.jpeg';?>" alt="Acerca"/>
+                                                        <img class="img-responsive" src="img/video.jpg" alt="perfect video"/>
+							<!--<a class="btn-play fancybox-media"  href="https://www.youtube.com/embed/fviFNrWKzZ8"><i class="fa fa-play"></i></a>-->
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+                
+                
+                
+                
+                
+                
+                <!-- our-numbers section -->
+		<section class="our-numbers animated">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="why-choose-box">
+                                                    <h2><?php echo replace_vocales_voculeshtml("Análisis Avanzado");?></h2>
+							<p>
+								Nos preocupamos por nuestros clientes y podemos hacer su vida más fácil!
+								<br>
+								No te pierdas esta oportunidad y sé parte de esta revolución que cambiará tu vida, sé parte de CRIPTOWIN.
+							</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <div class="single-count-box"><span class="decor-line"></span>
+              <div class="box">
+                <div class="number-box">+<span class="counter">10</span></div>
+                <div class="text-box">
+                  <p>Años de<br>Experiencia</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <div class="single-count-box"><span class="decor-line"></span>
+              <div class="box">
+                <div class="number-box"><span class="counter">15</span></div>
+                <div class="text-box">
+                  <p>Traders <br>Profesionales</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <div class="single-count-box"><span class="decor-line"></span>
+              <div class="box">
+                <div class="number-box">+<span class="counter">30</span></div>
+                <div class="text-box">
+                    <p>Operaciones<br><?php echo replace_vocales_voculeshtml("cada día");?></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <div class="single-count-box"><span class="decor-line"></span>
+              <div class="box">
+                <div class="number-box"><span class="counter">1</span></div>
+                <div class="text-box">
+                  <p>Proyecto<br>Revolucionario</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+			</div>
+        </section>
+                
+                
+                
+                
 		<!-- our futured services section -->
 		<section class="our-futured-services">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 header">
-						<p>
-							<?php echo replace_vocales_voculeshtml("¿Qué podemos hacer?");?>
-						</p>
                                                 <h2><?php echo replace_vocales_voculeshtml("¿Por qué elegirnos?");?></h2>
 					</div>
 				</div>
@@ -173,10 +220,9 @@
 							<div class="icon-box">
 								<i class="fa fa-university" aria-hidden="true"></i>
 							</div>
-							<h4>Business Consulting</h4>
-
+							<h4>Seguridad de Fondos</h4>
 							<p>
-								Lorem ipsum dolor sit amet, sint occaecat cupidatat non proident occaecat cupidatat.
+								<?php echo replace_vocales_voculeshtml("Para asegurar una máxima seguridad, los fondos son administrados por nuestros profesionales.");?>
 							</p>
 						</div>
 					</div>
@@ -185,10 +231,10 @@
 							<div class="icon-box">
 								<i class="fa fa-users" aria-hidden="true"></i>
 							</div>
-							<h4>Business Consulting</h4>
+							<h4>Operadores Dedicados</h4>
 
 							<p>
-								Lorem ipsum dolor sit amet, sint occaecat cupidatat non proident occaecat cupidatat.
+								<?php echo replace_vocales_voculeshtml("Como parte de nuestro compromiso con tu experiencia en la inversión te brindamos soporte 24/7.");?>
 							</p>
 						</div>
 					</div>
@@ -197,10 +243,10 @@
 							<div class="icon-box">
 								<i class="fa fa-bar-chart" aria-hidden="true"></i>
 							</div>
-							<h4>Business Consulting</h4>
+							<h4>Plataforma Galardonada</h4>
 
 							<p>
-								Lorem ipsum dolor sit amet, sint occaecat cupidatat non proident occaecat cupidatat.
+								<?php echo replace_vocales_voculeshtml("Diseñada para facilitar una poderosa y eficiente experiencia con tecnologías hechas a la medida.");?>
 							</p>
 						</div>
 					</div>
@@ -208,6 +254,10 @@
 				</div>
 			</div>
 		</section>
+                
+                
+                
+                
 
 		<!-- our services section -->
 		<section class="Our-services">
@@ -215,12 +265,9 @@
 				<div class="row">
 
 					<div class="col-md-12 header">
-						<p>
-							What can we do
-						</p>
-						<h2>Our Special
+						<h2>Nuestros Servicios
 						<br>
-						<span>Services</span></h2>
+						<span>Especiales</span></h2>
 					</div>
 
 				</div>
@@ -230,56 +277,41 @@
 
 							<div class="item01" >
 								<div class="image">
-									<a href=""> <img class="img-responsive" src="img/service1.jpg" alt="Nutrition Photo"></a>
+                                                                    <img class="img-responsive" src="<?php echo site_url().'static/page_front/images/rentabilidad.jpeg';?>" alt="earnings">
 								</div>
-								<h4 class="title">Our service</h4>
+                                                            <h4 class="title"><?php echo replace_vocales_voculeshtml("Rentabilidad de Inversión");?></h4>
 								<p>
-									Aliquam ultrices venenatis mauris. Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenatis mauris.
+									<?php echo replace_vocales_voculeshtml("Generas por un periodo de contrato de 75 días una rentabilidad en las operaciones que realizan nuestro equipo de traders.");?>
 								</p>
-								<a href=""> See More</a>
 							</div>
-
-							<div class="item1">
-								<div class="image">
-									<a href=""> <img class="img-responsive" src="img/service2.jpg" alt="Nutrition Photo"></a>
-								</div>
-								<h4 class="title1">Our service</h4>
-								<p>
-									Aliquam ultrices venenatis mauris. Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenatis mauris.
-								</p>
-								<a href=""> See More</a>
-							</div>
-
 							<div class="item2">
 								<div class="image">
-									<a href=""> <img class="img-responsive" src="img/service3.jpg" alt="Nutrition Photo"></a>
+									<img class="img-responsive" src="<?php echo site_url().'static/page_front/images/apuestas.png';?>" alt="Sports Betting">
 								</div>
-								<h4 class="title2">Our service</h4>
+								<h4 class="title2">Apuestas en Vivo</h4>
 								<p>
 									Aliquam ultrices venenatis mauris. Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenatis mauris.
 								</p>
-								<a href=""> See More</a>
 							</div>
 							<div class="item3">
 								<div class="image">
-									<a href=""> <img class="img-responsive" src="img/service4.jpg" alt="Nutrition Photo"></a>
+									<a href=""> <img class="img-responsive" src="<?php echo site_url().'static/page_front/images/instrumentos.jpg';?>" alt="Nutrition Photo"></a>
 								</div>
-								<h4 class="title3">Our service</h4>
+								<h4 class="title3">+200 Instrumentos</h4>
 								<p>
-									Aliquam ultrices venenatis mauris. Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenatis mauris.
+									<?php echo replace_vocales_voculeshtml("Con una variedad de productos en el cual operamos, que incluyen divisas, criptodivisas, commidities, índices y muchas más. CW ofrece una experiencia sin paralelos.");?>
 								</p>
-								<a href=""> See More</a>
 							</div>
 							<div class="item4">
 
 								<div class="image">
-									<a href=""> <img class="img-responsive" src="img/service5.jpg" alt="Nutrition Photo"> </a>
+									<img class="img-responsive" src="<?php echo site_url().'static/page_front/images/analysis.jpeg';?>" alt="analysis">>
 								</div>
-								<h4 class="title4">Our service</h4>
+                                                            <h4 class="title4"><?php echo replace_vocales_voculeshtml("Análisis de Mercado");?></h4>
 								<p>
-									Aliquam ultrices venenatis mauris. Vestibulum ante ipsum primis in industry, logistics, finance, business orci ultrices venenatis mauris.
+									<?php echo replace_vocales_voculeshtml("Información relevante para la operatividad del trader que podrás conocer, así como análisis del mercado actual.");?>
 								</p>
-								<a href=""> See More</a>
+								<!--<a href=""> See More</a>-->
 
 							</div>
 						</div>
@@ -294,55 +326,47 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="why-choose-box">
-							<h2>Advanced Analytics</h2>
-
+                                                    <h2><?php echo replace_vocales_voculeshtml("Cómo funciona todo");?></h2>
 							<p>
-								Business analytics (BA) is the practice of iterative, methodical exploration of an
-								<br>
-								organization's data with emphasis on statistical analysis.
+								No es inteligente confiar en la suerte, Hágalo inteligentemente.
+                                                                <br/>
+                                                                Haga sus inversiones con los profesionales de CRIPTOWIN
 							</p>
 
 						</div>
 					</div>
 				</div>
 				<div class="row">
-          <div class="col-md-3 col-sm-3 col-xs-6">
+          <div class="col-md-4 col-sm-4 col-xs-6">
             <div class="single-count-box"><span class="decor-line"></span>
               <div class="box">
-                <div class="number-box"><span class="counter">15</span></div>
+                <div class="number-box"><i class="fa fa-address-card fa-4x" aria-hidden="true"></i></div>
                 <div class="text-box">
-                  <p>Years of <br>Experiences</p>
+                    <p><?php echo replace_vocales_voculeshtml("Regístrese");?></p>
                 </div>
+                <p><?php echo replace_vocales_voculeshtml("Ir a la página de registro, rellenar los campos obligatorios y acceder a los instrumentos de inversión.");?></p>
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-3 col-xs-6">
+          <div class="col-md-4 col-sm-4 col-xs-6">
             <div class="single-count-box"><span class="decor-line"></span>
               <div class="box">
-                <div class="number-box"><span class="counter">44</span></div>
+                <div class="number-box"><i class="fa fa-money fa-4x" aria-hidden="true"></i></div>
                 <div class="text-box">
-                  <p>Professional <br>Advisors</p>
+                    <p><?php echo replace_vocales_voculeshtml("Haga un Depósito");?></p>
                 </div>
+                <p><?php echo replace_vocales_voculeshtml("En su cuenta personal seleccione un plan de inversión y siga las instrucciones.");?></p>
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-3 col-xs-6">
+          <div class="col-md-4 col-sm-4 col-xs-6">
             <div class="single-count-box"><span class="decor-line"></span>
               <div class="box">
-                <div class="number-box"><span class="counter">66</span></div>
+                <div class="number-box"><i class="fa fa-bar-chart fa-4x" aria-hidden="true"></i></div>
                 <div class="text-box">
-                  <p>new cases <br>every years</p>
+                    <p>Obtenga Ganancias</p>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-3 col-xs-6">
-            <div class="single-count-box"><span class="decor-line"></span>
-              <div class="box">
-                <div class="number-box"><span class="counter">98</span></div>
-                <div class="text-box">
-                  <p>Registered <br>Cases</p>
-                </div>
+                <p><?php echo replace_vocales_voculeshtml("De acuerdo con el plan elegido, obtendrás ganancias por el periodo de contrato seleccionado.");?></p>
               </div>
             </div>
           </div>
@@ -358,59 +382,45 @@
 							<h2>FAQ's</h2>
 						</div>
 						<p>
-							Business analytics (BA) is the practice of iterative, methodical exploration of an
-
-							organization's data with emphasis on statistical analysis.
+							Resuelve todas tus dudas o consultas en nuestro listado de preguntas y respuestas frecuentes que surgen normalmente nuestros asociados y los nuevos clientes.
 						</p>
-						<p>
-							Who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain.
-						</p>
-
-						<p>
-							Denouncing pleasure and praising pain was born and I will give you a complete account of the system, expound the actual teachings.
-						</p>
-						<a class="btn btn-default hvr-bounce-to-right" href="Faq.html" data-text="read-more">READ MORE</a>
+                                                <a class="btn btn-default hvr-bounce-to-right" href="<?php echo site_url().'faq';?>" data-text="read-more"><?php echo replace_vocales_voculeshtml("Ver Más");?></a>
 
 					</div>
 					<div class="col-md-6 tabs wow slideInRight">
 						<div id="accordion" role="tablist">
 							<div class="toggle">
 								<div class="toggle-heading" role="tab">
-									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> <i class="fa fa-plus"></i>What is do i have to tell you a few lorem?<i class="fa fa-minus"></i></a>
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> 
+                                                                            <i class="fa fa-plus"></i><?php echo replace_vocales_voculeshtml("¿Quiénes son los dueños de CRIPWOTIN?");?><i class="fa fa-minus"></i></a>
 								</div>
 								<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-expanded="false">
 									<div class="toggle-body">
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore. Love life’s sweetest reward Let it flow it floats back to you.
-										</p>
+										<p><?php echo replace_vocales_voculeshtml("Un grupo de trader del mercado bursátil que laboraban para la reconocida firma estadounidense Empire Capital Holdings.");?></p>
 									</div>
-
 								</div>
 
 							</div>
 							<div class="toggle">
 								<div class="toggle-heading" role="tab">
-									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-plus"></i> What is do i have to tell you a few lorem?<i class="fa fa-minus"></i></a></a>
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                                                                            <i class="fa fa-plus"></i><?php echo replace_vocales_voculeshtml("¿Cómo hago para ser parte de CRIPTOWIN?");?><i class="fa fa-minus"></i></a>
 								</div>
 								<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-expanded="false">
 									<div class="toggle-body">
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore. Love life’s sweetest reward Let it flow it floats back to you.
-										</p>
+										<p>1.	Crear una cuenta en la sección de registro.<br>2.	Hacer un depósito en bitcoin a la dirección de la CRIPTOWIN.</p>
 									</div>
-
 								</div>
 
 							</div>
 							<div class="toggle">
 								<div class="toggle-heading" role="tab">
-									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseOne"> <i class="fa fa-plus"></i>What is do i have to tell you a few lorem?<i class="fa fa-minus"></i></a></a>
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseOne"> 
+                                                                            <i class="fa fa-plus"></i><?php echo replace_vocales_voculeshtml("¿Cuánto es el monto mínimo para cobrar?");?><i class="fa fa-minus"></i></a>
 								</div>
 								<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-expanded="false">
 									<div class="toggle-body">
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore. Love life’s sweetest reward Let it flow it floats back to you.
-										</p>
+                                                                            <p><?php echo replace_vocales_voculeshtml("El monto mínimo para cobrar son de $10 y los pagos se procesan en las primeras 24 horas.")?></p>
 									</div>
 
 								</div>
@@ -418,13 +428,12 @@
 							</div>
 							<div class="toggle">
 								<div class="toggle-heading" role="tab">
-									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseOne"> <i class="fa fa-plus"></i>What is do i have to tell you a few lorem?<i class="fa fa-minus"></i></a></a>
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseOne"> 
+                                                                            <i class="fa fa-plus"></i><?php echo replace_vocales_voculeshtml("¿Cómo cobro?")?><i class="fa fa-minus"></i></a>
 								</div>
 								<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-expanded="false">
 									<div class="toggle-body">
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore. Love life’s sweetest reward Let it flow it floats back to you.
-										</p>
+										<p>Todos los cobros que se hacen por parte de CRIPWOTIN se realizan en bitcoin a la billetera de tu preferencia.</p>
 									</div>
 
 								</div>
@@ -435,7 +444,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="our-blogs">
+<!--		<section class="our-blogs">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -536,59 +545,18 @@
 
 				</div>
 			</div>
-		</section>
-		<!-- our testimonials section -->
-		<section class="testimonials">
-			<div class="container">
-				<div class="row">
-
-					<div class="col-md-12">
-						<header>
-							<h2>Testimonials</h2>
-						</header>
-				
-
-					</div>
-					<div class="row">
-						<div class="col-md-6">
-							<blockquote>
-								Totam rem aperiam, eaque ipsa quae ab illo invent ore veritatis et quasi architecto beatae vitae dict eaque ipsa quae ab.Teritatis et quasi architecto. Sed ut perspi ciatis unde omnis iste natus error sit volu ptatem accusantium dolore mque.
-							</blockquote>
-							<div class="testimonials-author">
-								<div class="author-img">
-									<img class="img-responsive" src="img/testimonial1.jpg" />
-								</div>
-								<h4>Boris Hunt<br><span>Account Manager</span></h4>
-								
-							</div>
-						</div>
-						<div class="col-md-6">
-							<blockquote>
-								Totam rem aperiam, eaque ipsa quae ab illo invent ore veritatis et quasi architecto beatae vitae dict eaque ipsa quae ab.Teritatis et quasi architecto. Sed ut perspi ciatis unde omnis iste natus error sit volu ptatem accusantium dolore mque.
-							</blockquote>
-							<div class="testimonials-author">
-								<div class="author-img">
-									<img class="img-responsive" src="img/testimonial1.jpg" />
-								</div>
-								<h4>Boris Hunt<br><span>Account Manager</span></h4>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		</section>-->
 		<section class="get-quote">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-9">
-						<h3>We Always Try to make a Difference</h3>
+						<h3>En CRIPTOWIN siempre hacemos la diferencia.</h3>
 						<p>
-							Nunc ac sapien lobortis, eleifend orci eu, vulputate mauris.  Quisque sed pharetra justo, a dictum eros.
+							<?php echo replace_vocales_voculeshtml("No te pierdas esta gran oportunidad y sé parte de los pioneros que se suman a cambiar la vida de miles de personas.");?>
 						</p>
 					</div>
 					<div class="col-lg-3">
-						<a class="btn btn-default hvr-bounce-to-right-reverse" href="#" data-text="read-more">GET A QUOTE</a>
+                                            <a class="btn btn-default hvr-bounce-to-right-reverse" href="<?php echo site_url().'register'?>" data-text="read-more"><?php echo replace_vocales_voculeshtml("Obtén un Paquete");?></a>
 					</div>
 				</div>
 			</div>

@@ -3,9 +3,7 @@
 				<div class="row">
 					<div class="col-md-3 social-icons">
 						<img src="<?php echo site_url().'static/page_front/images/logo.png';?>" alt="Logo Criptowin">
-						<p>
-							Benenatis mauris. Vestibulum ante the ipsum primis in industry, logistics, finance, business mauris.
-						</p>
+                                                <p><?php echo replace_vocales_voculeshtml("Somos un grupo de analistas del mercado bursátil que laboraban para la reconocida firma estadounidense Empire Capital Holdings;");?></p>
 						<ul>
 							<li>
 								<a href="" ><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -20,56 +18,38 @@
 						</ul>
 					</div>
 					<div class="col-md-3 services">
-						<h3>Nuestros Servicios</h3>
+                                            <h3 style="font-size: 14px !important;">Nuestros Servicios</h3>
 						<ul>
-							<li>
-								<a href=""> Wordwide Country</a>
-							</li>
-							<li>
-								<a href="">42 Tailstoi</a>
-							</li>
-							<li>
-								<a href="">Wordwide Country</a>
-							</li>
-
+                                                    <li><a href=""><?php echo replace_vocales_voculeshtml("Rentabilidad de Inversión");?></a></li>
 						</ul>
 						<ul>
-							<li>
-								<a href=""> Town 5248 MT</a>
-							</li>
-							<li>
-								<a href="">Wordwide Country</a>
-							</li>
-							<li>
-								<a href="">Wordwide Country</a>
-							</li>
+							<li><a href="">Apuestas en Vivo</a></li>
+						</ul>
+                                            <ul>
+							<li><a href="">+200 Instrumentos</a></li>
+						</ul>
+                                            <ul>
+							<li><a href=""><?php echo replace_vocales_voculeshtml("Análisis de Mercado");?></a></li>
 						</ul>
 					</div>
 					<div class="col-md-3 news">
-                                            <h3><?php echo replace_vocales_voculeshtml("Últimas noticias");?></h3>
+                                            <h3 style="font-size: 14px !important;"><?php echo replace_vocales_voculeshtml("Cómo soy parte de CW");?></h3>
 						<ul>
 							<li>
-								<a href="" >Seminar for improve your businessprofit &amp; loss </a>
-								<br>
-								<span>January 15, 2017</span>
-							</li>
+								<i class="fa fa-address-card" aria-hidden="true"></i> <?php echo replace_vocales_voculeshtml("Regístrese");?>							</li>
 							<li>
-								<a href="" >Experts Openion for save money</a>
-								<br>
-								<span>January 15, 2017</a></span>
+								<i class="fa fa-money" aria-hidden="true"></i> <?php echo replace_vocales_voculeshtml("Haga un Depósito");?>
 							</li>
-							<li>
-								<a href="" >Experts Openion for save money</a>
-								<br>
-								<span>January 15, 2017</span>
+                                                        <li>
+								<i class="fa fa-bar-chart" aria-hidden="true"></i> Obtenga Ganancias
 							</li>
 						</ul>
 					</div>
 					<div class="col-md-3 get-in-touch">
-                                            <h3><?php echo replace_vocales_voculeshtml("Manténgase en contacto")?></h3>
+                                            <h3 style="font-size: 14px !important;"><?php echo replace_vocales_voculeshtml("Manténgase en contacto")?></h3>
 						<ul>
 							<li>
-								<i class="fa fa-map-marker" aria-hidden="true"></i>42 Tailstoi Town 5248 MT, Wordwide Country
+								<i class="fa fa-map-marker" aria-hidden="true"></i>384 5th Ave, New York, NY 10018, USA
 							</li>
 							<li>
 								<i class="fa fa-clock-o" aria-hidden="true"></i>Mon to Fri - 08:00 to 16:30

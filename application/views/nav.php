@@ -33,10 +33,10 @@
 			<div class="container">
 				<div class="logo pull-left">
                                     <a href="<?php echo site_url().'home';?>" class="logo-desktop">
-                                            <img src="<?php echo site_url().'static/page_front/images/logo.png';?>" alt="Logo Criptowin">
+                                            <img src="<?php echo site_url().'static/page_front/images/logo_assest_2.png';?>" alt="Logo Criptowin">
                                         </a> 
                                         <a href="<?php echo site_url().'home';?>" class="logo-mobile">
-                                            <img src="<?php echo site_url().'static/page_front/images/logo.png';?>" alt="Logo Criptowin">
+                                            <img src="<?php echo site_url().'static/page_front/images/logo_assest_2.png';?>" alt="Logo Criptowin">
                                         </a>
 				</div>
 				<div class="navbar-header">
