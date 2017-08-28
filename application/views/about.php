@@ -196,7 +196,7 @@
 						</p>
 					</div>
 					<div class="col-lg-3">
-                                            <a class="btn btn-default hvr-bounce-to-right-reverse" href="<?php echo site_url().'register'?>" data-text="read-more"><?php echo replace_vocales_voculeshtml("Obtén un Paquete");?></a>
+                                            <a class="btn btn-default hvr-bounce-to-right-reverse" href="<?php echo site_url().''?>" data-text="read-more"><?php echo replace_vocales_voculeshtml("Obtén un Paquete");?></a>
 					</div>
 				</div>
 			</div>
