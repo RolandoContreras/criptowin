@@ -19,16 +19,14 @@
         <section class="contact_us-second">
             <div class="container">
                 <div class="row">
-                	
-                	
-                  		<div class="col-md-8 col-sm-12 col-xs-12">
-							<header>
-								<h2><?php echo replace_vocales_voculeshtml("Contáctenos Hoy");?></h2>
-								<p>
-									For more information contact Rapid Nutrition’s Investor Relations team. We value your feedback and will respond to your question as quickly as possible. Alternatively click on the ‘chat box’ at the bottom right corner of your computer.
-								</p>
-							</header>
-							<form action="#" method="POST" class="contact-formm">
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <header>
+                                <h2><?php echo replace_vocales_voculeshtml("Contáctenos Hoy");?></h2>
+                                <p>
+                                        For more information contact Rapid Nutrition’s Investor Relations team. We value your feedback and will respond to your question as quickly as possible. Alternatively click on the ‘chat box’ at the bottom right corner of your computer.
+                                </p>
+                        </header>
+				<form class="contact-formm">
                                   <div class="row">
                                     <div class="col-md-6">
                                       <div class="form-grp">
@@ -52,10 +50,8 @@
                                       <div class="form-grp">
                                         <label>Mensaje</label>
                                         <textarea id="message" name="message"></textarea>
-                                        <button class="btn btn-default hvr-bounce-to-right" type="submit">Enviar Mensaje</button>
+                                        <input onclick="send_messages();" class="btn btn-default hvr-bounce-to-right" value="Enviar Mensaje" />
                                       </div>
-                                        <div id="success">
-                                        </div>
                                     </div>
                                   </div>
                                 </form>
@@ -93,6 +89,11 @@
                     </div>
                 </div>
         </section>
+        <script src="<?php echo site_url().'static/page_front/js/contact.js';?>"></script>
+        <script src="static/cms/js/core/bootstrap-modal.js"></script>
+        <script src="static/cms/js/core/bootbox.min.js"></script>
+        <script src="static/cms/js/core/jquery-1.11.1.min.js"></script>
+
         <br><br>
         <section class="map-section">
             <div class="container">

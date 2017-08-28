@@ -1334,16 +1334,25 @@ box-shadow: 0px 0px 25px -13px rgba(0,0,0,0.42);
     position: relative;
    overflow: hidden;
 }
-.contact_us-second form .form-grp input[type="text"], .form-grp input[type="email"], .form-grp textarea{
+.contact_us-second form .form-grp input[type="text"],.form-grp input[type="password"], .form-grp input[type="email"], .form-grp textarea{
     width:100%;
     height:45px;
     margin-bottom: 20px;
 }
 .form-grp textarea{ 
     max-width: 100%;
-    max-height: 200px;
+    max-height: 300px;
 }
 
+.contact_us-second form .form-grp select{
+    width:100%;
+    height:45px;
+    margin-bottom: 20px;
+}
+.form-grp textarea{ 
+    max-width: 100%;
+    max-height: 300px;
+}
 
 .projects-section .grreen .blue .pink {
     width: 100px;

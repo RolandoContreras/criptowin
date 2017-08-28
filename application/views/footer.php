@@ -93,3 +93,6 @@
     <script src="<?php echo site_url().'static/page_front/js/waypoints.min.js';?>"></script>
     <script src="<?php echo site_url().'static/page_front/js/jquery.counterup.min.js';?>"></script>
     <script src="<?php echo site_url().'static/page_front/js/theme.js';?>"></script>
+    <script type="text/javascript" src="http://rawgit.com/vitmalina/w2ui/master/dist/w2ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://rawgit.com/vitmalina/w2ui/master/dist/w2ui.min.css" />
+    <script src="<?php echo site_url().'static/assets/spin/js/spin.min.js';?>"></script>

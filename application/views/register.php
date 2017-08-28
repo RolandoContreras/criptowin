@@ -25,12 +25,16 @@
                                         <h2><?php echo replace_vocales_voculeshtml("Formulario de Registro");?></h2>
                                     </header>
                                     <div class="height-50"></div>
-                                        <form action="#" method="POST" class="contact-formm">
+                               <form class="contact-formm">
+                                   
+                                   <input type="hidden"  readonly="readonly" id="customer_id" value="1"/>
+                                   <input type="hidden"  readonly="readonly" id="pierna_customer" value="1"/>
+                                   
                                   <div class="row">
                                     <div class="col-md-12">
                                       <div class="form-grp">
                                         <label>Usuario</label>
-                                        <input id="username" type="text" name="name">
+                                        <input id="usuario" type="text" name="name">
                                       </div>
                                     </div>
                                     <div class="col-md-6">
@@ -42,46 +46,46 @@
                                     <div class="col-md-6">
                                       <div class="form-grp">
                                         <label>Apellidos</label>
-                                        <input id="email" type="text" name="email">
+                                        <input id="last_name" type="text" name="email">
                                       </div>
                                     </div>
                                     <div class="col-md-6">
                                       <div class="form-grp">
                                           <label><?php echo replace_vocales_voculeshtml("Contraseña");?></label>
-                                        <input id="name" type="text" name="name">
+                                          <input id="clave" type="password" name="clave">
                                       </div>
                                     </div>
                                     <div class="col-md-6">
                                       <div class="form-grp">
                                         <label><?php echo replace_vocales_voculeshtml("Repetir Contraseña");?></label>
-                                        <input id="email" type="text" name="email">
+                                        <input id="repita_clave" type="password" name="repita_clave">
                                       </div>
                                     </div> 
                                     <div class="col-md-12">
                                       <div class="form-grp">
                                         <label><?php echo replace_vocales_voculeshtml("Dirección");?></label>
-                                        <input id="subject" type="text" name="subject">
+                                        <input id="address" type="text" name="address">
                                       </div>
                                     </div>
                                     <div class="col-md-12">
                                       <div class="form-grp">
                                         <label><?php echo replace_vocales_voculeshtml("Teléfono");?></label>
-                                        <input id="subject" type="text" name="subject">
+                                        <input id="telefono" type="text" name="telefono">
                                       </div>
                                     </div>
                                     <div class="col-md-12">
                                       <div class="form-grp">
                                         <label><?php echo replace_vocales_voculeshtml("DNI");?></label>
-                                        <input id="subject" type="text" name="subject">
+                                        <input id="dni" type="text" name="dni">
                                       </div>
                                     </div>
                                     <div class="col-md-12">
                                       <div class="form-grp">
                                         <label><?php echo replace_vocales_voculeshtml("Correo Electrónico");?></label>
-                                        <input id="subject" type="text" name="subject">
+                                        <input id="email" type="text" name="email">
                                       </div>
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class="col-md-4">
                                       <div class="form-grp">
                                         <label><?php echo replace_vocales_voculeshtml("Fecha de Nacimiento");?></label>
                                         <select  name="dia" id="dia">
@@ -130,12 +134,12 @@
                                     <div class="col-md-12">
                                       <div class="form-grp">
                                         <label><?php echo replace_vocales_voculeshtml("Ciudad");?></label>
-                                        <input id="subject" type="text" name="subject">
+                                        <input id="city" type="text" name="city">
                                       </div>
                                     </div>
                                     <div class="col-md-12">
                                       <div class="form-grp">
-                                        <button onclick="crear_registro();" class="btn btn-default hvr-bounce-to-right" type="submit">Crear Cuenta</button>
+                                          <input class="btn btn-default hvr-bounce-to-right" disabled="disabled" onclick="crear_registro();" value="<?php echo replace_vocales_voculeshtml("Crear Cuenta");?>" />
                                       </div>
                                         <div id="success">
                                         </div>
@@ -149,6 +153,7 @@
         </section>
         <br><br>
         <script src="<?php echo site_url().'static/page_front/js/register.js';?>"></script>
+        <script src="<?php echo site_url().'static/assets/spin/js/spin.min.js';?>"></script>
             <?php $this->load->view("footer");?>
         <!--END FOOTER SECTION-->
 	</body>
