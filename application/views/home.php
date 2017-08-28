@@ -44,7 +44,7 @@
 								del trading de este siglo.
 							</p>
                                                         <a href="<?php echo site_url().'register';?>" class="btn bluebtn hvr-bounce-to-right-reverse" data-text="READ MORE"><?php echo replace_vocales_voculeshtml("Regístrese");?></a>
-							<a href="<?php echo site_url().'contact';?>" class="btn whitebtn btn-default hvr-bounce-to-right" data-text="Contact Us">Contact Us</a>
+							<a href="<?php echo site_url().'contact';?>" class="btn whitebtn btn-default hvr-bounce-to-right" data-text="Contact Us"><?php echo replace_vocales_voculeshtml("Contáctenos");?></a>
 						</div>
 					</div>
 				</li>
