@@ -62,7 +62,7 @@
 						</div>
                         <div class="col-md-4 col-sm-8 col-xs-12 keep-in"> 
                         	<header>
-                                    <h2><?php echo replace_vocales_voculeshtml("¡Manténgase en contacto!")?></h2>
+                                    <h2><?php echo replace_vocales_voculeshtml("¡Redes Sociales!")?></h2>
 							</header>                        
 						
 						<ul class="social-icons">
@@ -71,6 +71,9 @@
 							</li>
 							<li>
 								<a href="" ><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+							</li>
+                                                        <li>
+								<a href="" ><i class="fa fa-youtube" aria-hidden="true"></i></a>
 							</li>
 
 						</ul>
@@ -90,18 +93,12 @@
                     </div>
                 </div>
         </section>
-        
+        <br><br>
         <section class="map-section">
             <div class="container">
                 <div class="row">
                 	<div class="col-md-12"> 
-                		<div id="contact-google-map" 
-                		data-map-lat="-38.038489" 
-                		data-map-lng="145.119687" 
-                		data-map-zoom="12" 
-                		data-icon-path="img/map-marker.png" 
-                		data-map-title="Hanoi" 
-                		data-markers="{	&quot;marker-1&quot;: [-38.038489, 145.119687, &quot;&lt;h4&gt;Main Head Office&lt;/h4&gt;&lt;p&gt;31 South Australia&lt;/p&gt;&quot;],		&quot;marker-2&quot;: [-38.021469, 145.118023, &quot;&lt;h4&gt;Branch Office&lt;/h4&gt;&lt;p&gt;31 Main Boulevar 33154&lt;/p&gt;&quot;]		}" class="google-map"></div>
+                		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.566710887688!2d-73.98620474897389!3d40.74955874315235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9edc73a69%3A0x334707e907aa24a1!2s384+5th+Ave%2C+New+York%2C+NY+10018%2C+EE.+UU.!5e0!3m2!1ses!2spe!4v1503914976717" width="1100" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>			
 
                 		</div>                       
                 	</div>
