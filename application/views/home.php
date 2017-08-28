@@ -119,7 +119,7 @@
 					<div class="col-md-6">
 						<h2>Bienvenido a<span><br>CriptoWin</span></h2>
 						<p>
-							<?php echo replace_vocales_voculeshtml("Somos un grupo de analistas del mercado bursátil que laboraban para la reconocida firma estadounidense Empire Capital Holdings; con la visión de ayudar a las personas su horizonte de inversión en el mercado existente, estudiaron el entorno económico de mayor recaudación y como fruto de ese esfuerzo nace Criptowin, una plataforma donde las personas tendrán la capacidad de tomar el control sobre sus comisiones y empezar a disfrutar de lo mejor que ofrece el mundo de las acciones e intercambios.");?> 
+							<?php echo replace_vocales_voculeshtml("Somos un grupo de analistas del mercado bursátil que laboraban para la reconocida firma estadounidense Empire Capital Holdings; con la visión de ayudar a las personas hacia su horizonte de inversión en el mercado existente, estudiaron el entorno económico de mayor recaudación y como fruto de ese esfuerzo nace Criptowin, una plataforma donde las personas tendrán la capacidad de tomar el control sobre sus comisiones y empezar a disfrutar de lo mejor que ofrece el mundo de las acciones e intercambios.");?> 
 						</p>
 						<ul>
 						</ul>

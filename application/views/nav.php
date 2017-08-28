@@ -53,20 +53,15 @@
                                                     <a href="<?php echo site_url().'home';?>"><b>INICIO</b></a>
 						</li>
 						<li class="dropdown">
-							<a href="#"><b>ACERCA</b></a>
-							<ul class="dropdown-submenu">
-								<li>
-                                                                    <a href="<?php echo site_url().'about';?>">ACERCA</a>
-								</li>
-								<li>
-									<a href="<?php echo site_url().'faq';?>">FAQ</a>
-								</li>
-							</ul>
+							<a href="<?php echo site_url().'about';?>"><b>ACERCA</b></a>
 						</li>
 						<li class="dropdown">
 							<a href="<?php echo site_url().'services';?>"><b>SERVICIOS</b></a>
 						</li>
-						<li class="dropdown">
+                                                <li class="dropdown">
+							<a href="<?php echo site_url().'faq';?>"><b>FAQ</b></a>
+						</li>
+                                                <li class="dropdown">
 							<a href="<?php echo site_url().'contact';?>"><b>CONTACTO</b></a>
 						</li>
                                                 <li class="dropdown">
