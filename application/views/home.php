@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<?php $this->load->view("head");?>
-	<body>
+	<body onLoad="javaScript:mensaje_home();">
 		<?php $this->load->view("nav");?>
 
 		<!-- Header slider -->
@@ -557,6 +557,7 @@
 				</div>
 			</div>
 		</section>
+                <script src="<?php echo site_url().'static/page_front/js/contact.js';?>"></script>
 		<!-- FOOTER SECTION -->
                <?php $this->load->view("footer");?>
 		<!--END FOOTER SECTION-->
