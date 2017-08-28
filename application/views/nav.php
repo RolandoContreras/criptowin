@@ -65,7 +65,7 @@
 							<a href="<?php echo site_url().'contact';?>"><b>CONTACTO</b></a>
 						</li>
                                                 <li class="dropdown">
-							<a href="#"><b>REGISTRO</b></a>
+							<a href="<?php echo site_url().'register';?>"><b>REGISTRO</b></a>
 						</li>
 						<li class="dropdown">
 							<a href=""><b>LOGIN</b></a>
