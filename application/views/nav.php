@@ -56,7 +56,7 @@
 							<a href="<?php echo site_url().'about';?>"><b>ACERCA</b></a>
 						</li>
 						<li class="dropdown">
-                                                    <a href="#"><b><?php echo replace_vocales_voculeshtml("Plan de  Inversión");?></b></a>
+                                                    <a href="<?php echo site_url().'plan';?>"><b><?php echo replace_vocales_voculeshtml("Plan de  Inversión");?></b></a>
 						</li>
                                                 <li class="dropdown">
 							<a href="<?php echo site_url().'faq';?>"><b>FAQ</b></a>

@@ -9,7 +9,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h2>Latest News</h2>
+                                            <h2><?php echo replace_vocales_voculeshtml("Plan de Inversión");?></h2>
 					</div>
 				</div>
 			</div>
@@ -20,51 +20,25 @@
 					<div class="col-md-4">
 						<aside>
 							<div class="list-group">
-								<a href="Financial planing.html" class="list-group-item">Financial Planing</a>
-								<a href="Business growth.html"  class="list-group-item active disabled">Business Growth</a>
-								<a href="Investment trusts.html"  class="list-group-item">Investment Trusts</a>
-								<a href="Advice generator.html"  class="list-group-item">Advice Generator</a>
-								<a href="Business Advisor.html"  class="list-group-item">Business Advisor </a>
-								<a href="Business Consulting.html"  class="list-group-item">Business Consulting</a>
-								
+                                                            <a href="<?php echo site_url().'plan';?>" class="list-group-item active disabled"><?php echo replace_vocales_voculeshtml("Rentabilidad por Inversión");?></a>
+								<a href="<?php echo site_url().'plan';?>"  class="list-group-item"><?php echo replace_vocales_voculeshtml("Bono por Referidos");?></a>
+								<a href="<?php echo site_url().'';?>"  class="list-group-item"><?php echo replace_vocales_voculeshtml("Bono Binario");?></a>
+								<a href="<?php echo site_url().'';?>"  class="list-group-item"><?php echo replace_vocales_voculeshtml("Apuesta en Vivo");?></a>
 							</div>
 
 							<div class="brochures-download">
-								<h3>Brochures Download</h3>
+                                                            <h3><?php echo replace_vocales_voculeshtml("Descargar Plan de Compensación");?></h3>
 								<div class="list-group">
-									<a href="#"  class="list-group-item download-pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Medge Ratliff</a>
-									<a href="#"  class="list-group-item download-pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Nash Vasquez</a>
+									<a href="#"  class="list-group-item download-pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Plan de Pagos CW</a>
 								</div>
 							</div>
 
 							<div class="request-quote">
-								<h4>Request a quote</h4>
-								<p>
-									Get professional guidance for creating and management of successful business.
-								</p>
-								<a class="btn btn-default hvr-bounce-to-right" href="#" role="button">CONTACT US</a>
+								<h4><?php echo replace_vocales_voculeshtml("Obtén un Paquete");?></h4>
+                                                                <p><?php echo replace_vocales_voculeshtml("Obtenga orientación profesional para crear y administrar su negocio.");?></p>
+                                                                <a class="btn btn-default hvr-bounce-to-right" href="<?php echo site_url().'contact';?>" role="button"><?php echo replace_vocales_voculeshtml("Contáctenos");?></a>
 							</div>
-
-							<div  class="testimonials-service">
-
-								<div class="testimonials-content">
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore Love life’s sweetest.
-									</p>
-								</div>
-								<div class="testimonials-author-service">
-									<div class="author-img">
-										<img src="img/testimonial1.jpg" alt="" />
-									</div>
-									<h4>Boris Hunt
-									<br>
-									<span>Account manager</span></h4>
-								</div>
-
-							</div>
-
 						</aside>
-
 					</div>
 					<div class="col-md-8">
 						<div class="service-right-content">
@@ -137,133 +111,7 @@
 									</div>
 								</div>
 							</div>
-
 							<div class="height-50"></div>
-							<div class="row">
-								<div class="col-md-12">
-									<div id="accordion" role="tablist">
-										<div class="toggle">
-											<div class="toggle-heading" role="tab">
-												<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> <i class="fa fa-plus"></i>What is do i have to tell you a few lorem?<i class="fa fa-minus"></i></a>
-											</div>
-											<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-expanded="false">
-												<div class="toggle-body">
-													<p>
-														Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore. Love life’s sweetest reward Let it flow it floats back to you.
-													</p>
-												</div>
-
-											</div>
-
-										</div>
-										<div class="toggle">
-											<div class="toggle-heading" role="tab">
-												<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-plus"></i> What is do i have to tell you a few lorem?<i class="fa fa-minus"></i></a></a>
-											</div>
-											<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-expanded="false">
-												<div class="toggle-body">
-													<p>
-														Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore. Love life’s sweetest reward Let it flow it floats back to you.
-													</p>
-												</div>
-
-											</div>
-
-										</div>
-										<div class="toggle">
-											<div class="toggle-heading" role="tab">
-												<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseOne"> <i class="fa fa-plus"></i>What is do i have to tell you a few lorem?<i class="fa fa-minus"></i></a></a>
-											</div>
-											<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-expanded="false">
-												<div class="toggle-body">
-													<p>
-														Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore. Love life’s sweetest reward Let it flow it floats back to you.
-													</p>
-												</div>
-
-											</div>
-
-										</div>
-										<div class="toggle">
-											<div class="toggle-heading" role="tab">
-												<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseOne"> <i class="fa fa-plus"></i>What is do i have to tell you a few lorem?<i class="fa fa-minus"></i></a></a>
-											</div>
-											<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-expanded="false">
-												<div class="toggle-body">
-													<p>
-														Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore. Love life’s sweetest reward Let it flow it floats back to you.
-													</p>
-												</div>
-
-											</div>
-
-										</div>
-									</div>
-
-								</div>
-							</div>
-							<div class="height-50"></div>
-							<div class="row">
-								<div class="col-md-12"	>
-									<div class="tabs-info">
-
-										<!-- Nav tabs -->
-										<ul class="nav nav-tabs tabs-btn" role="tablist">
-											<li role="presentation" class="active">
-												<a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a>
-											</li>
-											<li role="presentation">
-												<a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a>
-											</li>
-											<li role="presentation">
-												<a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a>
-											</li>
-											<li role="presentation">
-												<a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a>
-											</li>
-										</ul>
-
-										<!-- Tab panes -->
-										<div class="tab-content">
-											<div role="tabpanel" class="tab-pane active" id="home">
-												<div class="img-box pull-left">
-													<img src="img/service6.jpg" alt="" />
-												</div>
-												<p>
-													You can activate a tab or pill navigation without writing any JavaScript by simply specifying data-toggle="tab" or data-toggle="pill" on an element. Adding the nav and nav-tabs classes to the tab ul will apply the Bootstrap tab styling, while adding the nav and nav-pills classes will apply pill styling.
-												</p>
-											</div>
-											<div role="tabpanel" class="tab-pane" id="profile">
-												<div class="img-box pull-left">
-													<img src="img/service6.jpg" alt="" />
-												</div>
-												<p>
-													.You can activate a tab or pill navigation without writing any JavaScript by simply specifying data-toggle="tab" or data-toggle="pill"g the nav and nav-pills classes will apply pill styling.
-												</p>
-											</div>
-											<div role="tabpanel" class="tab-pane" id="messages">
-												<div class="img-box pull-left">
-													<img src="img/service6.jpg" alt="" />
-												</div>
-												<p>
-													You can activate a tab or pill navigation without writing any JavaScript by simply specifying data-toggle="tab" or data-toggle="pill" on an element. Adding the nav and nav-tabs classes to the tab ul will apply the Bootstrap tab styling, while adding the nav and nav-pills classes will apply pill styling.
-												</p>
-											</div>
-											<div role="tabpanel" class="tab-pane" id="settings">
-												<div class="img-box pull-left">
-													<img src="img/service6.jpg" alt="" />
-												</div>
-												<p>
-													.You can activate a tab or pill navigation without writing any JavaScript by simply specifying data-toggle="tab" or data-toggle="pill" ov and nav-pills classes will apply pill styling.
-												</p>
-											</div>
-										</div>
-
-									</div>
-
-								</div>
-							</div>
-
 						</div>
 					</div>
 				</div>
