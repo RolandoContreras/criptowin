@@ -56,7 +56,7 @@
 							<a href="<?php echo site_url().'about';?>"><b>ACERCA</b></a>
 						</li>
 						<li class="dropdown">
-							<a href="<?php echo site_url().'services';?>"><b>SERVICIOS</b></a>
+                                                    <a href="#"><b><?php echo replace_vocales_voculeshtml("Plan de  Inversión");?></b></a>
 						</li>
                                                 <li class="dropdown">
 							<a href="<?php echo site_url().'faq';?>"><b>FAQ</b></a>
@@ -65,10 +65,10 @@
 							<a href="<?php echo site_url().'contact';?>"><b>CONTACTO</b></a>
 						</li>
                                                 <li class="dropdown">
-							<a href="<?php echo site_url().'register';?>"><b>REGISTRO</b></a>
+							<a href="#"><b>REGISTRO</b></a>
 						</li>
 						<li class="dropdown">
-							<a href="<?php echo site_url().'login';?>"><b>LOGIN</b></a>
+							<a href=""><b>LOGIN</b></a>
 						</li>
 					</ul>
 				</div>
