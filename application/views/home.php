@@ -255,10 +255,6 @@
 			</div>
 		</section>
                 
-                
-                
-                
-
 		<!-- our services section -->
 		<section class="Our-services">
 			<div class="container">
@@ -560,7 +556,6 @@
 					</div>
 				</div>
 			</div>
-
 		</section>
 		<!-- FOOTER SECTION -->
                <?php $this->load->view("footer");?>

@@ -61,30 +61,16 @@
 								<li>
 									<a href="<?php echo site_url().'faq';?>">FAQ</a>
 								</li>
-								<li>
-									<a href="<?php echo site_url().'testimonial';?>">TESTIMONIO</a>
-								</li>
 							</ul>
 						</li>
 						<li class="dropdown">
 							<a href="<?php echo site_url().'services';?>"><b>SERVICIOS</b></a>
-							<ul class="dropdown-submenu">
-								<li>
-									<a href="Financial planing.html">Financial planing</a>
-								</li>
-								<li>
-									<a href="Financial planing.html">Business Growth</a>
-								</li>
-								<li>
-									<a href="Financial planing.html">Investment Trusts</a>
-								</li>
-								<li>
-									<a href="Financial planing.html">Advice Generator</a>
-								</li>
-							</ul>
 						</li>
 						<li class="dropdown">
 							<a href="<?php echo site_url().'contact';?>"><b>CONTACTO</b></a>
+						</li>
+                                                <li class="dropdown">
+							<a href="<?php echo site_url().'register';?>"><b>REGISTRO</b></a>
 						</li>
 						<li class="dropdown">
 							<a href="<?php echo site_url().'login';?>"><b>LOGIN</b></a>

@@ -20,16 +20,16 @@
 					<div class="col-md-3 services">
                                             <h3 style="font-size: 14px !important;">Nuestros Servicios</h3>
 						<ul>
-                                                    <li><a href=""><?php echo replace_vocales_voculeshtml("Rentabilidad de Inversión");?></a></li>
+                                                    <li><a href="<?php echo site_url().'services';?>"><?php echo replace_vocales_voculeshtml("Rentabilidad de Inversión");?></a></li>
 						</ul>
 						<ul>
-							<li><a href="">Apuestas en Vivo</a></li>
+                                                    <li><a href="<?php echo site_url().'services';?>">Apuestas en Vivo</a></li>
 						</ul>
-                                            <ul>
-							<li><a href="">+200 Instrumentos</a></li>
+                                                <ul>
+                                                    <li><a href="<?php echo site_url().'services';?>">+200 Instrumentos</a></li>
 						</ul>
-                                            <ul>
-							<li><a href=""><?php echo replace_vocales_voculeshtml("Análisis de Mercado");?></a></li>
+                                                <ul>
+                                                    <li><a href="<?php echo site_url().'services';?>"><?php echo replace_vocales_voculeshtml("Análisis de Mercado");?></a></li>
 						</ul>
 					</div>
 					<div class="col-md-3 news">
