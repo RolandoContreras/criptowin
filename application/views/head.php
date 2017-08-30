@@ -11,8 +11,8 @@
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 
 		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-		<link rel="shortcut icon" href="http://www.mylamarena.com/vermun/favicon.ico">
-		<link rel="apple-touch-icon" href="http://www.mylamarena.com/vermun/apple-touch-icon.png">
+		<link rel="shortcut icon" href="<?php echo site_url().'static/page_front/images/favicon/favicon.ico';?>" type="image/x-icon">
+                <link rel="icon" href="<?php echo site_url().'static/page_front/images/favicon/favicon.ico';?>" type="image/x-icon">
                 <link rel="stylesheet" type="text/css" href="<?php echo site_url().'static/page_front/css/jquery.fancybox.css';?>"/>
 		<link rel="stylesheet" href="<?php echo site_url().'static/page_front/css/style_hero.css';?>">
 		<!-- CSS reset -->
