@@ -6,7 +6,7 @@
                                                 <p><?php echo replace_vocales_voculeshtml("Grupo de analistas de la reconocida firma Empire Capital Holdings;");?></p>
 						<ul>
 							<li>
-								<a href="" ><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
 							</li>
 							</li>
 							<li>
@@ -20,16 +20,16 @@
 					<div class="col-md-3 services">
                                             <h3 style="font-size: 16px !important;">Nuestros Servicios</h3>
 						<ul>
-                                                    <li><a href="#"><?php echo replace_vocales_voculeshtml("Rentabilidad de Inversión");?></a></li>
+                                                    <li><a href="<?php echo site_url().'referred';?>"><?php echo replace_vocales_voculeshtml("Rentabilidad de Inversión");?></a></li>
 						</ul>
 						<ul>
-                                                    <li><a href="#">Apuestas en Vivo</a></li>
+                                                    <li><a href="<?php echo site_url().'bets';?>">Apuestas en Vivo</a></li>
 						</ul>
                                                 <ul>
-                                                    <li><a href="#">+200 Instrumentos</a></li>
+                                                    <li><a>+200 Instrumentos</a></li>
 						</ul>
                                                 <ul>
-                                                    <li><a href="#"><?php echo replace_vocales_voculeshtml("Análisis de Mercado");?></a></li>
+                                                    <li><a><?php echo replace_vocales_voculeshtml("Análisis de Mercado");?></a></li>
 						</ul>
 					</div>
 					<div class="col-md-3 news">
@@ -83,7 +83,6 @@
     <script src="<?php echo site_url().'static/page_front/js/wow.min.js';?>"></script>
     <script src="<?php echo site_url().'static/page_front/js/jquery.countTo.js';?>"></script>
     <script src="<?php echo site_url().'static/page_front/js/owl.carousel.min.js';?>"></script>
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.24/gmaps.min.js"></script>
     <script src="<?php echo site_url().'static/page_front/js/map-helper.js';?>"></script>
     <script src="<?php echo site_url().'static/page_front/js/jquery.mixitup.min.js';?>"></script>

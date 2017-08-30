@@ -20,8 +20,8 @@
 					<div class="col-md-4">
 						<aside>
 							<div class="list-group">
-                                                            <a href="<?php echo site_url().'plan';?>" class="list-group-item active disabled"><?php echo replace_vocales_voculeshtml("Rentabilidad por Inversión");?></a>
-								<a href="<?php echo site_url().'referred';?>"  class="list-group-item"><?php echo replace_vocales_voculeshtml("Bono por Referidos");?></a>
+                                                            <a href="<?php echo site_url().'plan';?>" class="list-group-item"><?php echo replace_vocales_voculeshtml("Rentabilidad por Inversión");?></a>
+								<a href="<?php echo site_url().'referred';?>"  class="list-group-item active disabled"><?php echo replace_vocales_voculeshtml("Bono por Referidos");?></a>
 								<a href="<?php echo site_url().'binary';?>"  class="list-group-item"><?php echo replace_vocales_voculeshtml("Bono Binario");?></a>
 								<a href="<?php echo site_url().'bets';?>"  class="list-group-item"><?php echo replace_vocales_voculeshtml("Apuestas en Vivo");?></a>
 							</div>
@@ -44,33 +44,32 @@
 						<div class="service-right-content">
 							<div class="service-first">
 								<div class="img-box">
-                                                                    <img src="<?php echo site_url().'static/page_front/images/plan/profit.jpg';?>" alt=""/>
+                                                                    <img src="<?php echo site_url().'static/page_front/images/plan/refer.jpg';?>" alt=""/>
 								</div>
-                                                            <h2><?php echo replace_vocales_voculeshtml("Rentabilidad por Inversión")?></h2>
-								<p>Todos los paquetes de inversión tienen un contrato de 75 días (2 meses y medio). Los pagos se procesan desde la segunda semana de la fecha de activación debido a que la primera semana se comienza a hacer el trading acorde a su paquete. La rentabilidad se procesa de lunes a domingo.Tenemos 5 paquetes de inversión:</p>
+                                                            <h2><?php echo replace_vocales_voculeshtml("Bono por Referido Directo")?></h2>
+                                                            <p><?php echo replace_vocales_voculeshtml("Ganas el 15% de todos los referidos directos que ingresan a la empresa gracias a tu recomendación. Puedes tener todos los referidos por directos que desees en todo el periodo de vigencia de tu contrato.");?></p>
                                                                 <div class="height-50"></div>
                                                                 <ul>
                                                                     <li>
-                                                                            <i class="fa fa-star" aria-hidden="true"></i>BEGINNER ($50) ganas el 15% en 75 días (2 meses y medio).
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>Por un paquete BEGINNER ganas $7.5.
                                                                     </li>
                                                                     <li>
-                                                                            <i class="fa fa-star" aria-hidden="true"></i>START ($100)  ganas el 20% en 75 días (2 meses y medio).
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>Por un paquete START ganas $15.
                                                                     </li>
                                                                     <li>
-                                                                            <i class="fa fa-star" aria-hidden="true"></i>GENERAL ($300) ganas el 25% en 75 días (2 meses y medio).
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>Por un paquete GENERAL ganas $45.
                                                                     </li>
                                                                     <li>
-                                                                            <i class="fa fa-star" aria-hidden="true"></i>VIP ($500) ganas el 30% en 75 días (2 meses y medio).
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>Por un paquete VIP ganas $75.
                                                                     </li>
                                                                     <li>
-                                                                            <i class="fa fa-star" aria-hidden="true"></i>PREMIUN ($1000) ganas hasta el 35% en 75 días (2 meses y medio).
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>Por un paquete PREMIUN ganas $150.
                                                                     </li>
                                                                     <li>
-                                                                            <i class="fa fa-star" aria-hidden="true"></i>MASTER ($5000) ganas hasta el 40% en 75 días (2 meses y medio).
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>Por un paquete MASTER ganas $750.
                                                                     </li>
                                                                 </ul>
                                                                 <div class="height-50"></div>
-                                                                <p>Dependiendo de tu inversión también es tu rentabilidad. Puedes comprar todos los centros de negocio o paquetes que desees, cada uno de ellos es autónomo e independiente. Al finalizar tu contrato tienes la opción de renovar pagando el 100% del costo del paquete.</p>
 							</div>
 						</div>
 					</div>

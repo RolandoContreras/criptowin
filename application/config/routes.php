@@ -48,6 +48,10 @@ $route['backoffice'] = "b_home";
 $route['logout'] = "b_home/logout";
 $route['backoffice/misdatos'] = "b_data";
 
+$route['referred'] = "plan";
+$route['binary'] = "plan";
+$route['bets'] = "plan";
+
 $route['dashboard'] = "dashboard";
 $route['dashboard/panel'] = "panel";
 $route['dashboard/panel/guardar_btc'] = "panel/guardar_btc";
