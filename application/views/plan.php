@@ -21,9 +21,9 @@
 						<aside>
 							<div class="list-group">
                                                             <a href="<?php echo site_url().'plan';?>" class="list-group-item active disabled"><?php echo replace_vocales_voculeshtml("Rentabilidad por Inversión");?></a>
-								<a href="<?php echo site_url().'plan';?>"  class="list-group-item"><?php echo replace_vocales_voculeshtml("Bono por Referidos");?></a>
-								<a href="<?php echo site_url().'';?>"  class="list-group-item"><?php echo replace_vocales_voculeshtml("Bono Binario");?></a>
-								<a href="<?php echo site_url().'';?>"  class="list-group-item"><?php echo replace_vocales_voculeshtml("Apuesta en Vivo");?></a>
+								<a href="<?php echo site_url().'referred';?>"  class="list-group-item"><?php echo replace_vocales_voculeshtml("Bono por Referidos");?></a>
+								<a href="<?php echo site_url().'binary';?>"  class="list-group-item"><?php echo replace_vocales_voculeshtml("Bono Binario");?></a>
+								<a href="<?php echo site_url().'bets';?>"  class="list-group-item"><?php echo replace_vocales_voculeshtml("Apuesta en Vivo");?></a>
 							</div>
 
 							<div class="brochures-download">
@@ -44,74 +44,34 @@
 						<div class="service-right-content">
 							<div class="service-first">
 								<div class="img-box">
-                                                                    <img src="<?php echo site_url().'static/page_front/images/plan/business_plan.jpg';?>" alt=""/>
+                                                                    <img src="<?php echo site_url().'static/page_front/images/plan/profit.jpg';?>" alt=""/>
 								</div>
-                                                            <h2><?php echo replace_vocales_voculeshtml("Planificación Financiera")?></h2>
-								<p>
-									Ruis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliqu id etx ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo. nim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliqu. Ruis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliqu id etx ea commodi consequatur?
-
-									Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo. nim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliqu.
-								</p>
-								<blockquote>
-									Lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat.
-								</blockquote>
-
+                                                            <h2><?php echo replace_vocales_voculeshtml("Rentabilidad por Inversión")?></h2>
+								<p>Todos los paquetes de inversión tienen un contrato de 75 días (2 meses y medio). Los pagos se procesan desde la segunda semana de la fecha de activación debido a que la primera semana se comienza a hacer el trading acorde a su paquete. La rentabilidad se procesa de lunes a domingo.Tenemos 5 paquetes de inversión:</p>
+                                                                <div class="height-50"></div>
+                                                                <ul>
+                                                                    <li>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>BEGINNER ($50) ganas el 15% en 75 días (2 meses y medio).
+                                                                    </li>
+                                                                    <li>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>START ($100)  ganas el 20% en 75 días (2 meses y medio).
+                                                                    </li>
+                                                                    <li>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>GENERAL ($300) ganas el 25% en 75 días (2 meses y medio).
+                                                                    </li>
+                                                                    <li>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>VIP ($500) ganas el 30% en 75 días (2 meses y medio).
+                                                                    </li>
+                                                                    <li>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>PREMIUN ($1000) ganas hasta el 35% en 75 días (2 meses y medio).
+                                                                    </li>
+                                                                    <li>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>MASTER ($5000) ganas hasta el 40% en 75 días (2 meses y medio).
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="height-50"></div>
+                                                                <p>Dependiendo de tu inversión también es tu rentabilidad. Puedes comprar todos los centros de negocio o paquetes que desees, cada uno de ellos es autónomo e independiente. Al finalizar tu contrato tienes la opción de renovar pagando el 100% del costo del paquete.</p>
 							</div>
-							<div class="row">
-								<div class="col-lg-6 col-md-12">
-									<div class="image">
-										<img src="img/Leadership.png" alt="" />
-									</div>
-								</div>
-								<div class="col-lg-6 col-md-12">
-									<h3>How strategy works</h3>
-									<p>
-										Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo.
-									</p>
-									<ul>
-										<li>
-											<i class="fa fa-star" aria-hidden="true"></i>Nec sagittis sem nibh id elit
-										</li>
-										<li>
-											<i class="fa fa-star" aria-hidden="true"></i>Ruis nostrum exercitationem ullam
-										</li>
-										<li>
-											<i class="fa fa-star" aria-hidden="true"></i>Corporis suscipit laboriosam
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="height-50"></div>
-							<div class="row">
-								<div class="col-md-4">
-									<div class="service-business">
-										<i class="fa fa-diamond" aria-hidden="true"></i>
-										<h4>Manufacturing</h4>
-										<p>
-											Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur
-										</p>
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="service-business">
-										<i class="fa fa-globe" aria-hidden="true"></i>
-										<h4>Business Strategy</h4>
-										<p>
-											Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur
-										</p>
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="service-business">
-										<i class="fa fa-users" aria-hidden="true"></i>
-										<h4>Advice consulting</h4>
-										<p>
-											Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="height-50"></div>
 						</div>
 					</div>
 				</div>
@@ -123,13 +83,13 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-9">
-						<h3>We Always Try to make a Difference</h3>
+						<h3>En CRIPTOWIN siempre hacemos la diferencia.</h3>
 						<p>
-							Nunc ac sapien lobortis, eleifend orci eu, vulputate mauris.  Quisque sed pharetra justo, a dictum eros.
+							<?php echo replace_vocales_voculeshtml("No te pierdas esta gran oportunidad y sé parte de los pioneros que se suman a cambiar la vida de miles de personas.");?>
 						</p>
 					</div>
 					<div class="col-lg-3">
-						<a class="btn btn-default hvr-bounce-to-right-reverse" href="#" data-text="read-more">GET A QUOTE</a>
+                                            <a class="btn btn-default hvr-bounce-to-right-reverse" href="<?php echo site_url().'register'?>" data-text="read-more"><?php echo replace_vocales_voculeshtml("Obtén un Paquete");?></a>
 					</div>
 				</div>
 			</div>
