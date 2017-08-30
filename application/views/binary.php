@@ -47,7 +47,7 @@
                                                                     <img src="<?php echo site_url().'static/page_front/images/plan/binary.jpg';?>" alt=""/>
 								</div>
                                                             <h2><?php echo replace_vocales_voculeshtml("Bono Binario")?></h2>
-								<p>Ganas el 12% de la pierna menor hasta una profundidad hasta el infinito, condición calificar el binario con 2 directos en ambos lados de la misma cuenta. No hay tipe límite de ganancia.</p>
+                                                            <p><?php echo replace_vocales_voculeshtml("Ganas el 12% de la pierna menor hasta una profundidad hasta el infinito, condición calificar el binario con 2 directos en ambos lados de la misma cuenta. No hay tope límite de ganancia.");?></p>
                                                                 <div class="height-50"></div>
                                                                 
 							</div>

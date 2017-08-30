@@ -46,8 +46,8 @@
 								<div class="img-box">
                                                                     <img src="<?php echo site_url().'static/page_front/images/plan/bets.jpg';?>" alt=""/>
 								</div>
-                                                            <h2><?php echo replace_vocales_voculeshtml("Rentabilidad por Inversión")?></h2>
-								<p>Cada semana los traders de CRIPTOWIN hacen operaciones en vivo en el mercado bursátil, tendrás la oportunidad de apostar 2 veces por semana como mínimo y ganar porcentajes de cada operación que se realice al día, las apuestas son independiente al negocio de CRIPTOWIN y con la información del mercado que será entregado por los traders a los asociados tendrán mayor probabilidad de ganar.La mínima inversión para las apuestas son de $1 y no hay tope para la máxima cantidad.</p>
+                                                            <h2><?php echo replace_vocales_voculeshtml("Apuestas en Vivo")?></h2>
+                                                            <p><?php echo replace_vocales_voculeshtml("Cada semana los traders de CRIPTOWIN hacen operaciones en vivo en el mercado bursátil, tendrás la oportunidad de apostar 2 veces por semana como mínimo y ganar porcentajes de cada operación que se realice al día, las apuestas son independiente al negocio de CRIPTOWIN y con la información del mercado que será entregado por los traders a los asociados tendrán mayor probabilidad de ganar.La mínima inversión para las apuestas son de $1 y no hay tope para la máxima cantidad.");?></p>
                                                                 <!--<div class="height-50"></div>-->
 							</div>
 						</div>

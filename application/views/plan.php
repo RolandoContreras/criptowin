@@ -47,7 +47,7 @@
                                                                     <img src="<?php echo site_url().'static/page_front/images/plan/profit.jpg';?>" alt=""/>
 								</div>
                                                             <h2><?php echo replace_vocales_voculeshtml("Rentabilidad por Inversión")?></h2>
-								<p>Todos los paquetes de inversión tienen un contrato de 75 días (2 meses y medio). Los pagos se procesan desde la segunda semana de la fecha de activación debido a que la primera semana se comienza a hacer el trading acorde a su paquete. La rentabilidad se procesa de lunes a domingo.Tenemos 5 paquetes de inversión:</p>
+                                                            <p><?php echo replace_vocales_voculeshtml("Todos los paquetes de inversión tienen un contrato de 75 días (2 meses y medio). Los pagos se procesan desde la segunda semana de la fecha de activación debido a que la primera semana se comienza a hacer el trading acorde a su paquete. La rentabilidad se procesa de lunes a domingo.Tenemos 5 paquetes de inversión:");?></p>
                                                                 <div class="height-50"></div>
                                                                 <ul>
                                                                     <li>
