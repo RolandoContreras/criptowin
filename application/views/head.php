@@ -8,6 +8,7 @@
 		<meta name="description" content="Somos un grupo de analistas del mercado bursátil que laboraban para la reconocida firma estadounidense Empire Capital Holdings; con la visión de ayudar a las personas su horizonte de inversión en el mercado existente.">
 		<meta name="author" content="CRIPTOWIN">
                 <script src="https://use.fontawesome.com/3aa4a6fd0b.js"></script>
+                <meta name="keywords" content="criptowin,mlm,bitcoin,mercado bursatil,bolsa de valores,forex,inversión,redes de mercadeo">
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 
 		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
