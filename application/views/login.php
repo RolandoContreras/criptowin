@@ -30,13 +30,13 @@
                                     <div class="col-md-6">
                                       <div class="form-grp">
                                         <label>Usuario</label>
-                                        <input id="name" type="text" name="name">
+                                        <input id="username" type="text" name="username">
                                       </div>
                                     </div>
                                     <div class="col-md-6">
                                       <div class="form-grp">
                                         <label><?php echo replace_vocales_voculeshtml("Contraseña");?></label>
-                                        <input id="last_name" type="password" name="email">
+                                        <input id="password" type="password" name="password">
                                       </div>
                                     </div>
                                         <div class="col-md-12">
@@ -47,7 +47,7 @@
                                        
                                        <div class="col-md-12">
                                       <div class="form-grp">
-                                          <input class="btn btn-default hvr-bounce-to-right" disabled="disabled" onclick="crear_registro();" value="<?php echo replace_vocales_voculeshtml("Iniciar Sesión");?>" />
+                                          <input class="btn btn-default hvr-bounce-to-right" onclick="send_login();" value="<?php echo replace_vocales_voculeshtml("Iniciar Sesión");?>" />
                                       </div>
                                       
                                         <div id="success">
@@ -60,8 +60,9 @@
                 </div>
         </section>
         <br><br>
-        <script src="<?php echo site_url().'static/page_front/js/register.js';?>"></script>
+        <script src="<?php echo site_url().'static/page_front/js/login.js';?>"></script>
         <script src="<?php echo site_url().'static/assets/spin/js/spin.min.js';?>"></script>
+        <div id="spinner"></div>
             <?php $this->load->view("footer");?>
         <!--END FOOTER SECTION-->
 	</body>
