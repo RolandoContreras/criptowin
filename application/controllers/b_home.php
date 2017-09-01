@@ -13,6 +13,7 @@ class B_home extends CI_Controller {
     {
         //GET SESION ACTUALY
         $this->get_session();
+        
         /// VISTA
         $customer_id = $_SESSION['customer']['customer_id'];
         $params = array(
@@ -21,7 +22,6 @@ class B_home extends CI_Controller {
                                     customer.parents_id,
                                     customer.username,
                                     customer.email,
-                                    customer.bit,
                                     customer.password,
                                     customer.first_name,
                                     customer.last_name,
