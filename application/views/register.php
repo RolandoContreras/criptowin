@@ -27,16 +27,59 @@
                                     <div class="height-50"></div>
                                <form class="contact-formm">
                                    
-                                   <input type="hidden"  readonly="readonly" id="customer_id" value="1"/>
-                                   <input type="hidden"  readonly="readonly" id="pierna_customer" value="1"/>
+                                    <?php if(isset($obj_customer)){ ?>
+                                        <a class="blog_post_title" style="font-size: 22px !important;">Patrocinador</a>
+                                                <label data-add-placeholder>
+                                                    <input type="text"  readonly="readonly" value="<?php  
+                                                    if(isset($obj_customer->username)){
+                                                        echo $obj_customer->username;
+                                                    }?>" placeholder="<?php 
+                                                    if(isset($obj_customer->username)){
+                                                        echo $obj_customer->username;
+                                                    }?>"/>
+                                                    <input type="hidden"  id="customer_id" name="customer_id" value="<?php  
+                                                    if(isset($obj_customer->customer_id)){
+                                                        echo $obj_customer->customer_id;
+                                                    }
+                                                    ?>" placeholder="<?php 
+                                                    if(isset($obj_customer->customer_id)){
+                                                        echo $obj_customer->customer_id;
+                                                    }?>"/>
+                                                    <input type="hidden"  id="pierna_customer"  name="pierna_customer" value="<?php  
+                                                    if(isset($obj_customer->position_temporal)){
+                                                        echo $obj_customer->position_temporal;
+                                                    }
+                                                    ?>" placeholder="<?php 
+                                                    if(isset($obj_customer->position_temporal)){
+                                                        echo $obj_customer->position_temporal;
+                                                    }?>"/>
+                                                </label>
+                                    <?php }else{ ?>
+                                        <input type="hidden"  readonly="readonly" id="customer_id" value="1"/>
+                                        <input type="hidden"  readonly="readonly" id="pierna_customer" value="1"/>
+                                    <?php } ?>
                                    
                                   <div class="row">
                                     <div class="col-md-12">
                                       <div class="form-grp">
                                         <label>Usuario</label>
-                                        <input id="usuario" type="text" name="name">
+                                        <input onblur="validate_username(this.value);" id="usuario" type="text" name="usuario">
+                                        <span class="alert-0"></span>
                                       </div>
                                     </div>
+                                  <div class="col-md-6">
+                                  <div class="form-grp">
+                                      <label><?php echo replace_vocales_voculeshtml("Contraseña");?></label>
+                                      <input id="clave" type="password" name="clave">
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="form-grp">
+                                    <label><?php echo replace_vocales_voculeshtml("Repetir Contraseña");?></label>
+                                    <input id="repita_clave" onblur="validate_2passwordr(this.value);" type="password" name="repita_clave">
+                                    <span class="alert-1"></span>
+                                  </div>
+                                </div> 
                                     <div class="col-md-6">
                                       <div class="form-grp">
                                         <label>Nombres</label>
@@ -49,18 +92,7 @@
                                         <input id="last_name" type="text" name="email">
                                       </div>
                                     </div>
-                                    <div class="col-md-6">
-                                      <div class="form-grp">
-                                          <label><?php echo replace_vocales_voculeshtml("Contraseña");?></label>
-                                          <input id="clave" type="password" name="clave">
-                                      </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                      <div class="form-grp">
-                                        <label><?php echo replace_vocales_voculeshtml("Repetir Contraseña");?></label>
-                                        <input id="repita_clave" type="password" name="repita_clave">
-                                      </div>
-                                    </div> 
+                                    
                                     <div class="col-md-12">
                                       <div class="form-grp">
                                         <label><?php echo replace_vocales_voculeshtml("Dirección");?></label>
@@ -141,8 +173,6 @@
                                       <div class="form-grp">
                                           <input class="btn btn-default hvr-bounce-to-right" onclick="crear_registro();" value="<?php echo replace_vocales_voculeshtml("Crear Cuenta");?>" />
                                       </div>
-                                        <div id="success">
-                                        </div>
                                     </div>
                                       
                                   </div>
@@ -152,9 +182,7 @@
                 </div>
         </section>
         <br><br>
-        
-        <script type="text/javascript" src="<?php echo site_url().'static/assets/js/jquery-1.8.3.min.js';?>"></script>
-        
+        <div id="spinner"></div>
         <script src="<?php echo site_url().'static/page_front/js/register.js';?>"></script>
         <script src="<?php echo site_url().'static/assets/spin/js/spin.min.js';?>"></script>
             <?php $this->load->view("footer");?>
