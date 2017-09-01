@@ -29,7 +29,7 @@
 							<div class="brochures-download">
                                                             <h3><?php echo replace_vocales_voculeshtml("Descargar Plan de Compensación");?></h3>
 								<div class="list-group">
-									<a href="#"  class="list-group-item download-pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Plan de Pagos CW</a>
+									<a href="<?php echo site_url().'static/page_front/document/presentacion_cw.pdf';?>" download="presentacion_cw.pdf" alt="<?php echo replace_vocales_voculeshtml("presentación criptowin");?>" class="list-group-item download-pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Plan de Pagos CW</a>
 								</div>
 							</div>
 
