@@ -90,9 +90,6 @@
                 </div>
         </section>
         <script src="<?php echo site_url().'static/page_front/js/contact.js';?>"></script>
-        <script src="static/cms/js/core/bootstrap-modal.js"></script>
-        <script src="static/cms/js/core/bootbox.min.js"></script>
-        <script src="static/cms/js/core/jquery-1.11.1.min.js"></script>
 
         <br><br>
         <section class="map-section">

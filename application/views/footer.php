@@ -83,7 +83,6 @@
     <script src="<?php echo site_url().'static/page_front/js/wow.min.js';?>"></script>
     <script src="<?php echo site_url().'static/page_front/js/jquery.countTo.js';?>"></script>
     <script src="<?php echo site_url().'static/page_front/js/owl.carousel.min.js';?>"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.24/gmaps.min.js"></script>
     <script src="<?php echo site_url().'static/page_front/js/map-helper.js';?>"></script>
     <script src="<?php echo site_url().'static/page_front/js/jquery.mixitup.min.js';?>"></script>
     <script src="<?php echo site_url().'static/page_front/js/bootstrap-select.min.js';?>"></script>

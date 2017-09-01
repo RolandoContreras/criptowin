@@ -139,7 +139,7 @@
                                     </div>
                                     <div class="col-md-12">
                                       <div class="form-grp">
-                                          <input class="btn btn-default hvr-bounce-to-right" disabled="disabled" onclick="crear_registro();" value="<?php echo replace_vocales_voculeshtml("Crear Cuenta");?>" />
+                                          <input class="btn btn-default hvr-bounce-to-right" onclick="crear_registro();" value="<?php echo replace_vocales_voculeshtml("Crear Cuenta");?>" />
                                       </div>
                                         <div id="success">
                                         </div>
@@ -152,6 +152,9 @@
                 </div>
         </section>
         <br><br>
+        
+        <script type="text/javascript" src="<?php echo site_url().'static/assets/js/jquery-1.8.3.min.js';?>"></script>
+        
         <script src="<?php echo site_url().'static/page_front/js/register.js';?>"></script>
         <script src="<?php echo site_url().'static/assets/spin/js/spin.min.js';?>"></script>
             <?php $this->load->view("footer");?>
