@@ -90,7 +90,8 @@
                 </div>
         </section>
         <script src="<?php echo site_url().'static/page_front/js/contact.js';?>"></script>
-
+        <script src="<?php echo site_url().'static/assets/spin/js/spin.min.js';?>"></script>
+        <div id="spinner"></div>
         <br><br>
         <section class="map-section">
             <div class="container">
