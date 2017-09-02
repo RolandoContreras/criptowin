@@ -4,7 +4,6 @@
             <h1 class="title text-uppercase">Perfil</h1>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 pull-right count-down-box">
-            <a class="white"><?php echo "Precio del BITCOIN: "?><?php echo $price_btc;?></a>
         </div>
     </div> 
     <!--SPINNER-->
@@ -38,7 +37,7 @@
                                 <div class="form-group">
                                     <div class="media">
                                         <div class="media-left">
-                                            <div class="media-left"><i class="fa fa-male fa-4x" aria-hidden="true"></i></div>
+                                            <i class="fa fa-male fa-4x" aria-hidden="true"></i>
                                         </div>
                                         <div class="media-body">
                                             <div class="user-name-info"><span><?php echo $obj_customer->username;?></span></div>
@@ -67,7 +66,7 @@
                             <div class="col-md-3 col-sm-6 border-left">
                                 <div class="form-group">
                                     <div class="media">
-                                        <div class="media-left"><i class="icon-phone fa-3x"></i></div>
+                                        <div class="media-left"><i class="fa fa-mobile fa-4x" aria-hidden="true"></i></div>
                                         <div class="media-body">
                                             <div class="control-label"><?php echo replace_vocales_voculeshtml("Teléfono Movil:");?></div>
                                             <p class="form-control">

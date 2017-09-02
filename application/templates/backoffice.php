@@ -14,22 +14,22 @@
 <link rel="icon" href="<?php echo site_url().'static/page_front/images/favicon/favicon.ico';?>" type="image/x-icon">
 <!-- /site favicon -->
 <!-- Entypo font stylesheet -->
-<link href="http://g-axon.com/mouldifi4.3/light/css/entypo.css" rel="stylesheet">
+<link href="<?php echo site_url().'static/backoffice/css/assets/entypo.css';?>" rel="stylesheet">
 <!-- /entypo font stylesheet -->
-
+<link href="<?php echo site_url().'static/backoffice/css/one/style_one.css';?>" rel="stylesheet">
 <!-- Font awesome stylesheet -->
-<link href="http://g-axon.com/mouldifi4.3/light/css/font-awesome.min.css" rel="stylesheet">
+<link href="<?php echo site_url().'static/backoffice/css/assets/font-awesome.min.css';?>" rel="stylesheet">
 <!-- /font awesome stylesheet -->
 
 <!-- Bootstrap stylesheet min version -->
-<link href="http://g-axon.com/mouldifi4.3/light/css/bootstrap.min.css" rel="stylesheet">
+<link href="<?php echo site_url().'static/backoffice/css/assets/bootstrap.min.css';?>" rel="stylesheet">
 <!-- /bootstrap stylesheet min version -->
 
 <!-- Mouldifi core stylesheet -->
-<link href="http://g-axon.com/mouldifi4.3/light/css/mouldifi-core.css" rel="stylesheet">
+<link href="<?php echo site_url().'static/backoffice/css/assets/mouldifi-core.css';?>" rel="stylesheet">
 <!-- /mouldifi core stylesheet -->
 
-<link href="http://g-axon.com/mouldifi4.3/light/css/mouldifi-forms.css" rel="stylesheet">
+<link href="<?php echo site_url().'static/backoffice/css/assets/mouldifi-forms.css';?>" rel="stylesheet">
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -57,7 +57,9 @@
                           <img src="<?php echo site_url().'static/page_front/images/logo_assest_2.png';?>" width="200px" alt="Logo Criptowin">
                       </a>
                   </div>
-		  <div class="sidebar-collapse hidden-xs"><a class="sidebar-collapse-icon" href="#"><i class="icon-menu"></i></a></div>
+		  <div class="sidebar-collapse hidden-xs">
+                      <a class="sidebar-collapse-icon" href="#"><i class="icon-menu"></i></a>
+                  </div>
 		  <div class="sidebar-mobile-menu visible-xs">
                       <a data-target="#side-nav" data-toggle="collapse" class="mobile-menu-icon" href="#">
                           <i class="icon-menu"></i>
@@ -70,24 +72,13 @@
 		<!-- Main navigation -->
 		<ul id="side-nav" class="main-menu navbar-collapse collapse">
                     <li class="has-sub"><a href="<?php echo site_url().'backoffice'?>"><i class="fa fa-tachometer fa-lg"></i><span class="title">Dashboard</span></a></li>
-			<li class="has-sub"><a href="#"><i class="fa fa-address-book fa-lg"></i><span class="title">Mi Perfil</span></a>
-<!--				<ul class="nav collapse">
-					<li><a href="collapsed-sidebar.html"><span class="title">Collapsed Sidebar</span></a></li>
-					<li><a href="fixed-sidebar.html"><span class="title">Fixed Sidebar</span></a></li>
-				</ul>-->
-			</li>
-			<li class="has-sub"><a href="#"><i class="fa fa-arrow-up fa-lg"></i><span class="title">Upgrade</span></a>
-			</li>
-			<li class="has-sub"><a href="#"><i class="fa fa-cubes fa-lg"></i><span class="title">Binario</span></a>
-			</li>
-			<li class="has-sub"><a href="#"><i class="fa fa-area-chart" fa-lg"></i><span class="title">Mis Comisiones</span></a>
-			</li>
-			<li class="has-sub"><a href="#"><i class="fa fa-btc fa-lg"></i><span class="title">Billetera</span></a>
-			</li>
-                        <li class="has-sub"><a href="#"><i class="fa fa-university fa-lg"></i><span class="title">Pagos</span></a>
-			</li>
-                        <li class="has-sub"><a href="<?php echo site_url().'login/logout';?>"><i class="fa fa-sign-out fa-lg"></i><span class="title">Salir</span></a>
-			</li>
+                    <li class="has-sub"><a href="<?php echo site_url().'backoffice/profile'?>"><i class="fa fa-address-book fa-lg"></i><span class="title">Mi Perfil</span></a></li>
+			<li class="has-sub"><a href="#"><i class="fa fa-arrow-up fa-lg"></i><span class="title">Upgrade</span></a></li>
+			<li class="has-sub"><a href="#"><i class="fa fa-cubes fa-lg"></i><span class="title">Binario</span></a></li>
+			<li class="has-sub"><a href="#"><i class="fa fa-area-chart" fa-lg"></i><span class="title">Mis Comisiones</span></a></li>
+			<li class="has-sub"><a href="#"><i class="fa fa-btc fa-lg"></i><span class="title">Billetera</span></a></li>
+                        <li class="has-sub"><a href="#"><i class="fa fa-university fa-lg"></i><span class="title">Pagos</span></a></li>
+                        <li class="has-sub"><a href="<?php echo site_url().'login/logout';?>"><i class="fa fa-sign-out fa-lg"></i><span class="title">Salir</span></a></li>
 			
 		</ul>
 		<!-- /main navigation -->		
@@ -105,17 +96,16 @@
 			<ul class="user-info pull-left">          
                             <li class="profile-info dropdown">
                                 <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false"> 
-                                    <img width="44" class="img-circle avatar" alt="" src="<?php echo site_url().'static/backoffice/images/avatar/avatar.jpg';?>">Rolando Contreras &nbsp;&nbsp;<i class="fa fa-arrow-down" aria-hidden="true"></i>
+                                    <img width="44" class="img-circle avatar" alt="" src="<?php echo site_url().'static/backoffice/images/avatar/avatar.png';?>">Rolando Contreras &nbsp;&nbsp;<i class="fa fa-arrow-down" aria-hidden="true"></i>
                                 </a>
 
                                           <!-- User action menu -->
                               <ul class="dropdown-menu">
 
-                                <li><a href=""><i class="icon-user"></i>My profile</a></li>
-                                <li><a href="#/"><i class="icon-mail"></i>Messages</a></li>
-                                <li><a href="#"><i class="icon-clipboard"></i>Tasks</a></li>
+                                <li><a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i>My profile</a></li>
+                                <li><a href="#"><i class="fa fa-comment" aria-hidden="true"></i>Messages</a></li>
                                             <li class="divider"></li>
-                                            <li><a href="<?php echo site_url().'login/logout';?>"><i class="icon-logout"></i>Salir</a></li>
+                                            <li><a href="<?php echo site_url().'login/logout';?>"><i class="fa fa-sign-out fa-lg"></i>Salir</a></li>
                               </ul>
                                           <!-- /user action menu -->
 
@@ -235,22 +225,22 @@
 <!-- /page container -->
 
 <!--Load JQuery-->
-<script src="http://g-axon.com/mouldifi4.3/light/js/jquery.min.js"></script>
-<script src="http://g-axon.com/mouldifi4.3/light/js/bootstrap.min.js"></script>
-<script src="http://g-axon.com/mouldifi4.3/light/js/plugins/metismenu/jquery.metisMenu.js"></script>
-<script src="http://g-axon.com/mouldifi4.3/light/js/plugins/blockui-master/jquery-ui.js"></script>
-<script src="http://g-axon.com/mouldifi4.3/light/js/plugins/blockui-master/jquery.blockUI.js"></script>
+<script src="<?php echo site_url().'static/backoffice/js/assets/jquery.min.js';?>"></script>
+<script src="<?php echo site_url().'static/backoffice/js/assets/bootstrap.min.js';?>"></script>
+<script src="<?php echo site_url().'static/backoffice/js/assets/jquery.metisMenu.js';?>"></script>
+<script src="<?php echo site_url().'static/backoffice/js/assets/jquery-ui.js';?>"></script>
+<script src="<?php echo site_url().'static/backoffice/js/assets/jquery.blockUI.js';?>"></script>
 <!--Float Charts-->
-<script src="http://g-axon.com/mouldifi4.3/light/js/plugins/flot/jquery.flot.min.js"></script>
-<script src="http://g-axon.com/mouldifi4.3/light/js/plugins/flot/jquery.flot.tooltip.min.js"></script>
-<script src="http://g-axon.com/mouldifi4.3/light/js/plugins/flot/jquery.flot.resize.min.js"></script>
-<script src="http://g-axon.com/mouldifi4.3/light/js/plugins/flot/jquery.flot.selection.min.js"></script>        
-<script src="http://g-axon.com/mouldifi4.3/light/js/plugins/flot/jquery.flot.pie.min.js"></script>
-<script src="http://g-axon.com/mouldifi4.3/light/js/plugins/flot/jquery.flot.time.min.js"></script>
-<script src="http://g-axon.com/mouldifi4.3/light/js/functions.js"></script>
+<script src="<?php echo site_url().'static/backoffice/js/assets/jquery.flot.min.js';?>"></script>
+<script src="<?php echo site_url().'static/backoffice/js/assets/jquery.flot.tooltip.min.js';?>"></script>
+<script src="<?php echo site_url().'static/backoffice/js/assets/jquery.flot.resize.min.js';?>"></script>
+<script src="<?php echo site_url().'static/backoffice/js/assets/jquery.flot.selection.min.js';?>"></script>        
+<script src="<?php echo site_url().'static/backoffice/js/assets/jquery.flot.pie.min.js';?>"></script>
+<script src="<?php echo site_url().'static/backoffice/js/assets/jquery.flot.time.min.js';?>"></script>
+<script src="<?php echo site_url().'static/backoffice/js/assets/functions.js';?>"></script>
 
 <!--ChartJs-->
-<script src="js/plugins/chartjs/Chart.min.js"></script>
+<script src="<?php echo site_url().'static/backoffice/js/assets/Chart.min.js';?>"></script>
 <script>
 	$(document).ready(function () {
 		var $checkbox = $('.todo-list .checkbox input[type=checkbox]');

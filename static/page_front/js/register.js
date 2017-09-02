@@ -1,3 +1,55 @@
+function send_register(){
+    alert("hola");
+    
+    $('#register-form').validate({ // initialize the plugin
+            rules: {
+                usuario: {
+                    required: true
+                },
+                clave: {
+                    required: true
+                },
+                usuario: {
+                    required: true
+                },
+                usuario: {
+                    required: true
+                },
+                usuario: {
+                    required: true
+                },
+//                email: {
+//                    required: true,
+//                    email: true
+//                },
+                message: {
+                    required: true
+                },
+                subject: {
+                    required: true
+                }
+            },
+            submitHandler: function(form) {
+                // sending value with ajax request
+                $.post($(form).attr('action'), $(form).serialize(), function(response) {
+                    $(form).parent('div').append(response);
+                    $(form).find('input[type="text"]').val('');
+                    $(form).find('input[type="email"]').val('');
+                    $(form).find('input[type="usuario"]').val('');
+                    $(form).find('textarea').val('');
+                });
+                return false;
+            }
+        });
+}
+    
+        
+
+
+
+
+
+
 function validate_username(username){
         $.ajax({
         type: "post",
@@ -77,29 +129,31 @@ function crear_registro() {
     var target = document.getElementById('spinner');
     var spinner = new Spinner(opts).spin(target);
         
-     var clave = document.getElementById("clave").value;
-     var repita_clave = document.getElementById("repita_clave").value;
-           
+     var clave = document.getElementByName("clave").value;
+     var repita_clave = document.getElementByName("repita_clave").value;
+     
+    var customer_id = document.getElementByName("customer_id").value;
+    var pierna_customer = document.getElementByName("pierna_customer").value;
+    var usuario = document.getElementByName("usuario").value;
+    var name = document.getElementByName("name").value;
+    var last_name = document.getElementByName("last_name").value;
+    var address = document.getElementByName("address").value;
+    var telefono = document.getElementByName("telefono").value;
+    var dni = document.getElementByName("dni").value;
+    var email = document.getElementByName("email").value;
         
-    customer_id = $("#customer_id").val();    
-    pierna_customer = $("#pierna_customer").val();     
-    usuario = $("#usuario").val();
-    name = $("#name").val();    
-    last_name = $("#last_name").val();    
-    address = $("#address").val();     
-    telefono = $("#telefono").val();
-    dni = $("#dni").val(); 
-    email = $("#email").val(); 
     
+    var dia = document.getElementByName("dia").value;
+    var mes = document.getElementByName("mes").value;
+    var ano = document.getElementByName("ano").value;
     
-    var dia = document.getElementsByName("dia")[0].value;
-    var mes = document.getElementsByName("mes")[0].value;
-    var ano = document.getElementsByName("ano")[0].value;
+//    var dia = document.getElementsByName("dia")[0].value;
+//    var mes = document.getElementsByName("mes")[0].value;
+//    var ano = document.getElementsByName("ano")[0].value;
     
         //ver si son iguales
             if(clave == repita_clave){
                 
-                if(usuario != "" && name != "" && last_name != ""  && address != "" && telefono != "" && dni != "" && email != "" && dia != "" && mes != "" && ano != "" && pais != "" && region != "" && city != ""){
                 $.ajax({
                        type: "post",
                        url: "register/crear_registro",
@@ -131,10 +185,7 @@ function crear_registro() {
                            }
                        }            
                    });
-                }else{
-                spinner.stop(); 
-                llene_campos();
-              }
+                
             }else{
                spinner.stop(); 
                contraseñas();

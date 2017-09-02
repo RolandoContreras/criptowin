@@ -8756,7 +8756,7 @@ button.lines-button:focus {
   .panel-form #transaction_password {
     margin-top: 10px; }
   .panel-form .media-left i {
-    color: #EAECF2; }
+    color: black; }
   .panel-form .panel-body {
     padding-top: 15px; }
   .panel-form h3 .form-control-feedback {

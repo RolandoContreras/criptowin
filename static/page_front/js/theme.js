@@ -304,38 +304,44 @@ function doughnutChartBox() {
     };
     
     
-    function contactFormValidation() {
-
-    if ($('.contact-form').length) {
-        $('.contact-form').validate({ // initialize the plugin
-            rules: {
-                name: {
-                    required: true
-                },
-                email: {
-                    required: true,
-                    email: true
-                },
-                message: {
-                    required: true
-                },
-                subject: {
-                    required: true
-                }
-            },
-            submitHandler: function(form) {
-                // sending value with ajax request
-                $.post($(form).attr('action'), $(form).serialize(), function(response) {
-                    $(form).parent('div').append(response);
-                    $(form).find('input[type="text"]').val('');
-                    $(form).find('input[type="email"]').val('');
-                    $(form).find('textarea').val('');
-                });
-                return false;
-            }
-        });
-    }
-}
+//    function contactFormValidation() {
+//
+//    if ($('.contact-form').length) {
+//        $('.contact-form').validate({ // initialize the plugin
+//            rules: {
+//                name: {
+//                    required: true
+//                },
+//                last_name: {
+//                    required: true
+//                },
+//                address: {
+//                    required: true
+//                },
+//                email: {
+//                    required: true,
+//                    email: true
+//                },
+//                message: {
+//                    required: true
+//                },
+//                subject: {
+//                    required: true
+//                }
+//            },
+//            submitHandler: function(form) {
+//                // sending value with ajax request
+//                $.post($(form).attr('action'), $(form).serialize(), function(response) {
+//                    $(form).parent('div').append(response);
+//                    $(form).find('input[type="text"]').val('');
+//                    $(form).find('input[type="email"]').val('');
+//                    $(form).find('textarea').val('');
+//                });
+//                return false;
+//            }
+//        });
+//    }
+//}
 
 
 function testiCarousel() {
@@ -384,27 +390,54 @@ function contactFormValidation() {
                 name: {
                     required: true
                 },
+                usuario: {
+                    required: true
+                },
+                clave: {
+                    required: true
+                },
+                repita_clave: {
+                    required: true
+                },
+                last_name: {
+                    required: true
+                },
+                address: {
+                    required: true
+                },
+                telefono: {
+                    required: true
+                },
+                
+                
+                dni: {
+                    required: true
+                },
+                dia: {
+                    required: true
+                },
+                mes: {
+                    required: true
+                },
+                ano: {
+                    required: true
+                },
+                
+                
                 email: {
                     required: true,
                     email: true
                 },
-                message: {
+                pais: {
                     required: true
                 },
-                subject: {
+                region: {
+                    required: true
+                },
+                 city: {
                     required: true
                 }
             },
-            submitHandler: function(form) {
-                // sending value with ajax request
-                $.post($(form).attr('action'), $(form).serialize(), function(response) {
-                    $(form).parent('div').append(response);
-                    $(form).find('input[type="text"]').val('');
-                    $(form).find('input[type="email"]').val('');
-                    $(form).find('textarea').val('');
-                });
-                return false;
-            }
         });
     }
 }

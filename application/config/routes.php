@@ -45,6 +45,7 @@ $route['home'] = 'home';
 $route['login'] = 'login';
 
 $route['backoffice'] = "b_home";
+$route['backoffice/profile'] = "b_data";
 $route['logout'] = "b_home/logout";
 $route['backoffice/misdatos'] = "b_data";
 

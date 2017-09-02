@@ -25,8 +25,7 @@
                                         <h2><?php echo replace_vocales_voculeshtml("Formulario de Registro");?></h2>
                                     </header>
                                     <div class="height-50"></div>
-                               <form class="contact-formm">
-                                   
+                                    <form class="contact" method="post" action="<?php echo site_url().'register/crear_registro'?>">
                                     <?php if(isset($obj_customer)){ ?>
                                         <a class="blog_post_title" style="font-size: 22px !important;">Patrocinador</a>
                                                 <label data-add-placeholder>
@@ -55,8 +54,8 @@
                                                     }?>"/>
                                                 </label>
                                     <?php }else{ ?>
-                                        <input type="hidden"  readonly="readonly" id="customer_id" value="1"/>
-                                        <input type="hidden"  readonly="readonly" id="pierna_customer" value="1"/>
+                                        <input type="hidden"  readonly="readonly" id="customer_id" name="customer_id" value="1"/>
+                                        <input type="hidden"  readonly="readonly" id="pierna_customer"  name="pierna_customer" value="1"/>
                                     <?php } ?>
                                    
                                   <div class="row">
@@ -89,7 +88,7 @@
                                     <div class="col-md-6">
                                       <div class="form-grp">
                                         <label>Apellidos</label>
-                                        <input id="last_name" type="text" name="email">
+                                        <input id="last_name" type="text" name="last_name">
                                       </div>
                                     </div>
                                     
@@ -127,7 +126,7 @@
                                                 <?php } ?>
                                         </select>
                                     
-                                        <select id="subject" name="mes" id="mes">
+                                        <select iname="mes" id="mes">
                                             <option value="">Mes</option>
                                                     <option value="01">Enero</option>
                                                     <option value="02">Febrero</option>
@@ -171,7 +170,8 @@
                                     </div>
                                     <div class="col-md-12">
                                       <div class="form-grp">
-                                          <input class="btn btn-default hvr-bounce-to-right" onclick="crear_registro();" value="<?php echo replace_vocales_voculeshtml("Crear Cuenta");?>" />
+                                          <!--<input class="btn btn-default hvr-bounce-to-right" onclick="send_register();" value="<?php echo replace_vocales_voculeshtml("Crear Cuenta");?>" />-->
+                                          <button type="submit" class="btn btn-default hvr-bounce-to-right"  value="<?php echo replace_vocales_voculeshtml("Crear Cuenta");?>">Crear Cuenta</button>
                                       </div>
                                     </div>
                                       

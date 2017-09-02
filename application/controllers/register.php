@@ -85,13 +85,12 @@ class Register extends CI_Controller {
     }
     
     public function crear_registro() {
-        if ($this->input->is_ajax_request()) {
+//        if ($this->input->is_ajax_request()) {
             //SET TIMEZONE AMERICA
             date_default_timezone_set('America/Lima');
-    
-            
             
             $customer_id = trim($this->input->post('customer_id'));
+            
             $pierna_customer = trim($this->input->post('pierna_customer'));
             //PUT CUSTOMER_ID LIKE PAREND
             $parent_id = $customer_id;
@@ -190,6 +189,8 @@ class Register extends CI_Controller {
             $ultimo = $explo_identificator[0] + 1;
             $identificator = $ultimo . $last_id . ',' . $idetificator;
             
+            
+            
             $this->form_validation->set_rules('usuario', 'usuario', "required|trim");
             $this->form_validation->set_rules('name', 'name', 'required|trim');
             $this->form_validation->set_rules('last_name', 'last_name', "required|trim");
@@ -226,7 +227,7 @@ class Register extends CI_Controller {
 
                 $data = array(
                     'parents_id' => $parent_id,
-                    'franchise_id' => 6,
+                    'franchise_id' => 7,
                     'username' => $usuario,
                     'email' => $email,
                     'position' => $position,
@@ -282,9 +283,6 @@ class Register extends CI_Controller {
                 $data['print'] = "Registrado con éxito";
                 $data['url'] = site_url() . "backoffice";
             }
-            echo json_encode($data);
-            exit();
-        }
     }
     
 
