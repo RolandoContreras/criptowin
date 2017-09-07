@@ -59,9 +59,6 @@ class B_home extends CI_Controller {
                     );
              $obj_commissions = $this->obj_commissions->get_search_row($params_total); 
              
-             //GET MANDATORY ACCOUNT
-             $obj_madatory = $obj_commissions->mandatory;
-             
              //GET PRICE BTC
             $params_price_btc = array(
                                     "select" =>"",
@@ -76,8 +73,42 @@ class B_home extends CI_Controller {
              $today = date("Y-m-d");
              //GET DATE END CONTRACT
              $date_end_contract = $obj_customer->date_end;
-            
              
+              //SELECT FRANCHISE_ID 
+              
+                switch ($obj_customer->franchise_id) {
+                    case 1:
+                        $images_franchise = "beginner.png";
+                        $text_franchise = "Basic";
+                        break;
+                    case 2:
+                        $images_franchise = "start.png";
+                        $text_franchise = "Start";
+                        break;
+                    case 3:
+                        $images_franchise = "general.png";
+                        $text_franchise = "General";
+                        break;
+                    case 4:
+                        $images_franchise = "vip.png";
+                        $text_franchise = "VIP";
+                        break;
+                    case 5:
+                        $text_franchise = "Premium";
+                        $images_franchise = "premium.png";
+                        break;
+                    case 6:
+                        $text_franchise = "Master";
+                        $images_franchise = "master.png";
+                        break;
+                    case 7:
+                        $images_franchise = "membership.png";
+                        $text_franchise = "Membership";
+                        break;
+                }
+              
+                $this->tmp_backoffice->set("text_franchise",$text_franchise);
+                $this->tmp_backoffice->set("images_franchise",$images_franchise);
                 $this->tmp_backoffice->set("price_btc",$price_btc);
                 $this->tmp_backoffice->set("obj_total",$obj_total);
                 $this->tmp_backoffice->set("obj_balance",$obj_balance);

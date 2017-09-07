@@ -1,52 +1,4 @@
 <section>
-    <?php
-        switch ($_SESSION['customer']['franchise_id']) {
-                case 2:
-                    $images = "basic.png";
-                    $text = "Basic";
-                    break;
-                case 3:
-                    $images = "executive.png";
-                    $text = "Executive";
-                    break;
-                case 4:
-                    $images = "gold.png";
-                    $text = "Gold";
-                    break;
-                case 5:
-                    $images = "senior_executive.png";
-                    $text = "Senior Executive";
-                    break;
-                case 6:
-                    $text = "Membership";
-                    $images = "membership.png";
-                    break;
-                case 7:
-                    $text = "Master";
-                    $images = "master.png";
-                    break;
-                case 11:
-                    $images = "basic.png";
-                    $text = "Basic";
-                    break;
-                case 12:
-                    $images = "executive.png";
-                    $text = "Executive";
-                    break;
-                case 13:
-                    $images = "business.png";
-                    $text = "Business";
-                    break;
-                case 14:
-                    $text = "Master";
-                    $images = "master.png";
-                    break;
-                case 15:
-                    $text = "Investor";
-                    $images = "investor.png";
-                    break;
-            }
-        ?>
     <div class="section-heading row">
         <div class=" col-lg-9 col-md-8 col-sm-7 col-xs-12">
             <h1 class="title text-uppercase">Tablero</h1>
@@ -94,11 +46,11 @@
                         
                             <div class="media-body media-middle">
                             <h5 class="media-heading text-uppercase title-small">PAQUETE ACTUAL</h5>
-                            <p class="title"><?php echo $text;?></p>
+                            <p class="title"><?php echo $text_franchise;?></p>
                             <div class="mt-10"></div>
                             </div>
                         <div class="media-right media-middle">
-                            <img style="max-width: 120px" src="<?php echo site_url()."static/backoffice/images/$images";?>" alt="<?php echo $text;?>" width="200px"/>
+                            <img style="max-width: 120px" src="<?php echo site_url()."static/backoffice/images/$images_franchise";?>" alt="<?php echo $text_franchise;?>" width="200px"/>
                         </div>
                         </div>
                     
