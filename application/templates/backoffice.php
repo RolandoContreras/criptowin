@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Somos un grupo de analistas del mercado bursátil que laboraban para la reconocida firma estadounidense Empire Capital Holdings; con la visión de ayudar a las personas su horizonte de inversión en el mercado existente.">
 <meta name="keywords" content="criptowin,mlm,bitcoin,mercado bursatil,bolsa de valores,forex,inversión,redes de mercadeo,multinivel,binario,dinero,millones,educacion,futuro">
-<title>CRIPTOWIN | Dashboard</title>
+<title>CRIPTOWIN | Back Office</title>
 <script src="https://use.fontawesome.com/3aa4a6fd0b.js"></script>
 
 <!-- Site favicon -->
@@ -74,12 +74,10 @@
                     <li class="has-sub"><a href="<?php echo site_url().'backoffice'?>"><i class="fa fa-tachometer fa-lg"></i><span class="title">Dashboard</span></a></li>
                     <li class="has-sub"><a href="<?php echo site_url().'backoffice/profile'?>"><i class="fa fa-address-book fa-lg"></i><span class="title">Mi Perfil</span></a></li>
 			<li class="has-sub"><a href="#"><i class="fa fa-arrow-up fa-lg"></i><span class="title">Upgrade</span></a></li>
-			<li class="has-sub"><a href="#"><i class="fa fa-cubes fa-lg"></i><span class="title">Binario</span></a></li>
-			<li class="has-sub"><a href="#"><i class="fa fa-area-chart" fa-lg"></i><span class="title">Mis Comisiones</span></a></li>
-			<li class="has-sub"><a href="#"><i class="fa fa-btc fa-lg"></i><span class="title">Billetera</span></a></li>
-                        <li class="has-sub"><a href="#"><i class="fa fa-university fa-lg"></i><span class="title">Pagos</span></a></li>
-                        <li class="has-sub"><a href="<?php echo site_url().'login/logout';?>"><i class="fa fa-sign-out fa-lg"></i><span class="title">Salir</span></a></li>
-			
+			<li class="has-sub"><a href="<?php echo site_url().'backoffice/binario'?>"><i class="fa fa-cubes fa-lg"></i><span class="title">Binario</span></a></li>
+			<li class="has-sub"><a href="<?php echo site_url().'backoffice/comisiones'?>"><i class="fa fa-area-chart fa-lg"></i><span class="title">Mis Comisiones</span></a></li>
+			<li class="has-sub"><a href="<?php echo site_url().'backoffice/billetera'?>"><i class="fa fa-btc fa-lg"></i><span class="title">Billetera</span></a></li>
+                        <li class="has-sub"><a href="<?php echo site_url().'backoffice/cobros'?>"><i class="fa fa-university fa-lg"></i><span class="title">Cobros</span></a></li>
 		</ul>
 		<!-- /main navigation -->		
   </div>
@@ -219,6 +217,9 @@
 	<!-- Main section-->
             <?php echo $body;?> 
       <!--START FOOTER-->
+      <footer class="footer-main"> 
+			&copy; 2017 <strong>BISAR</strong>
+      </footer>	
   <!-- /main container -->
   
 </div>

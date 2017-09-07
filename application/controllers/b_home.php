@@ -13,7 +13,6 @@ class B_home extends CI_Controller {
     {
         //GET SESION ACTUALY
         $this->get_session();
-        
         /// VISTA
         $customer_id = $_SESSION['customer']['customer_id'];
         $params = array(
@@ -47,10 +46,44 @@ class B_home extends CI_Controller {
                                         );
            $obj_customer = $this->obj_customer->get_search_row($params);
            //SET 5 VECES MAS EL VALOR DEL PAQUETE
+           $max_gain = $obj_customer->price * 5;
+           $points_left = $obj_customer->point_left / 0.12;
+           $points_rigth = $obj_customer->point_rigth / 0.12;
            
-      
-       
+           //GET TOTAL AMOUNT
+                $params_total = array(
+                        "select" =>"sum(amount) as total,
+                                    (select sum(amount) FROM commissions WHERE status_value <= 2 and customer_id = $customer_id) as balance,"
+                        . "         (select sum(mandatory_account) FROM commissions WHERE customer_id = $customer_id) as mandatory",
+                         "where" => "commissions.customer_id = $customer_id and bonus_id <> 2",
+                    );
+             $obj_commissions = $this->obj_commissions->get_search_row($params_total); 
+             
+             //GET MANDATORY ACCOUNT
+             $obj_madatory = $obj_commissions->mandatory;
+             
+             //GET PRICE BTC
+            $params_price_btc = array(
+                                    "select" =>"",
+                                     "where" => "otros_id = 1");
                 
+           $obj_otros = $this->obj_otros->get_search_row($params_price_btc); 
+           $price_btc = "$".number_format($obj_otros->precio_btc,2);
+           
+           $obj_total = $obj_commissions->total;
+           $obj_balance = $obj_commissions->balance;
+           
+             $today = date("Y-m-d");
+             //GET DATE END CONTRACT
+             $date_end_contract = $obj_customer->date_end;
+            
+             
+                $this->tmp_backoffice->set("price_btc",$price_btc);
+                $this->tmp_backoffice->set("obj_total",$obj_total);
+                $this->tmp_backoffice->set("obj_balance",$obj_balance);
+                $this->tmp_backoffice->set("max_gain",$max_gain);
+                $this->tmp_backoffice->set("points_left",$points_left);
+                $this->tmp_backoffice->set("points_rigth",$points_rigth);
                 $this->tmp_backoffice->set("obj_customer",$obj_customer);
                 $this->tmp_backoffice->render("backoffice/b_home");
     }
@@ -70,8 +103,6 @@ class B_home extends CI_Controller {
                                             
                                             'franchise_id' => 11,
                                             'new_contract' => 1,
-                                            'point_calification_left' => 125,
-                                            'point_calification_rigth' => 125,
                                             'updated_by' => $customer_id,
                                             'updated_at' => date("Y-m-d H:i:s")
                                         ); 
@@ -82,8 +113,6 @@ class B_home extends CI_Controller {
                                             
                                             'franchise_id' => 12,
                                             'new_contract' => 1,
-                                            'point_calification_left' => 125,
-                                            'point_calification_rigth' => 125,
                                             'updated_by' => $customer_id,
                                             'updated_at' => date("Y-m-d H:i:s")
                                         ); 
@@ -94,8 +123,6 @@ class B_home extends CI_Controller {
                                             
                                             'franchise_id' => 13,
                                             'new_contract' => 1,
-                                            'point_calification_left' => 125,
-                                            'point_calification_rigth' => 125,
                                             'updated_by' => $customer_id,
                                             'updated_at' => date("Y-m-d H:i:s")
                                         ); 
@@ -105,34 +132,23 @@ class B_home extends CI_Controller {
                                  $data = array(
                                             'franchise_id' => 14,
                                             'new_contract' => 1,
-                                            'point_calification_left' => 125,
-                                            'point_calification_rigth' => 125,
+                                            'updated_by' => $customer_id,
+                                            'updated_at' => date("Y-m-d H:i:s")
+                                        ); 
+                                        $this->obj_customer->update($customer_id,$data);
+                            }elseif($franchise_id == 15){
+                                //CHANGE TO MASTER
+                                 $data = array(
+                                            'franchise_id' => 15,
+                                            'new_contract' => 1,
                                             'updated_by' => $customer_id,
                                             'updated_at' => date("Y-m-d H:i:s")
                                         ); 
                                         $this->obj_customer->update($customer_id,$data);
                             }
-                            
-                            //alter session franchise_id
-                            
-//                            $data_customer_session['customer_id'] = $obj_customer->customer_id;
-//                $data_customer_session['name'] = $obj_customer->first_name.' '.$obj_customer->last_name;
-//                $data_customer_session['username'] = $obj_customer->username;
-//                $data_customer_session['franchise_id'] = $obj_customer->franchise_id;
-//                $data_customer_session['email'] = $obj_customer->email;
-//                $data_customer_session['country'] = $obj_customer->country;
-//                $data_customer_session['active'] = $obj_customer->active;
-//                $data_customer_session['logged_customer'] = "TRUE";
-//                $data_customer_session['status'] = $obj_customer->status_value;
-//                $_SESSION['customer'] = $data_customer_session;
-                            
-                            
-                            
-                            
                              $data['message'] = "true";
                              echo json_encode($data); 
                              exit();
-                    
                }else{
                      $data['message'] = "true";
                      echo json_encode($data); 

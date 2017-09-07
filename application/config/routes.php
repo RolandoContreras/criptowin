@@ -46,6 +46,10 @@ $route['login'] = 'login';
 
 $route['backoffice'] = "b_home";
 $route['backoffice/profile'] = "b_data";
+$route['backoffice/binario'] = "b_binario";
+$route['backoffice/comisiones'] = "b_comissions";
+$route['backoffice/billetera'] = "b_wallet";
+$route['backoffice/cobros'] = "b_pay";
 $route['logout'] = "b_home/logout";
 $route['backoffice/misdatos'] = "b_data";
 
