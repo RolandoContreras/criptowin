@@ -50,7 +50,7 @@
                             <div class="mt-10"></div>
                             </div>
                         <div class="media-right media-middle">
-                            <img style="max-width: 120px" src="<?php echo site_url()."static/backoffice/images/$images_franchise";?>" alt="<?php echo $text_franchise;?>" width="200px"/>
+                            <img style="max-width: 120px" src="<?php echo site_url()."static/backoffice/images/beginner.png";?>" alt="<?php echo $text_franchise;?>"/>
                         </div>
                         </div>
                     
@@ -125,31 +125,6 @@
                                 </div>
                             </div>
                         </a>
-
-                        <a href="<?php echo site_url('backoffice/unilevel');?>" class="col-flex box-height">
-                            <div class="media">
-                                <div class="media-body media-middle">
-                                <h5 class="media-heading">Patrocinios Directos</h5>
-                                <strong><?php echo $obj_customer->direct;?></strong>
-                                </div>
-                                <div class="media-right media-middle">
-                                    <i class="fa fa-users fa-3x" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </a>
-
-                         <a href="/backend/my-accounts/coinsafe-account" class="col-flex box-height">
-                            <div class="media">
-                                <div class="media-body media-middle">
-                                <h5 class="media-heading">Tope de Ganancia</h5>
-                                <strong><?php echo $max_gain." "."USD";?></strong>
-                                </div>
-                                <div class="media-right media-middle">
-                                <i class="fa fa-usd fa-3x" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </a>
-
                         <a href="<?php echo site_url('backoffice/misdatos');?>" class="col-flex box-height">
                             <div class="media">
                                 <div class="media-body media-middle">
@@ -185,73 +160,11 @@
                                 </div>
                             </div>
                         </a>
-
-                        <a href="#" class="col-flex box-height">
-                            <div class="media">
-                                <div class="media-body media-middle">
-                                    <h5 class="media-heading"><?php echo replace_vocales_voculeshtml("Promoción Viaje Cusco");?></h5>
-                                <strong>5,000 PTS</strong>
-                                </div>
-                                <div class="media-right media-middle">
-                                    <i class="fa fa-suitcase fa-3x" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="#" class="col-flex box-height">
-                            <div class="media">
-                                <div class="media-body media-middle">
-                                    <h5 class="media-heading"><?php echo replace_vocales_voculeshtml("Fecha Inicio");?></h5>
-                                <strong>01/06/17</strong>
-                                </div>
-                                <div class="media-right media-middle">
-                                    <i class="fa fa-plane fa-3x" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="#" class="col-flex box-height">
-                            <div class="media">
-                                <div class="media-body media-middle">
-                                    <h5 class="media-heading"><?php echo replace_vocales_voculeshtml("Fecha Termino");?></h5>
-                                <strong>30/06/17</strong>
-                                </div>
-                                <div class="media-right media-middle">
-                                    <i class="fa fa-pause fa-3x" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </a>    
-
-                        <a href="#" class="col-flex box-height">
-                            <div class="media">
-                                <div class="media-body media-middle">
-                                    <h5 class="media-heading"><?php echo replace_vocales_voculeshtml("Puntos de Viaje");?></h5>
-                                <strong>Pronto</strong>
-                                </div>
-                                <div class="media-right media-middle">
-                                   <i class="fa fa-line-chart fa-3x" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </a>  
-                        
-                        <a href="#" class="col-flex box-height">
-                            <div class="media">
-                                <div class="media-body media-middle">
-                                    <h5 class="media-heading"><?php echo replace_vocales_voculeshtml("BIT");?></h5>
-                                <strong><?php echo $obj_customer->bit;?></strong>
-                                </div>
-                                <div class="media-right media-middle">
-                                   <i class="fa fa-shopping-cart fa-3x" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-            
-            
         <?php if($obj_customer->active == 0){ ?>
             <div class="media-body media-middle">
              <h4 class="media-heading text-uppercase">Selecciona tu Paquete</h4>
@@ -262,73 +175,89 @@
                     <div class="col-sm-2">
                         <div class="well media media-badges box-height box">
                             <div class="media-body media-middle">
-                            <h5 class="media-heading text-uppercase title-small">BASIC</h5>
-                            <p class="title">$125.00</p>
-                            <p>93 PUNTOS</p>
+                            <h5 class="media-heading text-uppercase title-small">BEGINNER</h5>
+                            <p class="title">$50.00</p>
+                            <p>50 PUNTOS</p>
                             <div class="mt-10"></div>
                             </div>
                         <div class="media-right media-middle">
-                            <img style="max-width: 80px" src="<?php echo site_url()."static/backoffice/images/basic.png";?>" alt="Paquete Basic"/>
+                            <img style="max-width: 80px" src="<?php echo site_url()."static/backoffice/images/beginner.png";?>" alt="Paquete Beginner"/>
                         </div>
                         </div>
                         <div class="media-body media-middle">
-                            <button type="button" onclick="make_pedido('11');" class="btn btn-sm btn-primary bg-gray">Seleccionar</button>
+                            <button type="button" onclick="make_pedido('1');" class="btn btn-sm btn-primary bg-gray">Seleccionar</button>
                         </div>
                     </div>
                     <div class="col-sm-2">
                         <div class="well media media-badges box-height box">
                             <div class="media-body media-middle">
-                            <h5 class="media-heading text-uppercase title-small">EXECUTIVE</h5>
-                            <p class="title">$250.00</p>
-                            <p>187 PUNTOS</p>
+                            <h5 class="media-heading text-uppercase title-small">START</h5>
+                            <p class="title">$100.00</p>
+                            <p>100 PUNTOS</p>
                             <div class="mt-10"></div>
                             </div>
                         <div class="media-right media-middle">
-                            <img style="max-width: 80px" src="<?php echo site_url()."static/backoffice/images/executive.png";?>" alt="Paquete Executive"/>
+                            <img style="max-width: 80px" src="<?php echo site_url()."static/backoffice/images/start.png";?>" alt="Paquete Start"/>
                         </div>
                         </div>
                            <div class="media-body media-middle">
-                            <button type="button" onclick="make_pedido('12');" class="btn btn-sm btn-primary bg-gray">Seleccionar</button>
+                            <button type="button" onclick="make_pedido('2');" class="btn btn-sm btn-primary bg-gray">Seleccionar</button>
                         </div>                        
                     </div>
                     <div class="col-sm-2">
                         <div class="well media media-badges box-height box">
                             <div class="media-body media-middle">
-                            <h5 class="media-heading text-uppercase title-small">INVESTOR</h5>
+                            <h5 class="media-heading text-uppercase title-small">GENERAL</h5>
+                            <p class="title">$300.00</p>
+                            <p>300 PUNTOS</p>
+                            <div class="mt-10"></div>
+                            </div>
+                        <div class="media-right media-middle">
+                            <img style="max-width: 80px" src="<?php echo site_url()."static/backoffice/images/general.png";?>" alt="Paquete General"/>
+                        </div>
+                        </div>
+                           <div class="media-body media-middle">
+                            <button type="button" onclick="make_pedido('3');" class="btn btn-sm btn-primary bg-gray">Seleccionar</button>
+                        </div>                        
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="well media media-badges box-height box">
+                            <div class="media-body media-middle">
+                            <h5 class="media-heading text-uppercase title-small">VIP</h5>
                             <p class="title">$500.00</p>
-                            <p>375 PUNTOS</p>
+                            <p>500 PUNTOS</p>
                             <div class="mt-10"></div>
                             </div>
                         <div class="media-right media-middle">
-                            <img style="max-width: 80px" src="<?php echo site_url()."static/backoffice/images/investor.png";?>" alt="Paquete Investor"/>
-                        </div>
-                        </div>
-                           <div class="media-body media-middle">
-                            <button type="button" onclick="make_pedido('15');" class="btn btn-sm btn-primary bg-gray">Seleccionar</button>
-                        </div>                        
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="well media media-badges box-height box">
-                            <div class="media-body media-middle">
-                            <h5 class="media-heading text-uppercase title-small">BUSINESS</h5>
-                            <p class="title">$1,000.00</p>
-                            <p>750 PUNTOS</p>
-                            <div class="mt-10"></div>
-                            </div>
-                        <div class="media-right media-middle">
-                            <img style="max-width: 80px" src="<?php echo site_url()."static/backoffice/images/business.png";?>" alt="Paquete Business"/>
+                            <img style="max-width: 80px" src="<?php echo site_url()."static/backoffice/images/vip.png";?>" alt="Paquete VIP"/>
                         </div>
                         </div>
                         <div class="media-body media-middle">
-                            <button type="button" onclick="make_pedido('13');" class="btn btn-sm btn-primary bg-gray">Seleccionar</button>
+                            <button type="button" onclick="make_pedido('4');" class="btn btn-sm btn-primary bg-gray">Seleccionar</button>
                         </div> 
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-2">
+                        <div class="well media media-badges box-height box">
+                            <div class="media-body media-middle">
+                            <h5 class="media-heading text-uppercase title-small">PREMIUM</h5>
+                            <p class="title">$1,000.00</p>
+                            <p>1000 PUNTOS</p>
+                            <div class="mt-10"></div>
+                            </div>
+                        <div class="media-right media-middle">
+                            <img style="max-width: 80px" src="<?php echo site_url()."static/backoffice/images/premium.png";?>" alt="Paquete Premium"/>
+                        </div>
+                        </div>
+                        <div class="media-body media-middle">
+                            <button type="button" onclick="make_pedido('5');" class="btn btn-sm btn-primary bg-gray">Seleccionar</button>
+                        </div> 
+                    </div>
+                    <div class="col-sm-2">
                         <div class="well media media-badges box-height box">
                             <div class="media-body media-middle">
                             <h5 class="media-heading text-uppercase title-small">MASTER</h5>
-                            <p class="title">$3,000.00</p>
-                            <p>2250 PUNTOS</p>
+                            <p class="title">$5,000.00</p>
+                            <p>5000 PUNTOS</p>
                             <div class="mt-10"></div>
                             </div>
                         <div class="media-right media-middle">
@@ -336,7 +265,7 @@
                         </div>
                         </div>
                         <div class="media-body media-middle">
-                            <button type="button" onclick="make_pedido('14');" class="btn btn-sm btn-primary bg-gray">Seleccionar</button>
+                            <button type="button" onclick="make_pedido('6');" class="btn btn-sm btn-primary bg-gray">Seleccionar</button>
                         </div> 
                     </div>
                 </div>
@@ -363,55 +292,34 @@
                                     </div>
                                     <?php
                                     switch ($obj_customer->franchise_id) {
-                                        case 2:
+                                        case 1:
                                             $amount = "125 USD";?>
-                                             <img src="<?php echo site_url()."static/backoffice/images/basic.png";?>" alt="Cuenta Basic" height="120" width="130"/>
+                                             <img src="<?php echo site_url()."static/backoffice/images/beginner.png";?>" alt="Cuenta Beginner" height="120" width="130"/>
                                           <?php  break;
-                                        case 3:
+                                        case 2:
                                             $amount = "250 USD"?>
-                                            <img src="<?php echo site_url()."static/backoffice/images/executive.png";?>" alt="Cuenta Executive" height="120" width="130"/>
+                                            <img src="<?php echo site_url()."static/backoffice/images/start.png";?>" alt="Cuenta Start" height="120" width="130"/>
+                                            <?php break;
+                                        case 3:
+                                            $amount = "500 USD"?>
+                                            <img src="<?php echo site_url()."static/backoffice/images/general.png";?>" alt="Cuenta General" height="120" width="130"/>
                                             <?php break;
                                         case 4:
-                                            $amount = "500 USD"?>
-                                            <img src="<?php echo site_url()."static/backoffice/images/gold.png";?>" alt="Cuenta Gold" height="120" width="130"/>
+                                            $amount = "1,000 USD"?>
+                                            <img src="<?php echo site_url()."static/backoffice/images/vip.png";?>" alt="Cuenta VIP" height="120" width="130"/>
                                             <?php break;
                                         case 5:
-                                            $amount = "1,000 USD"?>
-                                            <img src="<?php echo site_url()."static/backoffice/images/senior_executive.png";?>" alt="Cuenta Senior Executive" height="120" width="130"/>
+                                            $amount = "15 USD"?>
+                                            <img src="<?php echo site_url()."static/backoffice/images/premium.png";?>" alt="Cuenta Premium" height="120" width="130"/>
                                             <?php break;
                                         case 6:
-                                            $amount = "15 USD"?>
-                                            <img src="<?php echo site_url()."static/backoffice/images/membership.png";?>" alt="Cuenta Membership" height="120" width="130"/>
-                                            <?php break;
-                                        case 7:
                                             $amount = "3,000 USD"?>
                                             <img src="<?php echo site_url()."static/backoffice/images/master.png";?>" alt="Cuenta Master" height="120" width="130"/>
                                         <?php break;
-                                        case 11: 
+                                        case 7: 
                                             $amount = "125 USD";?>
-                                             <img src="<?php echo site_url()."static/backoffice/images/basic.png";?>" alt="Cuenta Basic" height="120" width="130"/>
+                                             <img src="<?php echo site_url()."static/backoffice/images/membership.png";?>" alt="Cuenta Membership" height="120" width="130"/>
                                           <?php  break;
-                                        case 12: 
-                                            $amount = "250 USD"?>
-                                            <img src="<?php echo site_url()."static/backoffice/images/executive.png";?>" alt="Cuenta Executive" height="120" width="130"/>
-                                        <?php break;
-                                        case 13: 
-                                            $amount = "1,000 USD"?>
-                                            <img src="<?php echo site_url()."static/backoffice/images/business.png";?>" alt="Cuenta Business" height="120" width="130"/>
-                                        <?php break;
-                                        case 6: 
-                                            $amount = "15 USD"?>
-                                            <img src="<?php echo site_url()."static/backoffice/images/membership.png";?>" alt="Cuenta Membership" height="120" width="130"/>
-                                        <?php break;
-                                        case 14: 
-                                            $amount = "3,000 USD"?>
-                                            <img src="<?php echo site_url()."static/backoffice/images/master.png";?>" alt="Cuenta Master" height="120" width="130"/>
-                                        <?php break;
-                                        case 15: 
-                                            $amount = "500 USD"?>
-                                            <img src="<?php echo site_url()."static/backoffice/images/investor.png";?>" alt="Cuenta Investor" height="120" width="130"/>
-                                        <?php break;
-                                       
                                     }?>
                                 </div>
                             </div>
@@ -444,7 +352,7 @@
                                 <div class="media-body media-middle">
                                     <div class="mb-20">
                                     </div>
-                                    <img src="<?php echo site_url()."static/backoffice/images/share.png";?>" alt="Compartir" height="140" width="180" class="text-center"/>
+                                    <img src="<?php echo site_url()."static/backoffice/images/share.png";?>" alt="Compartir" height="140" width="140" class="text-center"/>
                                 </div>
                             </div>
                         </div>
@@ -459,65 +367,6 @@
             </div>
         </div>
        </div> 
-              
-              
-    <br><br>          
-    <div class="media-body media-middle">
-             <h4 class="media-heading text-uppercase">NOTICIAS</h4>
-    </div>          
-    <br>
-       <div class="row fix-box-height-byrow">
-        <div class="col-lg-12">
-            <div class="well media media-badges">
-                <div class="row">
-                    <div class="col-lg-3 col-sm-4 box-height-byrow text-center-md flex-items-center mb-xs-30">
-                        <div class="row">
-                            <div class="col-md-8 col-xs-12 pull-left">
-                                <div class="media-body media-middle">
-                                    <div class="mb-20">
-                                    </div>
-                                    <img src="<?php echo site_url()."static/assets/news/images/INVITACION_EVENTOS_2.jpg";?>" alt="invitacion evento" height="140" width="180" class="text-center"/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9 col-sm-8 pull-right box-height-byrow border">
-                        <p class="uppercase ralewaybold22px"><?php echo replace_vocales_voculeshtml("POB (PRESENTACIÓN OPORTUNIDAD BITSHARE)");?></p>
-                        <div class="small">
-                            <p>Ven y participa de este evento con todos tus invitados y sé parte de los pioneros de BITSHARE.<br><b>Fecha:</b> Viernes 30 de Junio<br><b>Hora:</b> Pre registro 7:30 pm , Inicio 8:00 pm<br><b>Lugar:</b> Hotel Brinatia Miraflores, Calle Independencia #211 - Miraflores<br><b>Referencia:</b> a 3 cuadras del parque kenedy, paralela a la av. pardo.<br><b>¡TE ESPERAMOS!</b>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-       </div>
-    
-    <div class="row fix-box-height-byrow">
-        <div class="col-lg-12">
-            <div class="well media media-badges">
-                <div class="row">
-                    <div class="col-lg-3 col-sm-4 box-height-byrow text-center-md flex-items-center mb-xs-30">
-                        <div class="row">
-                            <div class="col-md-8 col-xs-12 pull-left">
-                                <div class="media-body media-middle">
-                                    <div class="mb-20">
-                                    </div>
-                                    <img src="<?php echo site_url()."static/assets/news/images/inversiones.jpg";?>" alt="inversiones" height="140" width="180" class="text-center"/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9 col-sm-8 pull-right box-height-byrow border">
-                        <p class="uppercase ralewaybold22px"><?php echo replace_vocales_voculeshtml("SEMINARIO DE INVERSIONES - CRIPTOMONEDA Y ORO");?></p>
-                        <div class="small">
-                            <p>Ven y participa de este seminario con todos tus invitados y capacitate en inversiones.<br><b>Fecha:</b> Viernes 30 de Junio<br><b>Hora:</b> Pre registro 6:00 pm , Inicio 6:15 pm<br><b>Lugar:</b> Hotel Brinatia Miraflores, Calle Independencia #211 - Miraflores<br><b>Referencia:</b> a 3 cuadras del parque kenedy, paralela a la av. pardo.<br><b>¡TE ESPERAMOS!</b>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-       </div>
-              
     </div>
     </div>
    </section>

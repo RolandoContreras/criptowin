@@ -79,7 +79,7 @@ class B_home extends CI_Controller {
                 switch ($obj_customer->franchise_id) {
                     case 1:
                         $images_franchise = "beginner.png";
-                        $text_franchise = "Basic";
+                        $text_franchise = "Beginner";
                         break;
                     case 2:
                         $images_franchise = "start.png";
@@ -124,54 +124,68 @@ class B_home extends CI_Controller {
              if($this->input->is_ajax_request()){   
                 //SELECT ID FROM CUSTOMER
                $franchise_id = $this->input->post('franchise_id');
-               $customer_id = $_SESSION['customer']['customer_id'];;
+               $customer_id = $_SESSION['customer']['customer_id'];
                
                if($franchise_id != "" && $customer_id != ""){
                             //UPDATE DATA EN CUSTOMER TABLE
-                            if($franchise_id == 11){
+                            if($franchise_id == 1){
                                 //CHANGE TO BASIC
                                  $data = array(
                                             
-                                            'franchise_id' => 11,
-                                            'new_contract' => 1,
+                                            'franchise_id' => 1,
+                                            'point_calification_left' => 50,
+                                            'point_calification_rigth' => 50,
                                             'updated_by' => $customer_id,
                                             'updated_at' => date("Y-m-d H:i:s")
                                         ); 
                                         $this->obj_customer->update($customer_id,$data);
-                            }elseif($franchise_id == 12){
+                            }elseif($franchise_id == 2){
                                 //CHANGE TO EXECUTIVE
                                  $data = array(
                                             
-                                            'franchise_id' => 12,
-                                            'new_contract' => 1,
+                                            'franchise_id' => 2,
+                                            'point_calification_left' => 100,
+                                            'point_calification_rigth' => 100,
                                             'updated_by' => $customer_id,
                                             'updated_at' => date("Y-m-d H:i:s")
                                         ); 
                                         $this->obj_customer->update($customer_id,$data);
-                            }elseif($franchise_id == 13){
+                            }elseif($franchise_id == 3){
                                 //CHANGE TO SENIOR EXECUTIVE
                                  $data = array(
-                                            
-                                            'franchise_id' => 13,
-                                            'new_contract' => 1,
+                                            'franchise_id' => 3,
+                                            'point_calification_left' => 300,
+                                            'point_calification_rigth' => 300,
                                             'updated_by' => $customer_id,
                                             'updated_at' => date("Y-m-d H:i:s")
                                         ); 
                                         $this->obj_customer->update($customer_id,$data);
-                            }elseif($franchise_id == 14){
+                            }elseif($franchise_id == 4){
                                 //CHANGE TO MASTER
                                  $data = array(
-                                            'franchise_id' => 14,
-                                            'new_contract' => 1,
+                                            'franchise_id' => 4,
+                                            'point_calification_left' => 500,
+                                            'point_calification_rigth' => 500,
                                             'updated_by' => $customer_id,
                                             'updated_at' => date("Y-m-d H:i:s")
                                         ); 
                                         $this->obj_customer->update($customer_id,$data);
-                            }elseif($franchise_id == 15){
+                            }elseif($franchise_id == 5){
                                 //CHANGE TO MASTER
                                  $data = array(
-                                            'franchise_id' => 15,
-                                            'new_contract' => 1,
+                                            'franchise_id' => 5,
+                                            'point_calification_left' => 1000,
+                                            'point_calification_rigth' => 1000,
+                                            'updated_by' => $customer_id,
+                                            'updated_at' => date("Y-m-d H:i:s")
+                                        ); 
+                                        $this->obj_customer->update($customer_id,$data);
+                            }elseif($franchise_id == 6){
+                                //CHANGE TO MASTER
+                                 $data = array(
+                                            'franchise_id' => 6,
+                                            'point_calification_left' => 5000,
+                                            'point_calification_rigth' => 5000,
                                             'updated_by' => $customer_id,
                                             'updated_at' => date("Y-m-d H:i:s")
                                         ); 
