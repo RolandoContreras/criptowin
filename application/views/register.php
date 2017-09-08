@@ -170,8 +170,7 @@
                                     </div>
                                     <div class="col-md-12">
                                       <div class="form-grp">
-                                          <!--<input class="btn btn-default hvr-bounce-to-right" onclick="send_register();" value="<?php echo replace_vocales_voculeshtml("Crear Cuenta");?>" />-->
-                                          <button type="submit" class="btn btn-default hvr-bounce-to-right"  value="<?php echo replace_vocales_voculeshtml("Crear Cuenta");?>">Crear Cuenta</button>
+                                          <input class="btn btn-default hvr-bounce-to-right" onclick="crear_registro();" value="<?php echo replace_vocales_voculeshtml("Crear Cuenta");?>" />
                                       </div>
                                     </div>
                                       

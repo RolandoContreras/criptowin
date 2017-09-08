@@ -153,7 +153,7 @@
                                           <!-- User action menu -->
                               <ul class="dropdown-menu">
 
-                                <li><a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i>My profile</a></li>
+                                  <li><a href="<?php echo site_url().'backoffice/profile';?>"><i class="fa fa-user-circle-o" aria-hidden="true"></i>My profile</a></li>
                                 <li><a href="#"><i class="fa fa-comment" aria-hidden="true"></i>Mensajes</a></li>
                                             <li class="divider"></li>
                                             <li><a href="<?php echo site_url().'login/logout';?>"><i class="fa fa-sign-out fa-lg"></i>Salir</a></li>

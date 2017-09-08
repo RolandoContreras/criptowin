@@ -104,59 +104,56 @@ function validate_region(id) {
 }
 
 function crear_registro() {
-        var opts = {
-    lines: 13 // The number of lines to draw
-    , length: 28 // The length of each line
-    , width: 14 // The line thickness
-    , radius: 42 // The radius of the inner circle
-    , scale: 1 // Scales overall size of the spinner
-    , corners: 1 // Corner roundness (0..1)
-    , color: '#000' // #rgb or #rrggbb or array of colors
-    , opacity: 0.25 // Opacity of the lines
-    , rotate: 0 // The rotation offset
-    , direction: 1 // 1: clockwise, -1: counterclockwise
-    , speed: 1 // Rounds per second
-    , trail: 60 // Afterglow percentage
-    , fps: 20 // Frames per second when using setTimeout() as a fallback for CSS
-    , zIndex: 2e9 // The z-index (defaults to 2000000000)
-    , className: 'spinner' // The CSS class to assign to the spinner
-    , top: '50%' // Top position relative to parent
-    , left: '50%' // Left position relative to parent
-    , shadow: false // Whether to render a shadow
-    , hwaccel: false // Whether to use hardware acceleration
-    , position: 'absolute' // Element positioning
-    }
-    var target = document.getElementById('spinner');
-    var spinner = new Spinner(opts).spin(target);
-        
-     var clave = document.getElementByName("clave").value;
-     var repita_clave = document.getElementByName("repita_clave").value;
-     
-    var customer_id = document.getElementByName("customer_id").value;
-    var pierna_customer = document.getElementByName("pierna_customer").value;
-    var usuario = document.getElementByName("usuario").value;
-    var name = document.getElementByName("name").value;
-    var last_name = document.getElementByName("last_name").value;
-    var address = document.getElementByName("address").value;
-    var telefono = document.getElementByName("telefono").value;
-    var dni = document.getElementByName("dni").value;
-    var email = document.getElementByName("email").value;
-        
     
-    var dia = document.getElementByName("dia").value;
-    var mes = document.getElementByName("mes").value;
-    var ano = document.getElementByName("ano").value;
+    var opts = {
+  lines: 13 // The number of lines to draw
+, length: 28 // The length of each line
+, width: 14 // The line thickness
+, radius: 42 // The radius of the inner circle
+, scale: 1 // Scales overall size of the spinner
+, corners: 1 // Corner roundness (0..1)
+, color: '#000' // #rgb or #rrggbb or array of colors
+, opacity: 0.25 // Opacity of the lines
+, rotate: 0 // The rotation offset
+, direction: 1 // 1: clockwise, -1: counterclockwise
+, speed: 1 // Rounds per second
+, trail: 60 // Afterglow percentage
+, fps: 20 // Frames per second when using setTimeout() as a fallback for CSS
+, zIndex: 2e9 // The z-index (defaults to 2000000000)
+, className: 'spinner' // The CSS class to assign to the spinner
+, top: '50%' // Top position relative to parent
+, left: '50%' // Left position relative to parent
+, shadow: false // Whether to render a shadow
+, hwaccel: false // Whether to use hardware acceleration
+, position: 'absolute' // Element positioning
+};
+var target = document.getElementById('spinner');
+var spinner = new Spinner(opts).spin(target);
     
-//    var dia = document.getElementsByName("dia")[0].value;
-//    var mes = document.getElementsByName("mes")[0].value;
-//    var ano = document.getElementsByName("ano")[0].value;
-    
-        //ver si son iguales
+        clave = document.getElementById("clave").value;
+        repita_clave = document.getElementById("repita_clave").value;
+
             if(clave == repita_clave){
-                
+               var customer_id = document.getElementById("customer_id").value;
+               var pierna_customer = document.getElementById("pierna_customer").value;
+               var usuario = document.getElementById("usuario").value;
+               var name = document.getElementById("name").value;
+               var last_name = document.getElementById("last_name").value;
+               var dni = document.getElementById("dni").value;
+               var email = document.getElementById("email").value;
+               var dia = document.getElementById("dia").value;
+               var mes = document.getElementById("mes").value;
+               var address = document.getElementById("address").value;
+               var telefono = document.getElementById("telefono").value;
+               var city = document.getElementById("city").value;
+//               var ano = document.getElementById("ano").value;
+//               var pais = document.getElementById("pais").value;
+//               var region = document.getElementById("region").value;
+//               var city = document.getElementById("city").value;
+
                 $.ajax({
                        type: "post",
-                       url: "register/crear_registro",
+                       url: site + "register/crear_registro",
                        dataType: "json",
                        data: {customer_id: customer_id,
                               pierna_customer: pierna_customer,
@@ -170,15 +167,11 @@ function crear_registro() {
                               email: email,
                               dia: dia,
                               mes: mes,
-                              ano: ano,
-                              pais: pais,
-                              region: region,
                               city: city},
                           
                        success:function(data){            
                                if(data.message == "true"){         
-                                   enviado_correcto();
-                                   $(location).attr('href',data.url);  
+                                $(location).attr('href',data.url);    
                            }else{
                                spinner.stop(); 
                                 llene_campos();   
@@ -187,8 +180,7 @@ function crear_registro() {
                    });
                 
             }else{
-               spinner.stop(); 
-               contraseñas();
+               $(".alert-4").removeClass('text-danger').addClass('text-danger').html("Las contraseñas no coinciden");
             }
 }
 function llene_campos() {
@@ -198,6 +190,12 @@ function llene_campos() {
     });
 }
 function enviado_correcto() {
+    w2popup.open({
+        title: 'Felicidades',
+        body: '<div class="w2ui-centered">Registro creado con éxito</div>'
+    });
+}
+function exito() {
     w2popup.open({
         title: 'Felicidades',
         body: '<div class="w2ui-centered">Registro creado con éxito</div>'

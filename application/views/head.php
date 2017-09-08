@@ -43,4 +43,7 @@
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<link rel="stylesheet" type="text/css" href="includes/video_gallery_ie.css" />
 		<![endif]-->
+                <script type="text/javascript">
+                    var site = '<?php echo site_url();?>';
+                </script>
 	</head>

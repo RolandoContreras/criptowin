@@ -85,7 +85,7 @@ class Register extends CI_Controller {
     }
     
     public function crear_registro() {
-//        if ($this->input->is_ajax_request()) {
+        if ($this->input->is_ajax_request()) {
             //SET TIMEZONE AMERICA
             date_default_timezone_set('America/Lima');
             
@@ -127,12 +127,6 @@ class Register extends CI_Controller {
                 $not_like = "z,$identificator_param";
             }
 
-            //SELECT LAST REGISTER
-//                $params = array("select" =>"identificador,customer_id,first_name",
-//                                "where" => "identificador like '%$identificator_param'  and `identificador` like ('_$last_id%') and identificador NOT LIKE  '%$not_like'",
-//                                "order" => "customer.identificador DESC");
-//                $obj_dentificator = $this->obj_customer->search($params);
-
             $params = array("select" => "identificador,customer_id,first_name",
                 "where" => "identificador like '%$identificator_param'  and position = $position",
                 "order" => "customer.identificador DESC");
@@ -157,8 +151,6 @@ class Register extends CI_Controller {
                     $find = strpos($identificador_2, "$verify");
 
                     if ($find == false) {
-//                        $count =  strlen($identificador);
-//                        $str_number .= "$count|";
                         $str .= "$identificador|";
                     }
                 }
@@ -189,8 +181,6 @@ class Register extends CI_Controller {
             $ultimo = $explo_identificator[0] + 1;
             $identificator = $ultimo . $last_id . ',' . $idetificator;
             
-            
-            
             $this->form_validation->set_rules('usuario', 'usuario', "required|trim");
             $this->form_validation->set_rules('name', 'name', 'required|trim');
             $this->form_validation->set_rules('last_name', 'last_name', "required|trim");
@@ -199,9 +189,9 @@ class Register extends CI_Controller {
             $this->form_validation->set_rules('dni', 'dni', 'required|trim');
             $this->form_validation->set_rules('email', 'email', "required|trim");
             $this->form_validation->set_rules('city', 'city', 'required|trim');
-            $this->form_validation->set_rules('dia', 'dia', 'required|trim');
-            $this->form_validation->set_rules('mes', 'mes', "required|trim");
-            $this->form_validation->set_rules('ano', 'ano', 'required|trim');
+//            $this->form_validation->set_rules('dia', 'dia', 'required|trim');
+//            $this->form_validation->set_rules('mes', 'mes', "required|trim");
+//            $this->form_validation->set_rules('ano', 'ano', 'required|trim');
             $this->form_validation->set_message('required', 'Campo requerido %s');
 
             if ($this->form_validation->run($this) == false) {
@@ -236,13 +226,13 @@ class Register extends CI_Controller {
                     'password' => $clave,
                     'first_name' => $name,
                     'last_name' => $last_name,
+                    'address' => $address,
+                    'phone' => $telefono,
+                    'city' => $city,
                     'dni' => $dni,
                     'birth_date' => $birth_date,
-                    'address' => $address,
                     'country' => $pais,
                     'region' => $region,
-                    'city' => $city,
-                    'phone' => $telefono,
                     'active' => 0,
                     'calification' => 0,
                     'status_value' => 1,
@@ -250,24 +240,7 @@ class Register extends CI_Controller {
                 );
                 
                 $customer_id = $this->obj_customer->insert($data);
-                
-                
-                // Envio de Correo de Bienvenida
-                $mail = "Hola, $name $last_name, te damos la más cordial bienvenida al CRIPTOWIN, los datos de tu cuenta son usuario: $usuario contrseña:$clave";
-
-                // Si cualquier línea es más larga de 70 caracteres, se debería usar wordwrap()
-                $mensaje = wordwrap($mail, 70, "\r\n");
-                //Titulo
-                $titulo = "Bienvenido a CRIPTOWIN";
-                //cabecera
-                $headers = "MIME-Version: 1.0\r\n"; 
-                $headers .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
-                //dirección del remitente 
-                $headers .= "From: CRIPTOWIN - The Best Investment < noreplay@yourbitshares.com >\r\n";
-                //Enviamos el mensaje a tu_dirección_email 
-                $bool = mail("$email",$titulo,$mensaje,$headers);
-                
-
+              
                 //ACTIVE SESSION
                 $data_customer_session['customer_id'] = $customer_id;
                 $data_customer_session['name'] = $name;
@@ -283,7 +256,9 @@ class Register extends CI_Controller {
                 $data['print'] = "Registrado con éxito";
                 $data['url'] = site_url() . "backoffice";
             }
+            echo json_encode($data);
+            exit();
     }
-    
+   }
 
 }
