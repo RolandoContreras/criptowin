@@ -44,15 +44,12 @@ class B_home extends CI_Controller {
                          "where" => "customer.customer_id = $customer_id",
                          "join" => array('franchise, customer.franchise_id = franchise.franchise_id',)
                                         );
-           $obj_customer = $this->obj_customer->get_search_row($params);
+            $obj_customer = $this->obj_customer->get_search_row($params);
            
-              $points_left = $obj_customer->point_left / 0.12;
-               $points_rigth = $obj_customer->point_rigth / 0.12;
+            $points_left = $obj_customer->point_left / 0.12;
+            $points_rigth = $obj_customer->point_rigth / 0.12;
            
-           
-           
-           
-           //GET TOTAL AMOUNT
+                //GET TOTAL AMOUNT
                 $params_total = array(
                         "select" =>"sum(amount) as total,
                                     (select sum(amount) FROM commissions WHERE status_value <= 2 and customer_id = $customer_id) as balance,"
@@ -111,6 +108,7 @@ class B_home extends CI_Controller {
                 $this->tmp_backoffice->set("text_franchise",$text_franchise);
                 $this->tmp_backoffice->set("images_franchise",$images_franchise);
                 $this->tmp_backoffice->set("price_btc",$price_btc);
+                $this->tmp_backoffice->set("date_end_contract",$date_end_contract);
                 $this->tmp_backoffice->set("obj_total",$obj_total);
                 $this->tmp_backoffice->set("obj_balance",$obj_balance);
                 $this->tmp_backoffice->set("points_left",$points_left);
