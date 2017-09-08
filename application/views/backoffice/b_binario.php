@@ -21,7 +21,7 @@
                                 <div class="row">
                                     <div class="alert alert-inverse pull-left" style="opacity: 0.7;" aria-label="Left Align">
                                         <?php 
-                                                if($obj_customer->franchise_id != 6){
+                                                if($obj_customer->franchise_id != 7){
                                                     if($obj_customer->point_calification_left <= 0 && $obj_customer->point_calification_rigth <= 0){ ?>
                                                 <b><?php echo replace_vocales_voculeshtml("CALIFICADO PARA BINARIO")?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
                                                 <?php }else{ ?>
@@ -64,35 +64,26 @@
                                                                 <div class="div-img">
                                                                     <?php
                                                                     switch ($obj_customer->franchise_id) {
-                                                                            case 2:
-                                                                            $images = "basic.png";
+                                                                        case 1:
+                                                                            $images = "beginner.png";
+                                                                            break;
+                                                                        case 2:
+                                                                            $images = "start.png";
                                                                             break;
                                                                         case 3:
-                                                                            $images = "executive.png";
+                                                                            $images = "general.png";
                                                                             break;
                                                                         case 4:
-                                                                            $images = "gold.png";
+                                                                            $images = "vip.png";
                                                                             break;
                                                                         case 5:
-                                                                            $images = "senior_executive.png";
+                                                                            $images = "premium.png";
                                                                             break;
                                                                         case 6:
-                                                                            $images = "membership.png";
-                                                                            break;
-                                                                        case 7:
                                                                             $images = "master.png";
                                                                             break;
-                                                                        case 11:
-                                                                            $images = "basic.png";
-                                                                            break;
-                                                                        case 12:
-                                                                            $images = "executive.png";
-                                                                            break;
-                                                                        case 13:
-                                                                            $images = "senior_executive.png";
-                                                                            break;
-                                                                        case 14:
-                                                                            $text = "Master";
+                                                                        case 7:
+                                                                            $images = "membership.png";
                                                                             break;
                                                                         }
                                                                     ?>
@@ -113,36 +104,27 @@
                                                                     <div class="div-img">
                                                                         <?php
                                                                         switch ($n2_iz[10]) {
-                                                                            case 2:
-                                                                                $images = "basic.png";
-                                                                                break;
-                                                                            case 3:
-                                                                                $images = "executive.png";
-                                                                                break;
-                                                                            case 4:
-                                                                                $images = "gold.png";
-                                                                                break;
-                                                                            case 5:
-                                                                                $images = "senior_executive.png";
-                                                                                break;
-                                                                            case 6:
-                                                                                $images = "membership.png";
-                                                                                break;
-                                                                            case 7:
-                                                                                $images = "master.png";
-                                                                                break;
-                                                                            case 11:
-                                                                                $images = "basic.png";
-                                                                                break;
-                                                                            case 12:
-                                                                                $images = "executive.png";
-                                                                                break;
-                                                                            case 13:
-                                                                                $images = "senior_executive.png";
-                                                                                break;
-                                                                            case 14:
-                                                                                $text = "Master";
-                                                                                break;
+                                                                            case 1:
+                                                                            $images = "beginner.png";
+                                                                            break;
+                                                                        case 2:
+                                                                            $images = "start.png";
+                                                                            break;
+                                                                        case 3:
+                                                                            $images = "general.png";
+                                                                            break;
+                                                                        case 4:
+                                                                            $images = "vip.png";
+                                                                            break;
+                                                                        case 5:
+                                                                            $images = "premium.png";
+                                                                            break;
+                                                                        case 6:
+                                                                            $images = "master.png";
+                                                                            break;
+                                                                        case 7:
+                                                                            $images = "membership.png";
+                                                                            break;
                                                                         }
                                                                         ?>
                                                                         <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" class="thumb96">
@@ -151,9 +133,8 @@
                                                         </a>
                                                         <!--USERNAME-->
                                                         <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n2_iz[2];?>" class=""><?php echo $n2_iz[6];?></a></span>
-                                                        
                                                      <?php }else{ ?>
-                                                         <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blanco" class="thumb96 user-blank"/>                                                            
+                                                        <img src="<?php echo site_url().'static/backoffice/images/membership.png';?>" alt="paquete membership" width="96"/>                                                            
                                                     <?php } ?>
                                                 </span>
                                                 <!--//------END 2DO LEVEL LEFT------->
@@ -166,38 +147,29 @@
                                                                 <div class="row imagen-profile">
                                                                         <div class="div-img">
                                                                             <?php
-                                                                            switch ($n3_iz[10]) {
-                                                                                case 2:
-                                                                                    $images = "basic.png";
-                                                                                    break;
-                                                                                case 3:
-                                                                                    $images = "executive.png";
-                                                                                    break;
-                                                                                case 4:
-                                                                                    $images = "gold.png";
-                                                                                    break;
-                                                                                case 5:
-                                                                                    $images = "senior_executive.png";
-                                                                                    break;
-                                                                                case 6:
-                                                                                    $images = "membership.png";
-                                                                                    break;
-                                                                                case 7:
-                                                                                    $images = "master.png";
-                                                                                    break;
-                                                                                case 11:
-                                                                                    $images = "basic.png";
-                                                                                    break;
-                                                                                case 12:
-                                                                                    $images = "executive.png";
-                                                                                    break;
-                                                                                case 13:
-                                                                                    $images = "senior_executive.png";
-                                                                                    break;
-                                                                                case 14:
-                                                                                    $text = "Master";
-                                                                                    break;
-                                                                            }
+                                                                        switch ($n3_iz[10]) {    
+                                                                            case 1:
+                                                                            $images = "beginner.png";
+                                                                            break;
+                                                                        case 2:
+                                                                            $images = "start.png";
+                                                                            break;
+                                                                        case 3:
+                                                                            $images = "general.png";
+                                                                            break;
+                                                                        case 4:
+                                                                            $images = "vip.png";
+                                                                            break;
+                                                                        case 5:
+                                                                            $images = "premium.png";
+                                                                            break;
+                                                                        case 6:
+                                                                            $images = "master.png";
+                                                                            break;
+                                                                        case 7:
+                                                                            $images = "membership.png";
+                                                                            break;
+                                                                        }
                                                                             ?>
                                                                             <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" class="thumb96">
                                                                         </div>
@@ -206,7 +178,7 @@
                                                         <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n3_iz[2];?>" class=""><?php echo $n3_iz[6];?></a></span>
                                                             
                                                             <?php }else{ ?>
-                                                             <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blanco" class="thumb96 user-blank"/>                                                            
+                                                             <img src="<?php echo site_url().'static/backoffice/images/membership.png';?>" alt="paquete membership" width="96"/>   
                                                             <?php } ?>
                                                     </span>
                                                             <!--//-----END 4TO LEVEL LEFT--------->
@@ -220,37 +192,28 @@
                                                                                     <div class="div-img">
                                                                                         <?php
                                                                                         switch ($n4_iz[10]) {
+                                                                                            case 1:
+                                                                                                $images = "beginner.png";
+                                                                                                break;
                                                                                             case 2:
-                                                                                            $images = "basic.png";
-                                                                                            break;
-                                                                                        case 3:
-                                                                                            $images = "executive.png";
-                                                                                            break;
-                                                                                        case 4:
-                                                                                            $images = "gold.png";
-                                                                                            break;
-                                                                                        case 5:
-                                                                                            $images = "senior_executive.png";
-                                                                                            break;
-                                                                                        case 6:
-                                                                                            $images = "membership.png";
-                                                                                            break;
-                                                                                        case 7:
-                                                                                            $images = "master.png";
-                                                                                            break;
-                                                                                        case 11:
-                                                                                            $images = "basic.png";
-                                                                                            break;
-                                                                                        case 12:
-                                                                                            $images = "executive.png";
-                                                                                            break;
-                                                                                        case 13:
-                                                                                            $images = "senior_executive.png";
-                                                                                            break;
-                                                                                        case 14:
-                                                                                            $text = "Master";
-                                                                                            break;
-                                                                                        }
+                                                                                                $images = "start.png";
+                                                                                                break;
+                                                                                            case 3:
+                                                                                                $images = "general.png";
+                                                                                                break;
+                                                                                            case 4:
+                                                                                                $images = "vip.png";
+                                                                                                break;
+                                                                                            case 5:
+                                                                                                $images = "premium.png";
+                                                                                                break;
+                                                                                            case 6:
+                                                                                                $images = "master.png";
+                                                                                                break;
+                                                                                            case 7:
+                                                                                                $images = "membership.png";
+                                                                                                break;
+                                                                                            }
                                                                                         ?>
                                                                                         <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" class="thumb96">
                                                                                     </div>
@@ -259,7 +222,7 @@
                                                                             <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n4_iz[2];?>" class=""><?php echo $n4_iz[6];?></a></span>
                                                                         
                                                                         <?php }else{ ?>
-                                                                        <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blanco" class="thumb96 user-blank"/>                                                            
+                                                                        <img src="<?php echo site_url().'static/backoffice/images/membership.png';?>" alt="paquete membership" width="96"/>                                                             
                                                                        <?php } ?>
                                                                     </span>
                                                                     <!--//-----END 4TO LEVEL LEFT--------->
@@ -274,37 +237,28 @@
                                                                                 <div class="div-img">
                                                                                     <?php
                                                                                     switch ($n4_2_iz[10]) {
+                                                                                        case 1:
+                                                                                            $images = "beginner.png";
+                                                                                            break;
                                                                                         case 2:
-                                                                                        $images = "basic.png";
-                                                                                        break;
-                                                                                    case 3:
-                                                                                        $images = "executive.png";
-                                                                                        break;
-                                                                                    case 4:
-                                                                                        $images = "gold.png";
-                                                                                        break;
-                                                                                    case 5:
-                                                                                        $images = "senior_executive.png";
-                                                                                        break;
-                                                                                    case 6:
-                                                                                        $images = "membership.png";
-                                                                                        break;
-                                                                                    case 7:
-                                                                                        $images = "master.png";
-                                                                                        break;
-                                                                                    case 11:
-                                                                                        $images = "basic.png";
-                                                                                        break;
-                                                                                    case 12:
-                                                                                        $images = "executive.png";
-                                                                                        break;
-                                                                                    case 13:
-                                                                                        $images = "senior_executive.png";
-                                                                                        break;
-                                                                                    case 14:
-                                                                                        $text = "Master";
-                                                                                        break;
-                                                                                    }
+                                                                                            $images = "start.png";
+                                                                                            break;
+                                                                                        case 3:
+                                                                                            $images = "general.png";
+                                                                                            break;
+                                                                                        case 4:
+                                                                                            $images = "vip.png";
+                                                                                            break;
+                                                                                        case 5:
+                                                                                            $images = "premium.png";
+                                                                                            break;
+                                                                                        case 6:
+                                                                                            $images = "master.png";
+                                                                                            break;
+                                                                                        case 7:
+                                                                                            $images = "membership.png";
+                                                                                            break;
+                                                                                        }
                                                                                     ?>
                                                                                     <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" class="thumb96">
                                                                                 </div>
@@ -313,7 +267,7 @@
                                                                         <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n4_2_iz[2];?>"><?php echo $n4_2_iz[6];?></a></span>
                                                                     
                                                                     <?php }else{ ?>
-                                                                        <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blanco" class="thumb96 user-blank"/>                                                            
+                                                                        <img src="<?php echo site_url().'static/backoffice/images/membership.png';?>" alt="paquete membership" width="96"/>                                                              
                                                                     <?php } ?>
                                                                     </span>
                                                                     <!--//-----END 4TO 2DO LEVEL LEFT--------->
@@ -330,37 +284,28 @@
                                                                 <div class="div-img">
                                                                     <?php
                                                                     switch ($n3_2_iz[10]) {
+                                                                        case 1:
+                                                                            $images = "beginner.png";
+                                                                            break;
                                                                         case 2:
-                                                                            $images = "basic.png";
+                                                                            $images = "start.png";
                                                                             break;
                                                                         case 3:
-                                                                            $images = "executive.png";
+                                                                            $images = "general.png";
                                                                             break;
                                                                         case 4:
-                                                                            $images = "gold.png";
+                                                                            $images = "vip.png";
                                                                             break;
                                                                         case 5:
-                                                                            $images = "senior_executive.png";
+                                                                            $images = "premium.png";
                                                                             break;
                                                                         case 6:
-                                                                            $images = "membership.png";
-                                                                            break;
-                                                                        case 7:
                                                                             $images = "master.png";
                                                                             break;
-                                                                        case 11:
-                                                                            $images = "basic.png";
+                                                                        case 7:
+                                                                            $images = "membership.png";
                                                                             break;
-                                                                        case 12:
-                                                                            $images = "executive.png";
-                                                                            break;
-                                                                        case 13:
-                                                                            $images = "senior_executive.png";
-                                                                            break;
-                                                                        case 14:
-                                                                            $text = "Master";
-                                                                            break;
-                                                                    }
+                                                                        }
                                                                     ?>
                                                                     <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" class="thumb96">
                                                                 </div>
@@ -369,7 +314,7 @@
                                                         <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n3_2_iz[2];?>"><?php echo $n3_2_iz[6];?></a></span>
                                                     
                                                         <?php }else{ ?>
-                                                            <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blanco" class="thumb96 user-blank"/>
+                                                            <img src="<?php echo site_url().'static/backoffice/images/membership.png';?>" alt="paquete membership" width="96"/>   
                                                          <?php } ?>
                                                     </span>
                                                             <!--//-----END 3ER 2DO LEVEL LEFT--------->
@@ -383,37 +328,28 @@
                                                                                     <div class="div-img">
                                                                                         <?php
                                                                                         switch ($n4_3_iz[10]) {
+                                                                                           case 1:
+                                                                                                $images = "beginner.png";
+                                                                                                break;
                                                                                             case 2:
-                                                                                            $images = "basic.png";
-                                                                                            break;
-                                                                                        case 3:
-                                                                                            $images = "executive.png";
-                                                                                            break;
-                                                                                        case 4:
-                                                                                            $images = "gold.png";
-                                                                                            break;
-                                                                                        case 5:
-                                                                                            $images = "senior_executive.png";
-                                                                                            break;
-                                                                                        case 6:
-                                                                                            $images = "membership.png";
-                                                                                            break;
-                                                                                        case 7:
-                                                                                            $images = "master.png";
-                                                                                            break;
-                                                                                        case 11:
-                                                                                            $images = "basic.png";
-                                                                                            break;
-                                                                                        case 12:
-                                                                                            $images = "executive.png";
-                                                                                            break;
-                                                                                        case 13:
-                                                                                            $images = "senior_executive.png";
-                                                                                            break;
-                                                                                        case 14:
-                                                                                            $text = "Master";
-                                                                                            break;
-                                                                                        }
+                                                                                                $images = "start.png";
+                                                                                                break;
+                                                                                            case 3:
+                                                                                                $images = "general.png";
+                                                                                                break;
+                                                                                            case 4:
+                                                                                                $images = "vip.png";
+                                                                                                break;
+                                                                                            case 5:
+                                                                                                $images = "premium.png";
+                                                                                                break;
+                                                                                            case 6:
+                                                                                                $images = "master.png";
+                                                                                                break;
+                                                                                            case 7:
+                                                                                                $images = "membership.png";
+                                                                                                break;
+                                                                                            }
                                                                                         ?>
                                                                                         <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" class="thumb96">
                                                                                     </div>
@@ -422,7 +358,7 @@
                                                                     <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n4_3_iz[2];?>"><?php echo $n4_3_iz[6];?></a></span>
                                                                         
                                                                         <?php }else{ ?>
-                                                                             <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blanco" class="thumb96 user-blank"/>
+                                                                             <img src="<?php echo site_url().'static/backoffice/images/membership.png';?>" alt="paquete membership" width="96"/>   
                                                                         <?php } ?>
                                                                     </span>
                                                                     <!--//-----END 4TO 3ER LEVEL LEFT--------->
@@ -437,37 +373,28 @@
                                                                                 <div class="div-img">
                                                                                     <?php
                                                                                     switch ($n4_4_iz[10]) {
+                                                                                        case 1:
+                                                                                            $images = "beginner.png";
+                                                                                            break;
                                                                                         case 2:
-                                                                                        $images = "basic.png";
-                                                                                        break;
-                                                                                    case 3:
-                                                                                        $images = "executive.png";
-                                                                                        break;
-                                                                                    case 4:
-                                                                                        $images = "gold.png";
-                                                                                        break;
-                                                                                    case 5:
-                                                                                        $images = "senior_executive.png";
-                                                                                        break;
-                                                                                    case 6:
-                                                                                        $images = "membership.png";
-                                                                                        break;
-                                                                                    case 7:
-                                                                                        $images = "master.png";
-                                                                                        break;
-                                                                                    case 11:
-                                                                                        $images = "basic.png";
-                                                                                        break;
-                                                                                    case 12:
-                                                                                        $images = "executive.png";
-                                                                                        break;
-                                                                                    case 13:
-                                                                                        $images = "senior_executive.png";
-                                                                                        break;
-                                                                                    case 14:
-                                                                                        $text = "Master";
-                                                                                        break;
-                                                                                    }
+                                                                                            $images = "start.png";
+                                                                                            break;
+                                                                                        case 3:
+                                                                                            $images = "general.png";
+                                                                                            break;
+                                                                                        case 4:
+                                                                                            $images = "vip.png";
+                                                                                            break;
+                                                                                        case 5:
+                                                                                            $images = "premium.png";
+                                                                                            break;
+                                                                                        case 6:
+                                                                                            $images = "master.png";
+                                                                                            break;
+                                                                                        case 7:
+                                                                                            $images = "membership.png";
+                                                                                            break;
+                                                                                        }
                                                                                     ?>
                                                                                     <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" class="thumb96">
                                                                                 </div>
@@ -476,7 +403,7 @@
                                                                     <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n4_4_iz[2];?>"><?php echo $n4_4_iz[6];?></a></span>
                                                                     
                                                                     <?php }else{ ?>
-                                                                        <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blanco" class="thumb96 user-blank" />
+                                                                        <img src="<?php echo site_url().'static/backoffice/images/membership.png';?>" alt="paquete membership" width="96"/>   
                                                                     <?php } ?>
                                                                     </span>
                                                                     <!--//-----END 4TO LEVEL LEFT--------->
@@ -499,37 +426,28 @@
                                                                     <div class="div-img">
                                                                         <?php
                                                                         switch ($n2_de[10]) {
+                                                                            case 1:
+                                                                                $images = "beginner.png";
+                                                                                break;
                                                                             case 2:
-                                                                                $images = "basic.png";
+                                                                                $images = "start.png";
                                                                                 break;
                                                                             case 3:
-                                                                                $images = "executive.png";
+                                                                                $images = "general.png";
                                                                                 break;
                                                                             case 4:
-                                                                                $images = "gold.png";
+                                                                                $images = "vip.png";
                                                                                 break;
                                                                             case 5:
-                                                                                $images = "senior_executive.png";
+                                                                                $images = "premium.png";
                                                                                 break;
                                                                             case 6:
-                                                                                $images = "membership.png";
-                                                                                break;
-                                                                            case 7:
                                                                                 $images = "master.png";
                                                                                 break;
-                                                                            case 11:
-                                                                                $images = "basic.png";
+                                                                            case 7:
+                                                                                $images = "membership.png";
                                                                                 break;
-                                                                            case 12:
-                                                                                $images = "executive.png";
-                                                                                break;
-                                                                            case 13:
-                                                                                $images = "senior_executive.png";
-                                                                                break;
-                                                                            case 14:
-                                                                                $text = "Master";
-                                                                                break;
-                                                                        }
+                                                                            }
                                                                         ?>
                                                                         <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" class="thumb96">
                                                                     </div>
@@ -538,7 +456,7 @@
                                                     <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n2_de[2];?>"><?php echo $n2_de[6];?></a></span>
                                                         
                                                      <?php }else{ ?>
-                                                         <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blanco" class="thumb96 user-blank"/>                                                            
+                                                         <img src="<?php echo site_url().'static/backoffice/images/membership.png';?>" alt="paquete membership" width="96"/>   
                                                     <?php } ?>
                                                 </span>
                                                 <!--//------END 2DO LEVEL RIGHT------->
@@ -552,37 +470,28 @@
                                                                         <div class="div-img">
                                                                             <?php
                                                                             switch ($n3_2_de[10]) {
+                                                                                case 1:
+                                                                                    $images = "beginner.png";
+                                                                                    break;
                                                                                 case 2:
-                                                                                    $images = "basic.png";
+                                                                                    $images = "start.png";
                                                                                     break;
                                                                                 case 3:
-                                                                                    $images = "executive.png";
+                                                                                    $images = "general.png";
                                                                                     break;
                                                                                 case 4:
-                                                                                    $images = "gold.png";
+                                                                                    $images = "vip.png";
                                                                                     break;
                                                                                 case 5:
-                                                                                    $images = "senior_executive.png";
+                                                                                    $images = "premium.png";
                                                                                     break;
                                                                                 case 6:
-                                                                                    $images = "membership.png";
-                                                                                    break;
-                                                                                case 7:
                                                                                     $images = "master.png";
                                                                                     break;
-                                                                                case 11:
-                                                                                    $images = "basic.png";
+                                                                                case 7:
+                                                                                    $images = "membership.png";
                                                                                     break;
-                                                                                case 12:
-                                                                                    $images = "executive.png";
-                                                                                    break;
-                                                                                case 13:
-                                                                                    $images = "senior_executive.png";
-                                                                                    break;
-                                                                                case 14:
-                                                                                    $text = "Master";
-                                                                                    break;
-                                                                            }
+                                                                                }
                                                                             ?>
                                                                             <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" class="thumb96">
                                                                         </div>
@@ -591,7 +500,7 @@
                                                         <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n3_2_de[2];?>"><?php echo $n3_2_de[6];?></a></span>
                                                             
                                                             <?php }else{ ?>
-                                                             <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blanco" class="thumb96 user-blank"/>                                                            
+                                                             <img src="<?php echo site_url().'static/backoffice/images/membership.png';?>" alt="paquete membership" width="96"/>   
                                                             <?php } ?>
                                                     </span>
                                                             <!--//-----3ER 2DO LEVEL RIGHT--------->
@@ -605,37 +514,28 @@
                                                                                     <div class="div-img">
                                                                                         <?php
                                                                                         switch ($n4_4_de[10]) {
+                                                                                             case 1:
+                                                                                                $images = "beginner.png";
+                                                                                                break;
                                                                                             case 2:
-                                                                                            $images = "basic.png";
-                                                                                            break;
-                                                                                        case 3:
-                                                                                            $images = "executive.png";
-                                                                                            break;
-                                                                                        case 4:
-                                                                                            $images = "gold.png";
-                                                                                            break;
-                                                                                        case 5:
-                                                                                            $images = "senior_executive.png";
-                                                                                            break;
-                                                                                        case 6:
-                                                                                            $images = "membership.png";
-                                                                                            break;
-                                                                                        case 7:
-                                                                                            $images = "master.png";
-                                                                                            break;
-                                                                                        case 11:
-                                                                                            $images = "basic.png";
-                                                                                            break;
-                                                                                        case 12:
-                                                                                            $images = "executive.png";
-                                                                                            break;
-                                                                                        case 13:
-                                                                                            $images = "senior_executive.png";
-                                                                                            break;
-                                                                                        case 14:
-                                                                                            $text = "Master";
-                                                                                            break;
-                                                                                        }
+                                                                                                $images = "start.png";
+                                                                                                break;
+                                                                                            case 3:
+                                                                                                $images = "general.png";
+                                                                                                break;
+                                                                                            case 4:
+                                                                                                $images = "vip.png";
+                                                                                                break;
+                                                                                            case 5:
+                                                                                                $images = "premium.png";
+                                                                                                break;
+                                                                                            case 6:
+                                                                                                $images = "master.png";
+                                                                                                break;
+                                                                                            case 7:
+                                                                                                $images = "membership.png";
+                                                                                                break;
+                                                                                            }
                                                                                         ?>
                                                                                         <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" class="thumb96">
                                                                                     </div>
@@ -644,7 +544,7 @@
                                                                             <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n4_4_de[2];?>"><?php echo $n4_4_de[6];?></a></span>
                                                                         
                                                                         <?php }else{ ?>
-                                                                        <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blanco" class="thumb96 user-blank"/>                                                            
+                                                                        <img src="<?php echo site_url().'static/backoffice/images/membership.png';?>" alt="paquete membership" width="96"/>   
                                                                        <?php } ?>
                                                                     </span>
                                                                     <!--//-----END 4TO LEVEL LEFT--------->
@@ -659,37 +559,28 @@
                                                                                 <div class="div-img">
                                                                                     <?php
                                                                                     switch ($n4_3_de[10]) {
+                                                                                        case 1:
+                                                                                            $images = "beginner.png";
+                                                                                            break;
                                                                                         case 2:
-                                                                                        $images = "basic.png";
-                                                                                        break;
-                                                                                    case 3:
-                                                                                        $images = "executive.png";
-                                                                                        break;
-                                                                                    case 4:
-                                                                                        $images = "gold.png";
-                                                                                        break;
-                                                                                    case 5:
-                                                                                        $images = "senior_executive.png";
-                                                                                        break;
-                                                                                    case 6:
-                                                                                        $images = "membership.png";
-                                                                                        break;
-                                                                                    case 7:
-                                                                                        $images = "master.png";
-                                                                                        break;
-                                                                                    case 11:
-                                                                                        $images = "basic.png";
-                                                                                        break;
-                                                                                    case 12:
-                                                                                        $images = "executive.png";
-                                                                                        break;
-                                                                                    case 13:
-                                                                                        $images = "senior_executive.png";
-                                                                                        break;
-                                                                                    case 14:
-                                                                                        $text = "Master";
-                                                                                        break;
-                                                                                    }
+                                                                                            $images = "start.png";
+                                                                                            break;
+                                                                                        case 3:
+                                                                                            $images = "general.png";
+                                                                                            break;
+                                                                                        case 4:
+                                                                                            $images = "vip.png";
+                                                                                            break;
+                                                                                        case 5:
+                                                                                            $images = "premium.png";
+                                                                                            break;
+                                                                                        case 6:
+                                                                                            $images = "master.png";
+                                                                                            break;
+                                                                                        case 7:
+                                                                                            $images = "membership.png";
+                                                                                            break;
+                                                                                        }
                                                                                     ?>
                                                                                     <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" class="thumb96">
                                                                                 </div>
@@ -698,7 +589,7 @@
                                                                     <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n4_3_de[2];?>"><?php echo $n4_3_de[6];?></a></span>
                                                                     
                                                                     <?php }else{ ?>
-                                                                        <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blanco" class="thumb96 user-blank"/>                                                            
+                                                                        <img src="<?php echo site_url().'static/backoffice/images/membership.png';?>" alt="paquete membership" width="96"/>   
                                                                     <?php } ?>
                                                                     </span>
                                                                     <!--//-----END 4TO 3ER LEVEL RIGHT--------->
@@ -715,37 +606,28 @@
                                                                 <div class="div-img">
                                                                     <?php
                                                                     switch ($n3_de[10]) {
+                                                                         case 1:
+                                                                            $images = "beginner.png";
+                                                                            break;
                                                                         case 2:
-                                                                            $images = "basic.png";
+                                                                            $images = "start.png";
                                                                             break;
                                                                         case 3:
-                                                                            $images = "executive.png";
+                                                                            $images = "general.png";
                                                                             break;
                                                                         case 4:
-                                                                            $images = "gold.png";
+                                                                            $images = "vip.png";
                                                                             break;
                                                                         case 5:
-                                                                            $images = "senior_executive.png";
+                                                                            $images = "premium.png";
                                                                             break;
                                                                         case 6:
-                                                                            $images = "membership.png";
-                                                                            break;
-                                                                        case 7:
                                                                             $images = "master.png";
                                                                             break;
-                                                                        case 11:
-                                                                            $images = "basic.png";
+                                                                        case 7:
+                                                                            $images = "membership.png";
                                                                             break;
-                                                                        case 12:
-                                                                            $images = "executive.png";
-                                                                            break;
-                                                                        case 13:
-                                                                            $images = "senior_executive.png";
-                                                                            break;
-                                                                        case 14:
-                                                                            $text = "Master";
-                                                                            break;
-                                                                    }
+                                                                        }
                                                                     ?>
                                                                     <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" class="thumb96">
                                                                 </div>
@@ -754,7 +636,7 @@
                                                         <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n3_de[2];?>"><?php echo $n3_de[6];?></a></span>
                                                     
                                                         <?php }else{ ?>
-                                                            <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blanco" class="thumb96 user-blank"/>
+                                                            <img src="<?php echo site_url().'static/backoffice/images/membership.png';?>" alt="paquete membership" width="96"/>   
                                                          <?php } ?>
                                                     </span>
                                                             <!--//-----END 3ER LEVEL RIGHT--------->
@@ -768,37 +650,28 @@
                                                                                     <div class="div-img">
                                                                                         <?php
                                                                                         switch ($n4_2_de[10]) {
-                                                                                            case 2:
-                                                                                            $images = "basic.png";
-                                                                                            break;
-                                                                                        case 3:
-                                                                                            $images = "executive.png";
-                                                                                            break;
-                                                                                        case 4:
-                                                                                            $images = "gold.png";
-                                                                                            break;
-                                                                                        case 5:
-                                                                                            $images = "senior_executive.png";
-                                                                                            break;
-                                                                                        case 6:
-                                                                                            $images = "membership.png";
-                                                                                            break;
-                                                                                        case 7:
-                                                                                            $images = "master.png";
-                                                                                            break;
-                                                                                        case 11:
-                                                                                            $images = "basic.png";
-                                                                                            break;
-                                                                                        case 12:
-                                                                                            $images = "executive.png";
-                                                                                            break;
-                                                                                        case 13:
-                                                                                            $images = "senior_executive.png";
-                                                                                            break;
-                                                                                        case 14:
-                                                                                            $text = "Master";
-                                                                                            break;
-                                                                                        }
+                                                                                             case 1:
+                                                                                                    $images = "beginner.png";
+                                                                                                    break;
+                                                                                                case 2:
+                                                                                                    $images = "start.png";
+                                                                                                    break;
+                                                                                                case 3:
+                                                                                                    $images = "general.png";
+                                                                                                    break;
+                                                                                                case 4:
+                                                                                                    $images = "vip.png";
+                                                                                                    break;
+                                                                                                case 5:
+                                                                                                    $images = "premium.png";
+                                                                                                    break;
+                                                                                                case 6:
+                                                                                                    $images = "master.png";
+                                                                                                    break;
+                                                                                                case 7:
+                                                                                                    $images = "membership.png";
+                                                                                                    break;
+                                                                                                }
                                                                                         ?>
                                                                                         <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" class="thumb96">
                                                                                     </div>
@@ -807,7 +680,7 @@
                                                                             <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n3_de[2];?>"><?php echo $n4_2_de[6];?></a></span>
                                                                         
                                                                         <?php }else{ ?>
-                                                                             <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blanco" class="thumb96 user-blank"/>
+                                                                             <img src="<?php echo site_url().'static/backoffice/images/membership.png';?>" alt="paquete membership" width="96"/>
                                                                         <?php } ?>
                                                                     </span>
                                                                     <!--//-----END 4TO 2DO LEVEL RIGHT--------->
@@ -822,37 +695,28 @@
                                                                                 <div class="div-img">
                                                                                     <?php
                                                                                     switch ($n4_de[10]) {
+                                                                                         case 1:
+                                                                                            $images = "beginner.png";
+                                                                                            break;
                                                                                         case 2:
-                                                                                        $images = "basic.png";
-                                                                                        break;
-                                                                                    case 3:
-                                                                                        $images = "executive.png";
-                                                                                        break;
-                                                                                    case 4:
-                                                                                        $images = "gold.png";
-                                                                                        break;
-                                                                                    case 5:
-                                                                                        $images = "senior_executive.png";
-                                                                                        break;
-                                                                                    case 6:
-                                                                                        $images = "membership.png";
-                                                                                        break;
-                                                                                    case 7:
-                                                                                        $images = "master.png";
-                                                                                        break;
-                                                                                    case 11:
-                                                                                        $images = "basic.png";
-                                                                                        break;
-                                                                                    case 12:
-                                                                                        $images = "executive.png";
-                                                                                        break;
-                                                                                    case 13:
-                                                                                        $images = "senior_executive.png";
-                                                                                        break;
-                                                                                    case 14:
-                                                                                        $text = "Master";
-                                                                                        break;
-                                                                                    }
+                                                                                            $images = "start.png";
+                                                                                            break;
+                                                                                        case 3:
+                                                                                            $images = "general.png";
+                                                                                            break;
+                                                                                        case 4:
+                                                                                            $images = "vip.png";
+                                                                                            break;
+                                                                                        case 5:
+                                                                                            $images = "premium.png";
+                                                                                            break;
+                                                                                        case 6:
+                                                                                            $images = "master.png";
+                                                                                            break;
+                                                                                        case 7:
+                                                                                            $images = "membership.png";
+                                                                                            break;
+                                                                                        }
                                                                                     ?>
                                                                                     <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" class="thumb96">
                                                                                 </div>
@@ -861,7 +725,7 @@
                                                                     <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n4_de[2];?>"><?php echo $n4_de[6];?></a></span>
                                                                     
                                                                     <?php }else{ ?>
-                                                                        <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blanco" class="thumb96 user-blank" />
+                                                                        <img src="<?php echo site_url().'static/backoffice/images/membership.png';?>" alt="paquete membership" width="96"/>   
                                                                     <?php } ?>
                                                                     </span>
                                                                     <!--//-----END 4TO LEVEL RIGHT--------->
@@ -876,29 +740,6 @@
                             </ul>
                         </div>
                                 <br><br><br>
-
-
-                                
-<!--                        <div class="clearfix btn-holder">
-                            <a class="btn btn-success btn-sm pull-left" aria-label="Left Align" href="/backend/my-network/network-tree/first-available-position/left">
-                                <i class="icon-arrows-5" aria-hidden="true"></i>
-                                First available position left
-                            </a>
-                            <a type="button" class="btn btn-success btn-sm pull-right" aria-label="Right Align" href="/backend/my-network/network-tree/first-available-position/right">
-                                First available position right
-                                <i class="icon-arrows-6 in-right" aria-hidden="true"></i>
-                            </a>
-                        </div>-->
-                        
-                        <hr class="style-4 mb-20">
-                            <div class="position-info-list">
-                                <div class="style_basic responsive"><span class="">BASIC</span></div>
-                                <div class="style_executive responsive"><span class="">EXECUTIVE</span></div>
-                                <div class="style_senior_executive responsive"><span class="">SENIOR EXECUTIVE</span></div>
-                                <div class="style_master responsive"><span class="">MASTER</span></div>
-                                <div class="style_membership responsive"><span class="">MEMBERSHIP</span></div>
-                                <div class="style_free_position responsive"><span class=""><?php echo replace_vocales_voculeshtml("POSICIÓN LIBRE");?></span></div>
-                            </div>
                         </div>
                         </div>
                     </div>

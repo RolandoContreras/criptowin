@@ -45,8 +45,8 @@ class B_home extends CI_Controller {
                          "join" => array('franchise, customer.franchise_id = franchise.franchise_id',)
                                         );
            $obj_customer = $this->obj_customer->get_search_row($params);
+           
            //SET 5 VECES MAS EL VALOR DEL PAQUETE
-           $max_gain = $obj_customer->price * 5;
            $points_left = $obj_customer->point_left / 0.12;
            $points_rigth = $obj_customer->point_rigth / 0.12;
            
@@ -112,7 +112,6 @@ class B_home extends CI_Controller {
                 $this->tmp_backoffice->set("price_btc",$price_btc);
                 $this->tmp_backoffice->set("obj_total",$obj_total);
                 $this->tmp_backoffice->set("obj_balance",$obj_balance);
-                $this->tmp_backoffice->set("max_gain",$max_gain);
                 $this->tmp_backoffice->set("points_left",$points_left);
                 $this->tmp_backoffice->set("points_rigth",$points_rigth);
                 $this->tmp_backoffice->set("obj_customer",$obj_customer);

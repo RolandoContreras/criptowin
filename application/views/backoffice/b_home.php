@@ -50,7 +50,7 @@
                             <div class="mt-10"></div>
                             </div>
                         <div class="media-right media-middle">
-                            <img style="max-width: 120px" src="<?php echo site_url()."static/backoffice/images/beginner.png";?>" alt="<?php echo $text_franchise;?>"/>
+                            <img style="max-width: 120px" src="<?php echo site_url()."static/backoffice/images/$images_franchise";?>" alt="<?php echo $text_franchise;?>"/>
                         </div>
                         </div>
                     
