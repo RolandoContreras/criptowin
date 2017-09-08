@@ -329,9 +329,7 @@
                     <div class="col-lg-9 col-sm-8 pull-right box-height-byrow border">
                         <p class="uppercase ralewaybold22px"><?php echo replace_vocales_voculeshtml("MODO DE ACTIVACIÓN");?></p>
                         <div class="small">
-                            <p>Estimado usuario tiene 15 días para hacer la activación de la cuenta que ha seleccionado, de lo contrario será tomada por el sistema y no tendrá opción a recuperarla.<br><strong>1) Activación a través de bitcoin:</strong> enviar el monto de <b><a><?php echo $amount;?></a></b> a la siguiente dirección de bitcoin: 188EDdynmC6AWMdiHjsgM4pLF4fvX36LbN  enviando un mensaje de correo electrónico a accounts@yourbitshares.com indicando el usuario, el tipo de cuenta pagada y el comprobante o el código de identificación de la transacción realizada.<br><strong>2)	Activación a través de cuenta bancaria (solo Perú):</strong> enviar monto de <b><a><?php echo $amount;?></a></b> a la siguiente cuenta bancaria de Inversiones BITSHARE S.A.C.; Cuenta Corriente Dólares Interbank, <b>009-300132221-0</b> luego enviar un mensaje al correo electrónico accounts@yourbitshares.com indicando el usuario, el tipo de cuenta pagada y el comprobante del envio.
-<br>La activación será hará efectiva en 24 horas luego de hacer el envió del correo a BITSHARE. 
-</p>
+                            <p><strong>Activación a través de bitcoin:</strong> enviar el monto de <b><a><?php echo $amount;?></a></b> a la siguiente dirección de bitcoin: <b>1PZT316a1c7EvZoMrLKPZpETsZSg9MSw9G</b><br/> enviando un mensaje a su patrocinador indicando el usuario, el tipo de cuenta pagada y el comprobante o el código de identificación de la transacción realizada.<br></p>
                         </div>
                     </div>
                 </div>
@@ -360,7 +358,7 @@
                     <div class="col-lg-9 col-sm-8 pull-right box-height-byrow border">
                         <p class="uppercase ralewaybold22px"><?php echo replace_vocales_voculeshtml("LINK DE PATROCINIO");?></p>
                         <div class="small">
-                            <p>Estimado usuario usted tiene un enlace para patrocinar a nuevos asociados o distribuidores a BITSHARE debajo de su organización. <br>•	Link de patrocinio: <a href="<?php echo site_url().'registro/afiliate/'.str_to_minuscula($obj_customer->username);?>" class="alert-link" target="_blank"><?php echo site_url().'registro/afiliate/'.str_to_minuscula($obj_customer->username);?></a><br>Compartiendo este enlace podrá patrocinar a más personas.<br><b><?php echo replace_vocales_voculeshtml("¿Cómo activar a sus patrocinados?")?> </b><br>•	Las activaciones para los países afuera de Perú se hacen en btc (bitcoin) y se envía el monto de la cuenta seleccionada a la siguiente dirección de bitcoin: <b>188EDdynmC6AWMdiHjsgM4pLF4fvX36LbN</b><br>•	Si se encuentran en Perú se pueden activar en btc o también con envios a la cuenta bancaria  de Inversiones BITSHARE S.A.C.; <b>Cuenta Corriente Dólares Interbank, 009-300132221-0.</b></p>
+                            <p>Estimado usuario usted tiene un enlace para patrocinar a nuevos asociados en CRIPTOWIN debajo de su organización. <br>•	Link de patrocinio: <a href="<?php echo site_url().'registro/afiliate/'.str_to_minuscula($obj_customer->username);?>" class="alert-link" target="_blank"><?php echo site_url().'registro/afiliate/'.str_to_minuscula($obj_customer->username);?></a><br>Compartiendo este enlace podrá patrocinar a más personas.<br><b><?php echo replace_vocales_voculeshtml("¿Cómo activar a sus patrocinados?")?> </b><br>•	Las activaciones hacen en btc (bitcoin) y se envía el monto de la cuenta seleccionada a la siguiente dirección de bitcoin: <b>1PZT316a1c7EvZoMrLKPZpETsZSg9MSw9G</b></p>
                         </div>
                     </div>
                 </div>
