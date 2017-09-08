@@ -13,8 +13,7 @@
                <div class="col-lg-12">
                     
                      <div class="panel panel-info">
-                        <div class="panel-heading">
-                           Comisiones calculadas                        </div>
+                        <div class="panel-heading">Comisiones</div>
                         <div class="panel-body">
                            <div class="proceso_1 col-lg-12">
 
@@ -29,10 +28,9 @@
                                              <select class="form-control" name="concepto" id="concepto" required>
                                                 <option value="">***Seleccione***</option>
                                                 <option value="1">Bono Referido Directo</option>
-                                                <option value="3">Bono Usufructo Diario</option>
+                                                <option value="3">Bono Rentabilidad</option>
                                                 <option value="4">Bono Binario</option>
-                                                <option value="5">Bono Renovaci&oacute;n</option>
-                                                <option value="2">Recargas de Bitcoin</option>
+                                                <option value="4">Bono Apuestas</option>
                                              </select>
                                           </div>
                                        </div>

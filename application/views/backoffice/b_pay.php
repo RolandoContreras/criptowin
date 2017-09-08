@@ -9,8 +9,7 @@ $today = date("Y-m-d");
                 <h1 class="title text-uppercase"><?php echo replace_vocales_voculeshtml("Pagos");?></h1>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 pull-right count-down-box">
-                <a href="/backend/bonuses/start-up" class="white">until next bonus round.</a>
-                <div id="myCounter" data-countdown="1494244800000"></div>
+                <a class="white"><?php echo "Precio del BITCOIN: "?><?php echo $price_btc;?></a>
             </div>
         </div>
          <!-- Page content-->
@@ -25,8 +24,8 @@ $today = date("Y-m-d");
                         <div class="panel-body">
                             <div role="alert" class="alert alert-info">
                                 <strong>Nota:</strong><br>
-                            El monto minimo para solicitar el pago es de $15.<br>Los pedidos de cobro se efectúan de lunes a viernes.<br>Los pagos por usufructo se efectuarán después de 35 días de la fecha de activación.
-                            </div>
+                            <?php echo replace_vocales_voculeshtml("El monto mínimo para solicitar el pago es de $15.");?><br><?php echo replace_vocales_voculeshtml("Los pedidos de cobro se efectúan de lunes a sábado.");?><br><?php echo replace_vocales_voculeshtml("Los pagos por rentabilidad efectuarán después de 07 días de la fecha de activación.");?>
+                            </div><br/>
                             <div class="form-inline" >
                                 <p class="lead">
                                 Saldo Disponible en Billetera:
@@ -37,7 +36,7 @@ $today = date("Y-m-d");
                                 <select id="monto" name="monto" class="form-control">
                                     <option value="">***Seleccionar***</option>
                                     <option value="1"><?php if(count($obj_balance_red)>0){echo "$".$obj_balance_red." - "."Balance por Red";}else{echo "$0.00 - Balance por Red";}?></option>
-                                    <option value="2" <?php if($today < $date_limit_pay){echo "disabled='disabled'";}?>><?php if(count($normal_account)>0){echo "$".$normal_account." - "."Balance por Usufructo";}else{echo "$0.00 - Balance por Usufructo";}?></option>
+                                    <option value="2" <?php if($today < $date_limit_pay){echo "disabled='disabled'";}?>><?php if(count($normal_account)>0){echo "$".$normal_account." - "."Balance por Rentabilida";}else{echo "$0.00 - Balance por Rentabilidad";}?></option>
                                     <option value="3" <?php if($today < $date_limit_pay){echo "disabled='disabled'";}?>><?php if(count($obj_balance_disponible)>0){echo "$".$obj_balance_disponible." - "."Ambos Balances";}else{echo "$0.00 - Ambos Balances";}?></option>
                                 </select>
                                 </div>

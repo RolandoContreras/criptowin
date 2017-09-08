@@ -95,8 +95,6 @@ class B_wallet extends CI_Controller {
         $this->tmp_backoffice->set("price_btc",$price_btc);   
         $this->tmp_backoffice->set("obj_balance_disponible",$obj_balance_disponible); 
         $this->tmp_backoffice->set("obj_balance",$obj_balance);   
-        $this->tmp_backoffice->set("normal_account",$normal_account);
-        $this->tmp_backoffice->set("mandatory",$mandatory);
         $this->tmp_backoffice->set("obj_commissions",$obj_commissions);
         $this->tmp_backoffice->render("backoffice/b_wallet");
 	}

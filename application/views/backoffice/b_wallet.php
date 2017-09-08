@@ -11,73 +11,36 @@
           
          <!-- Page content-->
          <div class="content-wrapper">
-             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                  <!-- START widget-->
-                  <div class="panel widget bg-green">
-                     <div class="row row-table">
-                        <div class="col-xs-4 text-center bg-green-dark pv-lg">
-                           <em class="icon-diamond fa-3x"></em>
+             <div class="row fix-box-height package-box-fix mt-30">
+               <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="well media media-badges box-height box">
+                            <div class="media-body media-middle">
+                            <h5 class="media-heading text-uppercase title-small">TOTAL PAGADO</h5>
+                            <p class="title"><?php if(count($obj_balance)>0){echo "$".number_format($obj_balance,'2','.',',');}else{echo "$0.00";}?></p>
+                            <div class="mt-10"></div>
+                            </div>
+                        <div class="media-right media-middle">
+                            <i class="fa fa-btc fa-4x" aria-hidden="true"></i>
                         </div>
-                        <div class="col-xs-8 pv-lg">
-                            <div class="h2 mt0"><?php if(count($obj_balance)>0){echo "$".$obj_balance;}else{echo "$0.00";}?></div>
-                           <div class="text-uppercase">Balance total</div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-                
-                  <div class="col-lg-3 col-md-6 col-sm-12">
-                  <!-- START widget-->
-                  <div class="panel widget bg-purple">
-                     <div class="row row-table">
-                        <div class="col-xs-4 text-center bg-purple-dark pv-lg">
-                           <em class="icon-wallet fa-3x"></em>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="well media media-badges box-height box">
+                            <div class="media-body media-middle">
+                            <h5 class="media-heading text-uppercase title-small">BALANCE POR DISPONER</h5>
+                            <p class="title"><?php if(count($obj_balance)>0){echo "$".number_format($obj_balance,'2','.',',');}else{echo "$0.00";}?></p>
+                            <div class="mt-10">
+                            </div>
+                            </div>
+                        <div class="media-right media-middle">
+                            <i class="fa fa-credit-card-alt fa-3x" aria-hidden="true"></i>
                         </div>
-                        <div class="col-xs-8 pv-lg">
-                            <div class="h2 mt0"><?php if(count($obj_balance_disponible)>0){echo "$".$obj_balance_disponible;}else{echo "$0.00";}?></div>
-                            <input type="hidden" id="balance" name="balance" value="<?php if(count($obj_balance_disponible)>0){echo $obj_balance_disponible;}else{echo "0.00";}?>" />
-                           <div class="text-uppercase">Balance total disponible</div>
                         </div>
-                     </div>
-                  </div>
-               </div> 
-                 
-                 <?php 
-                 if($obj_customer->date_start < '2017-01-10'){ ?>
-                     <div class="col-lg-3 col-md-6 col-sm-12">
-                  <!-- START widget-->
-                  <div class="panel widget bg-danger">
-                     <div class="row row-table">
-                        <div class="col-xs-4 text-center bg-danger-dark pv-lg">
-                           <em class="icon-wallet fa-3x"></em>
-                        </div>
-                        <div class="col-xs-8 pv-lg">
-                            <div class="h2 mt0"><?php if(count($normal_account)>0){echo "$".$normal_account;}else{echo "$0.00";}?></div>
-                           <div class="text-uppercase">Balance Cuenta Normal</div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-                 
-              <div class="col-lg-3 col-md-6 col-sm-12">
-                  <!-- START widget-->
-                  <div class="panel widget bg-warning">
-                     <div class="row row-table">
-                        <div class="col-xs-4 text-center bg-warning-dark pv-lg">
-                           <em class="icon-wallet fa-3x"></em>
-                        </div>
-                        <div class="col-xs-8 pv-lg">
-                            <div class="h2 mt0"><?php if(count($mandatory)>0){echo "$".$mandatory;}else{echo "$0.00";}?></div>
-                           <div class="text-uppercase">Balance Cuenta Mandatoria</div>
-                        </div>
-                     </div>
-                  </div>
-              </div>  
-              <?php } ?>
-                 
-                 
-
+                    </div>
+                </div>
+            </div>
             <div class="row">
                <div class="col-lg-12">
                     
