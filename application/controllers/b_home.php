@@ -46,9 +46,11 @@ class B_home extends CI_Controller {
                                         );
            $obj_customer = $this->obj_customer->get_search_row($params);
            
-           //SET 5 VECES MAS EL VALOR DEL PAQUETE
-           $points_left = $obj_customer->point_left / 0.12;
-           $points_rigth = $obj_customer->point_rigth / 0.12;
+              $points_left = $obj_customer->point_left / 0.12;
+               $points_rigth = $obj_customer->point_rigth / 0.12;
+           
+           
+           
            
            //GET TOTAL AMOUNT
                 $params_total = array(
@@ -70,8 +72,7 @@ class B_home extends CI_Controller {
            $obj_total = $obj_commissions->total;
            $obj_balance = $obj_commissions->balance;
            
-             $today = date("Y-m-d");
-             //GET DATE END CONTRACT
+           //GET DATE END CONTRACT
              $date_end_contract = $obj_customer->date_end;
              
               //SELECT FRANCHISE_ID 
