@@ -57,7 +57,7 @@
 		<header class="site-header">
 		  <div class="site-logo">
                       <a href="<?php echo site_url().'backoffice';?>">
-                          <img src="<?php echo site_url().'static/page_front/images/logo_assest_2.png';?>" width="200px" alt="Logo Criptowin">
+                          <img style="margin-left: -20% !important" src="<?php echo site_url().'static/page_front/images/logo_assest_2.png';?>" width="200px" alt="Logo Criptowin">
                       </a>
                   </div>
 		  <div class="sidebar-collapse hidden-xs">
@@ -74,13 +74,63 @@
 		<!-- Main navigation -->
 		<!-- Main navigation -->
 		<ul id="side-nav" class="main-menu navbar-collapse collapse">
-                    <li class="has-sub"><a href="<?php echo site_url().'backoffice'?>"><i class="fa fa-tachometer fa-lg"></i><span class="title">Dashboard</span></a></li>
-                    <li class="has-sub"><a href="<?php echo site_url().'backoffice/profile'?>"><i class="fa fa-address-book fa-lg"></i><span class="title">Mi Perfil</span></a></li>
+                     <?php 
+                            if($_SESSION['customer']['active']==1){
+                                $title_active='Activo';
+                                $style_active='label-success';
+                            }else{
+                                $title_active='Inactivo';
+                                $style_active='label-danger';
+                            }
+                            ?>
+                     <?php 
+                                    $url = explode("/",uri_string()); 
+                                    $style_inicio = "";
+                                    $style_misdatos = "";
+                                    $style_upgrade = "";
+                                    $style_comisiones = "";
+                                    $style_mired = "";
+                                    $style_billetera = "";
+                                    $style_pagos = "";
+                                    if(isset($url[1])){
+                                        switch ($url[1]) {
+                                            ////////
+                                                    case "profile":
+                                                        $style_misdatos = "a_active";
+                                                        break;
+                                                    case "info-productos":
+                                                        $infoproductos = "a_active";
+                                                        break;
+                                                    case "upgrade":
+                                                        $style_upgrade = "a_active";
+                                                        break;
+                                                    case "binario":
+                                                        $style_mired = "a_active";
+                                                        break;
+                                                    case "comisiones":
+                                                        $style_comisiones = "a_active";
+                                                        break;
+                                                    case "billetera":
+                                                        $style_billetera = "a_active";
+                                                        break;
+                                                    case "cobros":
+                                                        $style_pagos = "a_active";
+                                                        break;
+                                                    default:
+                                                         $title = "Inicio";
+                                            }
+                                    }else{
+                                        $style_inicio = "a_active";
+                                    }
+                                    ?>  
+                        <li class="has-sub"><a class="<?php echo $style_active;?>"><em class="icon-star"></em><span class="title"><?php echo $title_active;?></span></a></li>
+                        <li class="has-sub"><a href="<?php echo site_url().'backoffice'?>" class="<?php echo $style_inicio;?>"><i class="fa fa-tachometer fa-lg"></i><span class="title">Dashboard</span></a></li>
+                        <li class="has-sub"><a href="<?php echo site_url().'backoffice/profile'?>" class="<?php echo $style_misdatos;?>"><i class="fa fa-address-book fa-lg"></i><span class="title">Mi Perfil</span></a></li>
 			<li class="has-sub"><a href="#"><i class="fa fa-arrow-up fa-lg"></i><span class="title">Upgrade</span></a></li>
-			<li class="has-sub"><a href="<?php echo site_url().'backoffice/binario'?>"><i class="fa fa-cubes fa-lg"></i><span class="title">Binario</span></a></li>
-			<li class="has-sub"><a href="<?php echo site_url().'backoffice/comisiones'?>"><i class="fa fa-area-chart fa-lg"></i><span class="title">Mis Comisiones</span></a></li>
-			<li class="has-sub"><a href="<?php echo site_url().'backoffice/billetera'?>"><i class="fa fa-btc fa-lg"></i><span class="title">Billetera</span></a></li>
-                        <li class="has-sub"><a href="<?php echo site_url().'backoffice/cobros'?>"><i class="fa fa-university fa-lg"></i><span class="title">Cobros</span></a></li>
+			<li class="has-sub"><a href="<?php echo site_url().'backoffice/binario'?>" class="<?php echo $style_mired;?>"><i class="fa fa-cubes fa-lg"></i><span class="title">Binario</span></a></li>
+			<li class="has-sub"><a href="<?php echo site_url().'backoffice/comisiones'?>" class="<?php echo $style_comisiones;?>"><i class="fa fa-area-chart fa-lg"></i><span class="title">Mis Comisiones</span></a></li>
+			<li class="has-sub"><a href="<?php echo site_url().'backoffice/billetera'?>" class="<?php echo $style_billetera;?>"><i class="fa fa-btc"></i><span class="title">Billetera</span></a></li>
+                        <li class="has-sub"><a href="<?php echo site_url().'backoffice/cobros'?>" class="<?php echo $style_pagos;?>"><i class="fa fa-university fa-lg"></i><span class="title">Cobros</span></a></li>
 		</ul>
 		<!-- /main navigation -->		
   </div>
@@ -97,14 +147,14 @@
 			<ul class="user-info pull-left">          
                             <li class="profile-info dropdown">
                                 <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false"> 
-                                    <img width="44" class="img-circle avatar" alt="" src="<?php echo site_url().'static/backoffice/images/avatar/avatar.png';?>">Rolando Contreras &nbsp;&nbsp;<i class="fa fa-arrow-down" aria-hidden="true"></i>
+                                    <img width="44" class="img-circle avatar" alt="" src="<?php echo site_url().'static/backoffice/images/avatar/avatar.png';?>"><?php echo $_SESSION['customer']['name'];?> &nbsp;&nbsp;<i class="fa fa-arrow-down" aria-hidden="true"></i>
                                 </a>
 
                                           <!-- User action menu -->
                               <ul class="dropdown-menu">
 
                                 <li><a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i>My profile</a></li>
-                                <li><a href="#"><i class="fa fa-comment" aria-hidden="true"></i>Messages</a></li>
+                                <li><a href="#"><i class="fa fa-comment" aria-hidden="true"></i>Mensajes</a></li>
                                             <li class="divider"></li>
                                             <li><a href="<?php echo site_url().'login/logout';?>"><i class="fa fa-sign-out fa-lg"></i>Salir</a></li>
                               </ul>

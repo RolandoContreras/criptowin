@@ -151,6 +151,7 @@ h6 {
 }
 .title {
 	font-weight: 400;
+        margin-left: 20%;
 }
 h3.title {
 	font-size: 18px;
@@ -269,7 +270,8 @@ a.text-purple:hover, a.text-purple:focus {
 /* Sidebar
    ========================================================================== */
 .page-sidebar {
-	background-color: #1D1D1D;
+	/*background-color: #1D1D1D;*/
+        background-color: #3a3f51;
 	color: #b4b5b8;
 	display: table-cell;
 	height: 100%;
@@ -287,6 +289,7 @@ a.text-purple:hover, a.text-purple:focus {
 .site-logo {
 	float: left;
 	position: relative;
+        margin-left: 25% !important;
 }
 .page-container.sidebar-collapsed .site-header {
 	padding: 20px;
@@ -363,10 +366,16 @@ ul.main-menu > li.active > a, ul.main-menu > li > a:hover, ul.main-menu > li > a
 	background-color: #00b8ce;
 	color: #FFFFFF;
 }
-ul.main-menu .nav > li > a:hover, ul.main-menu .nav > li > a:focus, ul.main-menu .nav > li.has-sub.active > a {
-	background-color: #1D1D1D;
+ul.main-menu > li.active > a, ul.main-menu > li > a:hover, ul.main-menu > li > a:focus {
+	background-color: #00b8ce;
 	color: #FFFFFF;
 }
+
+.a_active{
+    background-color: #00b8ce !important; 
+    color: #FFFFFF;
+}
+
 ul.main-menu .nav > li > a {
 	color: #a6a5a5;
 }
