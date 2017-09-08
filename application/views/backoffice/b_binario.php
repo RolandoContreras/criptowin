@@ -127,7 +127,7 @@
                                                                             break;
                                                                         }
                                                                         ?>
-                                                                        <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" class="thumb96">
+                                                                        <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" width="96">
                                                                     </div>
                                                             </div>
                                                         </a>
@@ -171,7 +171,7 @@
                                                                             break;
                                                                         }
                                                                             ?>
-                                                                            <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" class="thumb96">
+                                                                            <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" width="96">
                                                                         </div>
                                                                 </div>
                                                                 </a>
@@ -215,7 +215,7 @@
                                                                                                 break;
                                                                                             }
                                                                                         ?>
-                                                                                        <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" class="thumb96">
+                                                                                        <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" width="96">
                                                                                     </div>
                                                                             </div>
                                                                             </a>
@@ -260,7 +260,7 @@
                                                                                             break;
                                                                                         }
                                                                                     ?>
-                                                                                    <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" class="thumb96">
+                                                                                    <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" width="96">
                                                                                 </div>
                                                                         </div>
                                                                         </a>
@@ -307,7 +307,7 @@
                                                                             break;
                                                                         }
                                                                     ?>
-                                                                    <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" class="thumb96">
+                                                                    <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" width="96">
                                                                 </div>
                                                         </div>
                                                         </a>
@@ -351,7 +351,7 @@
                                                                                                 break;
                                                                                             }
                                                                                         ?>
-                                                                                        <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" class="thumb96">
+                                                                                        <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" width="96">
                                                                                     </div>
                                                                             </div>
                                                                             </a>
@@ -396,7 +396,7 @@
                                                                                             break;
                                                                                         }
                                                                                     ?>
-                                                                                    <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" class="thumb96">
+                                                                                    <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" width="96">
                                                                                 </div>
                                                                         </div>
                                                                         </a>
@@ -449,7 +449,7 @@
                                                                                 break;
                                                                             }
                                                                         ?>
-                                                                        <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" class="thumb96">
+                                                                        <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" width="96">
                                                                     </div>
                                                             </div>
                                                             </a>
@@ -493,7 +493,7 @@
                                                                                     break;
                                                                                 }
                                                                             ?>
-                                                                            <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" class="thumb96">
+                                                                            <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" width="96">
                                                                         </div>
                                                                 </div>
                                                                 </a>
@@ -537,7 +537,7 @@
                                                                                                 break;
                                                                                             }
                                                                                         ?>
-                                                                                        <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" class="thumb96">
+                                                                                        <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" width="96">
                                                                                     </div>
                                                                             </div>
                                                                             </a>
@@ -582,7 +582,7 @@
                                                                                             break;
                                                                                         }
                                                                                     ?>
-                                                                                    <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" class="thumb96">
+                                                                                    <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" width="96">
                                                                                 </div>
                                                                         </div>
                                                                         </a>
@@ -629,7 +629,7 @@
                                                                             break;
                                                                         }
                                                                     ?>
-                                                                    <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" class="thumb96">
+                                                                    <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" width="96">
                                                                 </div>
                                                         </div>
                                                         </a>
@@ -673,7 +673,7 @@
                                                                                                     break;
                                                                                                 }
                                                                                         ?>
-                                                                                        <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" class="thumb96">
+                                                                                        <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" width="96">
                                                                                     </div>
                                                                             </div>
                                                                             </a>
@@ -718,7 +718,7 @@
                                                                                             break;
                                                                                         }
                                                                                     ?>
-                                                                                    <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" class="thumb96">
+                                                                                    <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" width="96">
                                                                                 </div>
                                                                         </div>
                                                                         </a>
