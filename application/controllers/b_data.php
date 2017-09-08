@@ -67,7 +67,16 @@ class B_data extends CI_Controller {
 
          $obj_sponsor = $this->obj_customer->get_search_row($params);
          
+         //GET PRICE BTC
+            $params_price_btc = array(
+                                    "select" =>"",
+                                     "where" => "otros_id = 1");
+                
+           $obj_otros = $this->obj_otros->get_search_row($params_price_btc); 
+           $price_btc = "$".number_format($obj_otros->precio_btc,2);
+         
          //SEND DATA TO VIEW  
+         $this->tmp_backoffice->set("price_btc",$price_btc);
          $this->tmp_backoffice->set("obj_customer",$obj_customer);
          $this->tmp_backoffice->set("obj_sponsor",$obj_sponsor);
          $this->tmp_backoffice->render("backoffice/b_data");

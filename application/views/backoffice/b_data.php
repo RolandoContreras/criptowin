@@ -4,6 +4,7 @@
             <h1 class="title text-uppercase">Perfil</h1>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 pull-right count-down-box">
+            <a class="white"><?php echo "Precio del BITCOIN: "?><?php echo $price_btc;?></a>
         </div>
     </div> 
     <!--SPINNER-->
@@ -11,8 +12,7 @@
     <!--END SPINNER-->
     <div class="tab">
         <button class="tablinks active"  onclick="openCity(event, 'principal')"><b><?php echo replace_vocales_voculeshtml("INFORMACIÓN PRINCIPAL");?></b></button>
-        <button class="tablinks" onclick="openCity(event, 'payments')"><b><?php echo replace_vocales_voculeshtml("INFORMACIÓN DE PAGO");?></b></button>
-        <button class="tablinks" onclick="openCity(event, 'password')"><b><?php echo replace_vocales_voculeshtml("CONTRASEÑAS");?></b></button>
+        <button class="tablinks" onclick="openCity(event, 'payments')"><b><?php echo replace_vocales_voculeshtml("PAGO Y CONTRASEÑAS");?></b></button>
     </div>
     
                              
@@ -51,7 +51,7 @@
                             <div class="col-md-4 col-sm-6 border-left">
                                 <div class="form-group">
                                     <div class="media">
-                                        <div class="media-left"><i class="icon-envelope fa-3x"></i></div>
+                                        <div class="media-left"><i class="fa fa-envelope fa-3x"></i></div>
                                         <div class="media-body">
                                             <div class="control-label"><?php echo replace_vocales_voculeshtml("Dirección e-mail");?></div>
                                             <p class="form-control">
@@ -97,20 +97,27 @@
                                 <div data-behaviour="content">
                                     <div class="row">
                                         <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label"><?php echo "Fecha de Inicio :";?></label>
-                                                <p class="form-control"><span><?php echo formato_fecha_barras("$obj_customer->date_start");?></span></p>
+                                            <div class="media">
+                                                <div class="media-left"><i class="fa fa-calendar-check-o fa-3x"></i></div>
+                                                <div class="media-body">
+                                                     <label class="control-label"><?php echo "Fecha de Inicio :";?></label>
+                                                    <p class="form-control"><span><?php echo formato_fecha_barras("$obj_customer->date_start");?></span></p>
+                                                </div>
                                             </div>
                                         </div>
+                                        
                                         <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label"><?php echo "Fecha de Termino :";?></label>
-                                                <p class="form-control">
+                                            <div class="media">
+                                                <div class="media-left"><i class="fa fa-calendar-check-o fa-3x"></i></div>
+                                                <div class="media-body">
+                                                     <label class="control-label"><?php echo "Fecha de Termino :";?></label>
+                                                    <p class="form-control">
                                                     <span><?php echo formato_fecha_barras("$obj_customer->date_end");?></span>
                                                 </p>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                      </div>
                                 </div>
                             </div>
                         </div>
@@ -131,17 +138,22 @@
                                 <div data-behaviour="content">
                                     <div class="row">
                                         <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label"><?php echo replace_vocales_voculeshtml("País :");?></label>
-                                                <p class="form-control"><span><?php echo $obj_customer->pais;?></span></p>
+                                            <div class="media">
+                                                <div class="media-left"><i class="fa fa-globe fa-3x"></i></div>
+                                                <div class="media-body">
+                                                     <label class="control-label"><?php echo replace_vocales_voculeshtml("País :");?></label>
+                                                    <p class="form-control"><span><?php echo $obj_customer->pais;?></span></p>
+                                                </div>
                                             </div>
                                         </div>
+                                        
                                         <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label"><?php echo replace_vocales_voculeshtml("Región :");?></label>
-                                                <p class="form-control">
-                                                    <span><?php echo $obj_customer->region;?></span>
-                                                </p>
+                                            <div class="media">
+                                                <div class="media-left"><i class="fa fa-globe fa-3x"></i></div>
+                                                <div class="media-body">
+                                                     <label class="control-label"><?php echo replace_vocales_voculeshtml("Región :");?></label>
+                                                     <p class="form-control"><span><?php echo $obj_customer->region;?></span></p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -167,7 +179,6 @@
                         </div>
                     </div>
                 </div>
-            
                 <div class="row">
                     <div class="col-md-6">
                         <div class="panel panel-default panel-form fix-info">
@@ -180,13 +191,23 @@
                             <div class="panel-body">
                                 <div data-behaviour="content">
                                     <div class="form-group has-feedback">
-                                        <label class="control-label">Fecha de Nacimiento :</label>
-                                        <p class="form-control"><span><?php echo formato_fecha_barras($obj_customer->birth_date);?></span></p>
+                                            <div class="media">
+                                                <div class="media-left"><i class="fa fa-calendar fa-3x"></i></div>
+                                                <div class="media-body">
+                                                     <label class="control-label"><?php echo replace_vocales_voculeshtml("Fecha de Nacimiento :");?></label>
+                                                     <p class="form-control"><span><?php echo formato_fecha_barras($obj_customer->birth_date);?></span></p>
+                                                </div>
+                                            </div>
                                     </div>
                                 <hr class="style-1"/>
                                     <div class="form-group has-feedback">
-                                        <label class="control-label"><?php echo replace_vocales_voculeshtml("País de Nacimiento");?></label>
-                                        <p class="form-control"><span><?php echo $obj_customer->pais;?></span></p>
+                                          <div class="media">
+                                                <div class="media-left"><i class="fa fa-calendar fa-3x"></i></div>
+                                                <div class="media-body">
+                                                     <label class="control-label"><?php echo replace_vocales_voculeshtml("País de Nacimiento");?></label>
+                                                     <p class="form-control"><span><?php echo $obj_customer->pais;?></span></p>
+                                                </div>
+                                            </div>
                                     </div>
                                 </div>
                             </div>
@@ -204,12 +225,15 @@
                         <div class="panel-body">
                             <div data-behaviour="content">
                                 <div class="form-group has-feedback" data-behaviour="element-content">
-                                    <label class="control-label">
-                                    Pasaporte / Numero de Identidad:
-                                    </label>
-                                    <p class="form-control relative">
-                                    <span><?php echo $obj_customer->dni;?></span>
-                                    </p>
+                                    
+                                    <div class="media">
+                                                <div class="media-left"><i class="fa fa-id-card fa-3x"></i></div>
+                                                <div class="media-body">
+                                                     <label class="control-label"><?php echo replace_vocales_voculeshtml("Pasaporte / Numero de Identidad:");?></label>
+                                                     <p class="form-control"><span><?php echo $obj_customer->dni;?></span></p>
+                                                </div>
+                                            </div>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -304,54 +328,6 @@
         <div class="col-xs-12">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="panel panel-default panel-form">
-                        <div class="panel-heading text-uppercase">
-                            <div class="clearfix">
-                            <h3 class="title">Datos Bancarios</h3>
-                                <div class="pull-right">
-                                        <button type="button" onclick="alter_bank();" class="btn btn-primary btn-sm edit-btn">
-                                    <i class="fa fa-floppy-o" aria-hidden="true"></i>Guardar </button>
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="style-2"/>
-                        <div class="panel-body">
-                            <div data-behaviour="content">
-                                <div class="form-group">
-                                <label class="control-label">Nombre del Títular de la Cuenta:</label>
-                                    <p class="form-control">
-                                        <input type="text" id="titular_name" class="form-control" value="<?php echo $obj_customer->titular_name;?>">
-                                    </p>
-                                </div>
-                            <hr class="style-1"/>
-                                <div class="form-group">
-                                <label class="control-label">Nombre del Banco:</label>
-                                <p class="form-control">
-                                    <input type="text" id="bank_name" class="form-control" disabled="disabled" value="<?php echo replace_vocales_voculeshtml("Banco Internacional del Perú - INTERBANK");?>">
-                                </p>
-                                </div>
-                            <hr class="style-1"/>
-                                <div class="form-group">
-                                <label class="control-label">País del Banco:</label>
-                                <p class="form-control">
-                                    <span data-target="country"><?php echo replace_vocales_voculeshtml("Perú");?></span>
-                                </p>
-                                </div>
-                            <hr class="style-2"/>
-                                <div class="form-group">
-                                    <label class="control-label"><?php echo replace_vocales_voculeshtml("Número de Cuenta Dolares:");?></label>
-                                    <div class="form-group">
-                                        <p class="form-control">
-                                            <input type="text" id="bank_account" class="form-control" value="<?php echo $obj_customer->bank_account;?>">
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6">
                     <div class="panel panel-default panel-form" data-behaviour="container">
                         <div class="panel-heading text-uppercase clearfix">
                             <h3 class="title pull-left"><?php echo replace_vocales_voculeshtml("Billetera de bitcoin");?></h3>
@@ -376,111 +352,60 @@
                     </div>
 
                 </div>
+                
+                <div class="col-md-6">
+                        <form name="form">
+                        <div class="panel panel-default panel-form">
+                            <div class="panel-heading text-uppercase"><h3><?php echo replace_vocales_voculeshtml("Cambiar Contraseña");?></h3></div>
+                            <hr class="style-2">
+                            <div class="panel-body">
+                                <div class="">
+                                    <div class="row">
+                                    <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label class="control-label required"><?php echo replace_vocales_voculeshtml("Contraseña Actual");?></label>
+                                        <input type="password" id="password" name="password" onblur="validate_password(this.value);" class="form-control form-control" maxlength="50" data-constraints="@NotEmpty"/>
+                                        <!--<input type="password" required="required" class="form-control form-control"/>-->
+                                        <span class="alert-0"></span>
+                                    </div>
+                                    </div>
+                                    </div>
+
+                                    <div class="row">
+                                    <div class="col-sm-12">
+                                    <div class="form-group"><label class="control-label required"><?php echo replace_vocales_voculeshtml("Nueva Contraseña");?></label>
+                                        <input type="password" id="password_one" name="password_one" disabled  required="required" class="form-control form-control"/>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="row">
+                                    <div class="col-sm-12">
+                                    <div class="form-group"><label class="control-label required"><?php echo replace_vocales_voculeshtml("Repita Nueva Contraseña");?></label>
+                                        <input type="password" id="password_two" name="password_two" required="required" disabled  class="form-control form-control"/></div>
+
+                                    </div>
+                                    </div>
+                                <hr class="style-1">
+                                    <div class="row">
+                                        <div class="mb-10">
+                                            <a class="btn btn-primary btn-block" onclick="alter_password();" name="button_password" style="word-wrap: break-word; white-space: normal !important;"><?php echo replace_vocales_voculeshtml("Cambiar Contraseña");?></a>
+                                            <span style="position: relative;left: 25%;top: 50%; transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);" class="alert-1"></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                     </form>
+                </div>
+                
             </div>
         </div>
     </div> 
 </div>    
-    
- <div id="password" class="tabcontent">
-    <div class="row ml-custom">
-        <div class="col-xs-12">
-            <div class="row">
-                <div class="col-md-9">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <form name="form">
-                            <div class="panel panel-default panel-form">
-                                <div class="panel-heading text-uppercase"><h3><?php echo replace_vocales_voculeshtml("Cambiar Contraseña");?></h3></div>
-                                <hr class="style-2">
-                                <div class="panel-body">
-                                    <div class="">
-                                        <div class="row">
-                                        <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <label class="control-label required"><?php echo replace_vocales_voculeshtml("Contraseña Actual");?></label>
-                                            <input type="password" id="password" name="password" onblur="validate_password(this.value);" class="form-control form-control" maxlength="50" data-constraints="@NotEmpty"/>
-                                            <!--<input type="password" required="required" class="form-control form-control"/>-->
-                                            <span class="alert-0"></span>
-                                        </div>
-                                        </div>
-                                        </div>
-                                    
-                                        <div class="row">
-                                        <div class="col-sm-12">
-                                        <div class="form-group"><label class="control-label required"><?php echo replace_vocales_voculeshtml("Nueva Contraseña");?></label>
-                                            <input type="password" id="password_one" name="password_one" disabled  required="required" class="form-control form-control"/>
-                                        </div>
-                                        </div>
-                                        </div>
-                                        <div class="row">
-                                        <div class="col-sm-12">
-                                        <div class="form-group"><label class="control-label required"><?php echo replace_vocales_voculeshtml("Repita Nueva Contraseña");?></label>
-                                            <input type="password" id="password_two" name="password_two" required="required" disabled  class="form-control form-control"/></div>
-                                            
-                                        </div>
-                                        </div>
-                                    <hr class="style-1">
-                                        <div class="row">
-                                            <div class="mb-10">
-                                                <a class="btn btn-primary btn-block" onclick="alter_password();" name="button_password" style="word-wrap: break-word; white-space: normal !important;"><?php echo replace_vocales_voculeshtml("Cambiar Contraseña");?></a>
-                                                <span style="position: relative;left: 25%;top: 50%; transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);" class="alert-1"></span>
-                                            </div>
-                                        </div>
-                                    
-                                    </div>
-                                </div>
-                            </div>
-                         </form>
-</div>
-<div class="col-md-6">
-    <div class="panel panel-default panel-form">
-        <div class="panel-heading text-uppercase"><h3>Change transaction password</h3></div>
-        <hr class="style-2">
-        <div class="panel-body">
-            <div class="">
-            <form name="change_transaction_password" method="post">
-            <div class="alert hidden" data-reset-password="true"></div>
-                <div class="row">
-                <div class="col-sm-12">
-                    <div class="form-group"><label class="control-label required">Current transaction password</label><input type="password" disabled="disable" id="" name="" required="required" class="form-control form-control"/></div>
-                </div>
-                </div>
-            <!--<hr class="style-1">-->
-                <div class="row">
-                <div class="col-sm-12">
-                <div class="form-group"><label class="control-label required" for="">New transaction password</label><input type="password" disabled="disable" id="" name="change_transaction_password[new_transaction_password][first]" required="required" class="form-control form-control"/></div>
-                </div>
-                </div>
-            <!--<hr class="style-1">-->
-                <div class="row">
-                <div class="col-sm-12">
-                <div class="form-group"><label class="control-label required" for="">New transaction password again</label><input type="password" disabled="disable" id="" name="change_transaction_password[new_transaction_password][second]" required="required" class="form-control form-control"/></div>
-                </div>
-                </div>
-            <hr class="style-1">
-                <div class="row">
-                <div class="col-md-12 mb-10">
-                    <button type="submit" disabled="disabled" id="" name="" class="btn-success btn-block break-word btn">Cambiar Contraseña de transacción</button>
-                </div>
-                </div>
-            
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-  </div> 
-
 <script src="<?php echo site_url().'static/assets/spin/js/spin.min.js';?>"></script>    
 <script src="<?php echo site_url().'static/backoffice/js/data.js';?>"></script>
-<!--<button type="button" onclick="alter_password();" class="btn btn-sm btn-primary bg-danger-dark"><?php echo replace_vocales_voculeshtml("Guardar Contraseña");?></button>-->
-               
 </section>
-
 <script>
 function openCity(evt, cityName) {
     // Declare all variables
