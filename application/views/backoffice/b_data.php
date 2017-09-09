@@ -269,11 +269,11 @@
                     <hr class="style-2"/>
                     <div class="panel-body">
                         <div>
-                        <input type="text" class="form-control" data-select value="<?php echo site_url().'registro/afiliate/'.str_to_minuscula($obj_customer->username);?>" readonly="readonly">
+                        <input type="text" class="form-control" data-select value="<?php echo site_url().'register/afiliate/'.str_to_minuscula($obj_customer->username);?>" readonly="readonly">
                         <hr class="style-2"/>
                             <div class="form-group mb-10">
                                 <div class="mb-10">
-                                <a href="<?php echo site_url().'registro/afiliate/'.str_to_minuscula($obj_customer->username);?>" target="_blank" class="btn btn-primary btn-block" style="word-wrap: break-word; white-space: normal !important;">
+                                <a href="<?php echo site_url().'register/afiliate/'.str_to_minuscula($obj_customer->username);?>" target="_blank" class="btn btn-primary btn-block" style="word-wrap: break-word; white-space: normal !important;">
                                 Ckick aquí para agregar a un nuevo miembro</a>
                                 </div>
                             </div>

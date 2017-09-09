@@ -54,6 +54,8 @@ $route['backoffice/cobros'] = "b_pay";
 $route['logout'] = "b_home/logout";
 $route['backoffice/misdatos'] = "b_data";
 
+$route['register/afiliate/([0-9a-z_-]+)'] = "register/index/$1";
+
 $route['referred'] = "plan";
 $route['binary'] = "plan";
 $route['bets'] = "plan";

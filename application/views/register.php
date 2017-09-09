@@ -26,9 +26,11 @@
                                     </header>
                                     <div class="height-50"></div>
                                     <form class="contact" method="post" action="<?php echo site_url().'register/crear_registro'?>">
+                                        <div class="row">
                                     <?php if(isset($obj_customer)){ ?>
-                                        <a class="blog_post_title" style="font-size: 22px !important;">Patrocinador</a>
-                                                <label data-add-placeholder>
+                                        <div class="col-md-12">
+                                            <div class="form-grp">
+                                                <label>Patrocinador</label>
                                                     <input type="text"  readonly="readonly" value="<?php  
                                                     if(isset($obj_customer->username)){
                                                         echo $obj_customer->username;
@@ -52,13 +54,14 @@
                                                     if(isset($obj_customer->position_temporal)){
                                                         echo $obj_customer->position_temporal;
                                                     }?>"/>
-                                                </label>
+                                            </div>
+                                        </div>
                                     <?php }else{ ?>
                                         <input type="hidden"  readonly="readonly" id="customer_id" name="customer_id" value="1"/>
                                         <input type="hidden"  readonly="readonly" id="pierna_customer"  name="pierna_customer" value="1"/>
                                     <?php } ?>
                                    
-                                  <div class="row">
+                                  
                                     <div class="col-md-12">
                                       <div class="form-grp">
                                         <label>Usuario</label>

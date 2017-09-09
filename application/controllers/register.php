@@ -92,6 +92,7 @@ class Register extends CI_Controller {
             $customer_id = trim($this->input->post('customer_id'));
             
             $pierna_customer = trim($this->input->post('pierna_customer'));
+            
             //PUT CUSTOMER_ID LIKE PAREND
             $parent_id = $customer_id;
 

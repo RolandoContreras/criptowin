@@ -1,15 +1,14 @@
 function validate_username(username){
         $.ajax({
         type: "post",
-        url: "register/validate_username",
+        url: site + "register/validate_username",
         dataType: "json",
         data: {username: username},
         success:function(data){            
-                if(data.message == "true"){         
-                $(".alert-0").removeClass('text-danger').addClass('text-danger').html(data.print)
-                
+            if(data.message == "true"){         
+                $(".alert-0").removeClass('text-success').addClass('text-danger').html(data.print);
             }else{
-                $(".alert-0").removeClass('text-success').addClass('text-success').html(data.print);
+                $(".alert-0").removeClass('text-danger').addClass('text-success').html(data.print);
             }
         }            
     });
@@ -28,7 +27,7 @@ function validate_2passwordr(password2) {
 function validate_region(id) {
         $.ajax({
         type: "post",
-        url: "register/validate_region",
+        url: site + "register/validate_region",
         dataType: "json",
         data: {id: id},
         success:function(data){            
