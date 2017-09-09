@@ -15,6 +15,7 @@ class B_home extends CI_Controller {
         $this->get_session();
         /// VISTA
         $customer_id = $_SESSION['customer']['customer_id'];
+        
         $params = array(
                         "select" =>"(select count(customer_id) from customer where parents_id = $customer_id) as direct,
                                     customer.customer_id,

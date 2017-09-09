@@ -328,7 +328,7 @@
                                             <img src="<?php echo site_url()."static/backoffice/images/master.png";?>" alt="Cuenta Master" height="120" width="130"/>
                                         <?php break;
                                         case 7: 
-                                            $amount = "125 USD";?>
+                                            $amount = "0 USD";?>
                                              <img src="<?php echo site_url()."static/backoffice/images/membership.png";?>" alt="Cuenta Membership" height="120" width="130"/>
                                           <?php  break;
                                     }?>
