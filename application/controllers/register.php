@@ -259,7 +259,7 @@ class Register extends CI_Controller {
                 $_SESSION['customer'] = $data_customer_session;
                 
 //                SEND MESSAGES
-                $images = "static/page_front/images/bienvenido.jpg";
+                $images = "static/page_front/images/bienvenido1.jpg";
                 $img_path = "<img src='".site_url().'/'.$images."' alt='Bievenido' height='800' width='800'/>";
                 
                 // Si cualquier línea es más larga de 70 caracteres, se debería usar wordwrap()
