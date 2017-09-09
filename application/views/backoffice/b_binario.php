@@ -134,7 +134,7 @@
                                                         <!--USERNAME-->
                                                         <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n2_iz[2];?>" class=""><?php echo $n2_iz[6];?></a></span>
                                                      <?php }else{ ?>
-                                                        <img src="<?php echo site_url().'static/backoffice/images/membership.png';?>" alt="paquete membership" width="96"/>                                                            
+                                                        <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blank" width="96"/>                                                            
                                                     <?php } ?>
                                                 </span>
                                                 <!--//------END 2DO LEVEL LEFT------->
@@ -178,7 +178,7 @@
                                                         <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n3_iz[2];?>" class=""><?php echo $n3_iz[6];?></a></span>
                                                             
                                                             <?php }else{ ?>
-                                                             <img src="<?php echo site_url().'static/backoffice/images/membership.png';?>" alt="paquete membership" width="96"/>   
+                                                             <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blank" width="96"/>     
                                                             <?php } ?>
                                                     </span>
                                                             <!--//-----END 4TO LEVEL LEFT--------->
@@ -222,7 +222,7 @@
                                                                             <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n4_iz[2];?>" class=""><?php echo $n4_iz[6];?></a></span>
                                                                         
                                                                         <?php }else{ ?>
-                                                                        <img src="<?php echo site_url().'static/backoffice/images/membership.png';?>" alt="paquete membership" width="96"/>                                                             
+                                                                        <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blank" width="96"/>     
                                                                        <?php } ?>
                                                                     </span>
                                                                     <!--//-----END 4TO LEVEL LEFT--------->
@@ -267,7 +267,7 @@
                                                                         <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n4_2_iz[2];?>"><?php echo $n4_2_iz[6];?></a></span>
                                                                     
                                                                     <?php }else{ ?>
-                                                                        <img src="<?php echo site_url().'static/backoffice/images/membership.png';?>" alt="paquete membership" width="96"/>                                                              
+                                                                        <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blank" width="96"/>     
                                                                     <?php } ?>
                                                                     </span>
                                                                     <!--//-----END 4TO 2DO LEVEL LEFT--------->
@@ -314,7 +314,7 @@
                                                         <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n3_2_iz[2];?>"><?php echo $n3_2_iz[6];?></a></span>
                                                     
                                                         <?php }else{ ?>
-                                                            <img src="<?php echo site_url().'static/backoffice/images/membership.png';?>" alt="paquete membership" width="96"/>   
+                                                            <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blank" width="96"/>     
                                                          <?php } ?>
                                                     </span>
                                                             <!--//-----END 3ER 2DO LEVEL LEFT--------->
@@ -358,7 +358,7 @@
                                                                     <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n4_3_iz[2];?>"><?php echo $n4_3_iz[6];?></a></span>
                                                                         
                                                                         <?php }else{ ?>
-                                                                             <img src="<?php echo site_url().'static/backoffice/images/membership.png';?>" alt="paquete membership" width="96"/>   
+                                                                             <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blank" width="96"/>     
                                                                         <?php } ?>
                                                                     </span>
                                                                     <!--//-----END 4TO 3ER LEVEL LEFT--------->
@@ -403,7 +403,7 @@
                                                                     <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n4_4_iz[2];?>"><?php echo $n4_4_iz[6];?></a></span>
                                                                     
                                                                     <?php }else{ ?>
-                                                                        <img src="<?php echo site_url().'static/backoffice/images/membership.png';?>" alt="paquete membership" width="96"/>   
+                                                                        <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blank" width="96"/>     
                                                                     <?php } ?>
                                                                     </span>
                                                                     <!--//-----END 4TO LEVEL LEFT--------->
@@ -456,7 +456,7 @@
                                                     <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n2_de[2];?>"><?php echo $n2_de[6];?></a></span>
                                                         
                                                      <?php }else{ ?>
-                                                         <img src="<?php echo site_url().'static/backoffice/images/membership.png';?>" alt="paquete membership" width="96"/>   
+                                                         <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blank" width="96"/>     
                                                     <?php } ?>
                                                 </span>
                                                 <!--//------END 2DO LEVEL RIGHT------->
@@ -500,7 +500,7 @@
                                                         <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n3_2_de[2];?>"><?php echo $n3_2_de[6];?></a></span>
                                                             
                                                             <?php }else{ ?>
-                                                             <img src="<?php echo site_url().'static/backoffice/images/membership.png';?>" alt="paquete membership" width="96"/>   
+                                                             <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blank" width="96"/>     
                                                             <?php } ?>
                                                     </span>
                                                             <!--//-----3ER 2DO LEVEL RIGHT--------->
@@ -544,7 +544,7 @@
                                                                             <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n4_4_de[2];?>"><?php echo $n4_4_de[6];?></a></span>
                                                                         
                                                                         <?php }else{ ?>
-                                                                        <img src="<?php echo site_url().'static/backoffice/images/membership.png';?>" alt="paquete membership" width="96"/>   
+                                                                        <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blank" width="96"/>     
                                                                        <?php } ?>
                                                                     </span>
                                                                     <!--//-----END 4TO LEVEL LEFT--------->
@@ -589,7 +589,7 @@
                                                                     <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n4_3_de[2];?>"><?php echo $n4_3_de[6];?></a></span>
                                                                     
                                                                     <?php }else{ ?>
-                                                                        <img src="<?php echo site_url().'static/backoffice/images/membership.png';?>" alt="paquete membership" width="96"/>   
+                                                                        <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blank" width="96"/>     
                                                                     <?php } ?>
                                                                     </span>
                                                                     <!--//-----END 4TO 3ER LEVEL RIGHT--------->
@@ -636,7 +636,7 @@
                                                         <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n3_de[2];?>"><?php echo $n3_de[6];?></a></span>
                                                     
                                                         <?php }else{ ?>
-                                                            <img src="<?php echo site_url().'static/backoffice/images/membership.png';?>" alt="paquete membership" width="96"/>   
+                                                            <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blank" width="96"/>     
                                                          <?php } ?>
                                                     </span>
                                                             <!--//-----END 3ER LEVEL RIGHT--------->
@@ -680,7 +680,7 @@
                                                                             <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n3_de[2];?>"><?php echo $n4_2_de[6];?></a></span>
                                                                         
                                                                         <?php }else{ ?>
-                                                                             <img src="<?php echo site_url().'static/backoffice/images/membership.png';?>" alt="paquete membership" width="96"/>
+                                                                             <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blank" width="96"/>     
                                                                         <?php } ?>
                                                                     </span>
                                                                     <!--//-----END 4TO 2DO LEVEL RIGHT--------->
@@ -725,7 +725,7 @@
                                                                     <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n4_de[2];?>"><?php echo $n4_de[6];?></a></span>
                                                                     
                                                                     <?php }else{ ?>
-                                                                        <img src="<?php echo site_url().'static/backoffice/images/membership.png';?>" alt="paquete membership" width="96"/>   
+                                                                        <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blank" width="96"/>     
                                                                     <?php } ?>
                                                                     </span>
                                                                     <!--//-----END 4TO LEVEL RIGHT--------->

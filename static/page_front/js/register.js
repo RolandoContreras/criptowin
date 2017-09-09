@@ -78,8 +78,8 @@ function crear_registro() {
 var target = document.getElementById('spinner');
 var spinner = new Spinner(opts).spin(target);
     
-        clave = document.getElementById("clave").value;
-        repita_clave = document.getElementById("repita_clave").value;
+       var clave = document.getElementById("clave").value;
+       var  repita_clave = document.getElementById("repita_clave").value;
 
             if(clave == repita_clave){
                var customer_id = document.getElementById("customer_id").value;
