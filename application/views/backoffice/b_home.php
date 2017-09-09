@@ -125,6 +125,17 @@
                                 </div>
                             </div>
                         </a>
+                        <a href="<?php echo site_url('backoffice/binario');?>" class="col-flex box-height">
+                            <div class="media">
+                                <div class="media-body media-middle">
+                                <h5 class="media-heading">Patrocinios Directos</h5>
+                                <strong><?php echo $obj_customer->direct;?></strong>
+                                </div>
+                                <div class="media-right media-middle">
+                                    <i class="fa fa-users fa-3x" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </a>
                         <a href="<?php echo site_url('backoffice/misdatos');?>" class="col-flex box-height">
                             <div class="media">
                                 <div class="media-body media-middle">

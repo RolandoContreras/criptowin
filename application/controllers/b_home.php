@@ -45,7 +45,7 @@ class B_home extends CI_Controller {
                          "join" => array('franchise, customer.franchise_id = franchise.franchise_id',)
                                         );
             $obj_customer = $this->obj_customer->get_search_row($params);
-           
+            
             $points_left = $obj_customer->point_left / 0.12;
             $points_rigth = $obj_customer->point_rigth / 0.12;
            
