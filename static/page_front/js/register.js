@@ -52,7 +52,6 @@ function validate_region(id) {
 }
 
 function crear_registro() {
-    
     var opts = {
   lines: 13 // The number of lines to draw
 , length: 28 // The length of each line
@@ -80,7 +79,7 @@ var spinner = new Spinner(opts).spin(target);
     
        var clave = document.getElementById("clave").value;
        var  repita_clave = document.getElementById("repita_clave").value;
-
+       
             if(clave == repita_clave){
                var customer_id = document.getElementById("customer_id").value;
                var pierna_customer = document.getElementById("pierna_customer").value;
@@ -89,15 +88,17 @@ var spinner = new Spinner(opts).spin(target);
                var last_name = document.getElementById("last_name").value;
                var dni = document.getElementById("dni").value;
                var email = document.getElementById("email").value;
-               var dia = document.getElementById("dia").value;
-               var mes = document.getElementById("mes").value;
+               
                var address = document.getElementById("address").value;
                var telefono = document.getElementById("telefono").value;
                var city = document.getElementById("city").value;
-//               var ano = document.getElementById("ano").value;
-//               var pais = document.getElementById("pais").value;
-//               var region = document.getElementById("region").value;
-//               var city = document.getElementById("city").value;
+               
+               var dia = $("#dia").val();
+               var mes = $("#mes").val();  
+               var ano = $("#ano").val();  
+               var pais = $("#pais").val();  
+               var region = $("#region").val();  
+
 
                 $.ajax({
                        type: "post",
@@ -115,6 +116,9 @@ var spinner = new Spinner(opts).spin(target);
                               email: email,
                               dia: dia,
                               mes: mes,
+                              ano: ano,
+                              pais: pais,
+                              region: region,
                               city: city},
                           
                        success:function(data){            

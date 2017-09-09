@@ -189,11 +189,11 @@ class Register extends CI_Controller {
             $this->form_validation->set_rules('dni', 'dni', 'required|trim');
             $this->form_validation->set_rules('email', 'email', "required|trim");
             $this->form_validation->set_rules('city', 'city', 'required|trim');
-//            $this->form_validation->set_rules('dia', 'dia', 'required|trim');
-//            $this->form_validation->set_rules('mes', 'mes', "required|trim");
-//            $this->form_validation->set_rules('ano', 'ano', 'required|trim');
+            $this->form_validation->set_rules('dia', 'dia', 'required|trim');
+            $this->form_validation->set_rules('mes', 'mes', "required|trim");
+            $this->form_validation->set_rules('ano', 'ano', 'required|trim');
             $this->form_validation->set_message('required', 'Campo requerido %s');
-
+            
             if ($this->form_validation->run($this) == false) {
                 $data['print'] = "Debe llenar todos los campos";
                 $data['message'] = "false";
