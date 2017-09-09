@@ -343,14 +343,13 @@
                                     <label class="control-label"><?php echo replace_vocales_voculeshtml("Dirección de bitcoin: ");?></label>
                                     <div class="form-group">
                                         <p class="form-control">
-                                            <input type="text" id="btc" class="form-control" value="<?php echo $obj_customer->btc_address;?>">
+                                            <input type="text" id="btc" name="btc" class="form-control form-control" data-constraints="@NotEmpty" value="<?php echo $obj_customer->btc_address;?>"/>
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
                 
                 <div class="col-md-6">

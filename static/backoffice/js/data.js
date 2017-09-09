@@ -154,7 +154,7 @@ function alter_btc(){
       , position: 'absolute' // Element positioning
     }
     
-    var target = document.getElementById('spinner')
+    var target = document.getElementById('spinner');
     var spinner = new Spinner(opts).spin(target);
     
         var customer_id = document.getElementById("customer_id").value;

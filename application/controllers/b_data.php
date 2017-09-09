@@ -205,15 +205,15 @@ class B_data extends CI_Controller {
                 // Si cualquier línea es más larga de 70 caracteres, se debería usar wordwrap()
                 $mensaje = wordwrap($mail, 70, "\r\n");
                 //Titulo
-                $titulo = "Cambio de dirección BTC - BITSHARE";
+                $titulo = "Cambio de dirección BTC - CRIPTOWIN";
                 //cabecera
                 $headers = "MIME-Version: 1.0\r\n"; 
                 $headers .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
                 //dirección del remitente 
-                $headers .= "From: Bitshare - Una solución para las personas < noreplay@yourbitshares.com >\r\n";
+                $headers .= "From: Criptowin - The Best Investment < noreplay@criptowin.com >\r\n";
                 //Enviamos el mensaje a tu_dirección_email 
                 $bool = mail("$email",$titulo,$mensaje,$headers);
-                       
+//                       
                 $data['message'] = "true";
             echo json_encode($data); 
             }
