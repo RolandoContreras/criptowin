@@ -304,27 +304,27 @@
                                     <?php
                                     switch ($obj_customer->franchise_id) {
                                         case 1:
-                                            $amount = "125 USD";?>
+                                            $amount = "50 USD";?>
                                              <img src="<?php echo site_url()."static/backoffice/images/beginner.png";?>" alt="Cuenta Beginner" height="120" width="130"/>
                                           <?php  break;
                                         case 2:
-                                            $amount = "250 USD"?>
+                                            $amount = "100 USD"?>
                                             <img src="<?php echo site_url()."static/backoffice/images/start.png";?>" alt="Cuenta Start" height="120" width="130"/>
                                             <?php break;
                                         case 3:
-                                            $amount = "500 USD"?>
+                                            $amount = "300 USD"?>
                                             <img src="<?php echo site_url()."static/backoffice/images/general.png";?>" alt="Cuenta General" height="120" width="130"/>
                                             <?php break;
                                         case 4:
-                                            $amount = "1,000 USD"?>
+                                            $amount = "500 USD"?>
                                             <img src="<?php echo site_url()."static/backoffice/images/vip.png";?>" alt="Cuenta VIP" height="120" width="130"/>
                                             <?php break;
                                         case 5:
-                                            $amount = "15 USD"?>
+                                            $amount = "1000 USD"?>
                                             <img src="<?php echo site_url()."static/backoffice/images/premium.png";?>" alt="Cuenta Premium" height="120" width="130"/>
                                             <?php break;
                                         case 6:
-                                            $amount = "3,000 USD"?>
+                                            $amount = "5000 USD"?>
                                             <img src="<?php echo site_url()."static/backoffice/images/master.png";?>" alt="Cuenta Master" height="120" width="130"/>
                                         <?php break;
                                         case 7: 
