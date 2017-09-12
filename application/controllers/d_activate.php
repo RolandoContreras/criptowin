@@ -139,9 +139,6 @@ class D_activate extends CI_Controller{
                 $price = $this->input->post("price");
                 $parents_id = $this->input->post("parents_id");
                 
-                //ADD BONUS BIT
-                $this->pay_bit($customer_id,$price);
-                
                 //GET BONUS DIRECT
                 $this->pay_directo($customer_id,$price,$parents_id);
                 
@@ -150,14 +147,22 @@ class D_activate extends CI_Controller{
                 
                 //SELECT TOY AND TODAY+76
                 $today = date('Y-m-j');
-                $today_120 = strtotime ( '+120 day' , strtotime ( $today ) ) ;
-                $today_120 = date ( 'Y-m-j' , $today_120 );
+                $today_7 = strtotime ( '+7 day' , strtotime ( $today ) ) ;
+                $today_7 = date ( 'Y-m-j' , $today_7 );
+                
+                var_dump($today);
+                var_dump($today_7);
+                
+                $today_75 = strtotime ( '+75 day' , strtotime ( $today_7 ) ) ;
+                $today_75 = date ( 'Y-m-j' , $today_75 );
                 
                 //UPDATE TABLE CUSTOMER ACTIVE = 1
                 if(count($customer_id) > 0){
                     $data = array(
                         'active' => 1,
                         'date_start' => $today,
+                        'date_stand_by' => $today_7,
+                        'date_end' => $today_75,
                         'updated_at' => date("Y-m-d H:i:s"),
                         'updated_by' => $_SESSION['usercms']['user_id'],
                     ); 
@@ -200,46 +205,7 @@ class D_activate extends CI_Controller{
            }   
             
     }
-    
-    public function pay_bit($customer_id,$price){
-                //GET PERCENT FROM BONUS
-                $params = array(
-                        "select" =>"percent",
-                        "where" => "bonus_id = 6 and status_value = 1"
-               );
-                //GET DATA FROM BONUS
-                $obj_bonus= $this->obj_bonus->get_search_row($params);
-                $percet = $obj_bonus->percent;
-                
-                //CALCULE AMOUNT
-                if(count($customer_id) > 0){
-                    if($price == "125"){
-                        //ITS BASIC ADD 182 BIT
-                        //INSERT CUSTOMER TABLE
-                            $data = array(
-                                        'bit' => 182,
-                                        'updated_at' => date("Y-m-d H:i:s"),
-                                        'updated_by' => $_SESSION['usercms']['user_id'],
-                                    ); 
-                                    $this->obj_customer->update($customer_id,$data); 
-                            $this->obj_customer->insert($data);
-                        
-                    }else{
-                        //ADD 50% FOR OTHER PACKATE
-                        $amount = ($price  * $percet) / 100;
-                        $amount_total = $price + $amount;
-                        //INSERT CUSTOMER TABLE
-                            $data = array(
-                                        'bit' => $amount_total,
-                                        'updated_at' => date("Y-m-d H:i:s"),
-                                        'updated_by' => $_SESSION['usercms']['user_id'],
-                                    ); 
-                                    $this->obj_customer->update($customer_id,$data); 
-                            $this->obj_customer->insert($data);
-                    }
-                }
-        }  
-    
+   
     public function pay_directo($customer_id,$price,$parents_id){
                 //GET PERCENT FROM BONUS
                 $params = array(
@@ -280,7 +246,7 @@ class D_activate extends CI_Controller{
                                     customer.parents_id,
                                     customer.identificador,
                                     customer.created_at,
-                                    (select percent from bonus where bonus_id = 4 and status_value = 1) as percet_binario,
+                                    (select percent from bonus where bonus_id = 3 and status_value = 1) as percet_binario,
                                     franchise.price as price,
                                     franchise.name as franchise,
                                     customer.status_value",
@@ -503,7 +469,6 @@ class D_activate extends CI_Controller{
                 }
             }    
     }
-    
     
     public function get_session(){          
         if (isset($_SESSION['usercms'])){

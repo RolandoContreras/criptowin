@@ -44,7 +44,7 @@
     <div id="header" class="navbar navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container-fluid">
-                <a class="brand" href="<?php echo site_url();?>dashboard/panel">Bitshare</a> 
+                <a class="brand" href="<?php echo site_url();?>dashboard/panel">CRIPTOWIN</a> 
                 <div class="btn-toolbar pull-right">                        
                 <!-- /btn-group -->
                     <div class="btn-group">

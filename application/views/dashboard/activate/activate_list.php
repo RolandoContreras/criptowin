@@ -53,6 +53,7 @@
                                     <div class="operation">
                                         <div class="btn-group">
                                                     <button class="btn btn-small" onclick="active('<?php echo $value->customer_id;?>','<?php echo $value->price;?>', '<?php echo $value->parents_id;?>');">Activar</button>
+                                                    <button class="btn btn-small" onclick="active_financiada('<?php echo $value->customer_id;?>','<?php echo $value->price;?>', '<?php echo $value->parents_id;?>');">Financiada</button>
                                         </div>
                                     </div>
                                 </td>
