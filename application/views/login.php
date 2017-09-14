@@ -41,7 +41,7 @@
                                     </div>
                                         <div class="col-md-12">
                                       <div class="form-grp">
-                                        <label><?php echo replace_vocales_voculeshtml("¿Olvidaste tu contraseña? ");?></label>
+                                          <label><a href="<?php echo site_url().'forgot';?>"><?php echo replace_vocales_voculeshtml("¿Olvidaste tu contraseña? ");?></a></label>
                                       </div>
                                     </div>
                                        

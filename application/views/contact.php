@@ -23,7 +23,7 @@
                         <header>
                                 <h2><?php echo replace_vocales_voculeshtml("Contáctenos Hoy");?></h2>
                                 <p>
-                                        For more information contact Rapid Nutrition’s Investor Relations team. We value your feedback and will respond to your question as quickly as possible. Alternatively click on the ‘chat box’ at the bottom right corner of your computer.
+                                       <?php echo replace_vocales_voculeshtml("Valoramos sus comentarios y responderemos a su pregunta lo más rápido posible. ");?>
                                 </p>
                         </header>
 				<form class="contact-formm">
