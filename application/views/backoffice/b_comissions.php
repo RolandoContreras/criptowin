@@ -28,8 +28,8 @@
                                              <select class="form-control" name="concepto" id="concepto" required>
                                                 <option value="">***Seleccione***</option>
                                                 <option value="1">Bono Referido Directo</option>
-                                                <option value="3">Bono Rentabilidad</option>
-                                                <option value="4">Bono Binario</option>
+                                                <option value="2">Bono Rentabilidad</option>
+                                                <option value="3">Bono Binario</option>
                                                 <option value="4">Bono Apuestas</option>
                                              </select>
                                           </div>

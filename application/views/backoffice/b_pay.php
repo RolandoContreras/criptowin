@@ -24,7 +24,7 @@ $today = date("Y-m-d");
                         <div class="panel-body">
                             <div role="alert" class="alert alert-info">
                                 <strong>Nota:</strong><br>
-                            <?php echo replace_vocales_voculeshtml("El monto mínimo para solicitar el pago es de $15.");?><br><?php echo replace_vocales_voculeshtml("Los pedidos de cobro se efectúan de lunes a sábado.");?><br><?php echo replace_vocales_voculeshtml("Los pagos por rentabilidad efectuarán después de 07 días de la fecha de activación.");?>
+                            <?php echo replace_vocales_voculeshtml("El monto mínimo para solicitar el pago es de $10.");?><br><?php echo replace_vocales_voculeshtml("Los pedidos de cobro se efectúan de lunes a sábado.");?><br><?php echo replace_vocales_voculeshtml("Los pagos por rentabilidad efectuarán después de 07 días de la fecha de activación.");?>
                             </div><br/>
                             <div class="form-inline" >
                                 <p class="lead">
@@ -35,9 +35,7 @@ $today = date("Y-m-d");
                                 <label for="monto">Monto que Solicita:</label>
                                 <select id="monto" name="monto" class="form-control">
                                     <option value="">***Seleccionar***</option>
-                                    <option value="1"><?php if(count($obj_balance_red)>0){echo "$".$obj_balance_red." - "."Balance por Red";}else{echo "$0.00 - Balance por Red";}?></option>
-                                    <option value="2" <?php if($today < $date_limit_pay){echo "disabled='disabled'";}?>><?php if(count($normal_account)>0){echo "$".$normal_account." - "."Balance por Rentabilida";}else{echo "$0.00 - Balance por Rentabilidad";}?></option>
-                                    <option value="3" <?php if($today < $date_limit_pay){echo "disabled='disabled'";}?>><?php if(count($obj_balance_disponible)>0){echo "$".$obj_balance_disponible." - "."Ambos Balances";}else{echo "$0.00 - Ambos Balances";}?></option>
+                                    <option value="3"><?php if(count($obj_balance_disponible)>0){echo "$".$obj_balance_disponible." - "."Total";}else{echo "$0.00 - Total";}?></option>
                                 </select>
                                 </div>
                                 <?php 

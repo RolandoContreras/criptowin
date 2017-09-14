@@ -61,7 +61,6 @@ class b_comissions extends CI_Controller {
 	}
 
         public function consultar(){
-        
         if($this->input->is_ajax_request()){   
             $bonus_id = trim($this->input->post('concepto'));
             $customer_id = $_SESSION['customer']['customer_id'];

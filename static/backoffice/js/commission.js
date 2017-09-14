@@ -3,7 +3,7 @@ function consultar(){
     concepto =  $('select[name=concepto]').val();
     $.ajax({
        type: "post",
-       url: site+"backoffice/comisiones/concepto",
+       url: site+"backoffice/comisiones/consultar",
        dataType: "json",
        data: {concepto : concepto},
        success:function(data){
