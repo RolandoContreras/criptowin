@@ -95,6 +95,7 @@
             </div>
             
          </div>
+             </div>
       </section>
 </body>
 <script src="<?php echo site_url().'static/cms/js/core/bootstrap-modal.js';?>"></script>

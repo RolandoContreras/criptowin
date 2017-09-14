@@ -46,6 +46,7 @@ $route['login'] = 'login';
 
 $route['backoffice'] = "b_home";
 $route['backoffice/profile'] = "b_data";
+$route['backoffice/upgrade'] = "b_upgrade";
 $route['backoffice/binario'] = "b_binario";
 $route['backoffice/binario/([0-9a-z_-]+)'] = "b_binario/index/$1";
 $route['backoffice/comisiones'] = "b_comissions";
