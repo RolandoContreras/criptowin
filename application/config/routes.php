@@ -86,6 +86,7 @@ $route['dashboard/usuarios/validate'] = "d_users/validate";
 
 $route['dashboard/activaciones'] = "d_activate";
 $route['dashboard/activaciones/active_customer'] = "d_activate/active_customer";
+$route['dashboard/activaciones/active_financy'] = "d_activate/active_financy";
 $route['dashboard/activaciones/active'] = "d_activate/active";
 
 $route['dashboard/comentarios'] = "d_comments";

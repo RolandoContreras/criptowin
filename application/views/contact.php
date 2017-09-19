@@ -23,7 +23,7 @@
                         <header>
                                 <h2><?php echo replace_vocales_voculeshtml("Contáctenos Hoy");?></h2>
                                 <p>
-                                       <?php echo replace_vocales_voculeshtml("Valoramos sus comentarios y responderemos a su pregunta lo más rápido posible. ");?>
+                                       <?php echo replace_vocales_voculeshtml("Valoramos sus comentarios y responderemos a su pregunta lo más rápido posible.");?>
                                 </p>
                         </header>
 				<form class="contact-formm">

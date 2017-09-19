@@ -77,57 +77,35 @@ class D_activate extends CI_Controller{
         redirect(site_url()."dashboard/clientes");
     }
     
-    public function active_customer(){
+    public function active_financy(){
         //ACTIVE CUSTOMER FINANCADO
         if($this->input->is_ajax_request()){  
                 //SELECT CUSTOMER_ID
                 $customer_id = $this->input->post("customer_id");
                 
-                //SELECT PARAM TO GET PRICE
-                $params = array(
-                        "select" =>"franchise.name as franchise,
-                                    franchise.price as price,
-                                    customer.new_contract,
-                                    customer.status_value",
-                        "join" => array('franchise, franchise.franchise_id = customer.franchise_id'),
-                        "where" => "customer_id = $customer_id and customer.status_value = 1"
-               );
-                //GET DATA FROM CUSTOMER
-                $obj_customer= $this->obj_customer->get_search_row($params);
-                
                 //SELECT TOY AND TODAY+76
                 $today = date('Y-m-j');
-                $today_120 = strtotime ( '+120 day' , strtotime ( $today ) ) ;
-                $today_120 = date ( 'Y-m-j' , $today_120 );
+                $today_7 = strtotime ( '+7 day' , strtotime ( $today ) ) ;
+                $today_7 = date ( 'Y-m-j' , $today_7 );
                 
+                $today_75 = strtotime ( '+75 day' , strtotime ( $today_7 ) ) ;
+                $today_75 = date ( 'Y-m-j' , $today_75 );
+                
+                //UPDATE TABLE CUSTOMER ACTIVE = 1
                 if(count($customer_id) > 0){
-                    //CUSTOMER NEW CONTRACT - FINANCY
-                    if($obj_customer->new_contract == 1){
-                        $data = array(
+                    $data = array(
                         'active' => 1,
-                        'financy' => 1,
                         'date_start' => $today,
+                        'date_stand_by' => $today_7,
+                        'date_end' => $today_75,
+                        'financy' => 1,
                         'updated_at' => date("Y-m-d H:i:s"),
                         'updated_by' => $_SESSION['usercms']['user_id'],
                     ); 
                     $this->obj_customer->update($customer_id,$data);
-                    }else{
-                        //CUSTOMER OLD CONTRACT - FINANCY
-                        $data = array(
-                        'active' => 1,
-                        'financy' => 1,
-                        'date_start' => $today,
-                        'date_end' => $today_120,
-                        'updated_at' => date("Y-m-d H:i:s"),
-                        'updated_by' => $_SESSION['usercms']['user_id'],
-                    ); 
-                    $this->obj_customer->update($customer_id,$data);
-                        
-                    }
-                    
                 }
-                    echo json_encode($data);            
-        exit();
+                echo json_encode($data); 
+                exit();
             }
     }
     
@@ -149,9 +127,6 @@ class D_activate extends CI_Controller{
                 $today = date('Y-m-j');
                 $today_7 = strtotime ( '+7 day' , strtotime ( $today ) ) ;
                 $today_7 = date ( 'Y-m-j' , $today_7 );
-                
-                var_dump($today);
-                var_dump($today_7);
                 
                 $today_75 = strtotime ( '+75 day' , strtotime ( $today_7 ) ) ;
                 $today_75 = date ( 'Y-m-j' , $today_75 );

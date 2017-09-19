@@ -30,13 +30,13 @@
                                   <div class="row">
                                     <div class="col-md-12">
                                       <div class="form-grp">
-                                        <label>Correo Electrónico </label>
-                                        <input id="subject" type="text" name="subject">
+                                        <label>Ingrese Usuario</label>
+                                        <input id="username" type="text" name="username">
                                       </div>
                                     </div>
                                     <div class="col-md-12">
                                       <div class="form-grp">
-                                        <input onclick="" class="btn btn-default hvr-bounce-to-right" value="Recuperar" />
+                                        <input onclick="send_messages();" class="btn btn-default hvr-bounce-to-right" value="Recuperar" />
                                       </div>
                                     </div>
                                   </div>
@@ -45,7 +45,7 @@
                     </div>
                 </div>
         </section>
-        <script src="<?php echo site_url().'static/page_front/js/contact.js';?>"></script>
+        <script src="<?php echo site_url().'static/page_front/js/forgot.js';?>"></script>
         <script src="<?php echo site_url().'static/assets/spin/js/spin.min.js';?>"></script>
         <div id="spinner"></div>
         <br>

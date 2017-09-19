@@ -3,7 +3,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Forgot extends CI_Controller {
     public function __construct() {
-        parent::__construct();     
+        parent::__construct();    
+        $this->load->model("customer_model", "obj_customer");
     }
 
 	/**
@@ -27,35 +28,40 @@ class Forgot extends CI_Controller {
 	}
         public function send_messages(){
             if($this->input->is_ajax_request()){ 
+                $username = $this->input->post('username');  
                 
-                $name = $this->input->post('name');  
-                $email = $this->input->post('email');  
-                $subject = $this->input->post('subject');  
-                $message = $this->input->post('message');  
+                //GER DATA USERNAME
+                 $params = array("select" => "first_name,email",
+                                "where" => "username = '$username'");
+                 $obj_data = $this->obj_customer->get_search_row($params);
+                
+                 
+                 $coubt = count($obj_data);
+                 
+                 var_dump($obj_data);
+                 die();
                 
                 
-                //validate background
-                $this->form_validation->set_rules('name','name',"required|trim");
-                $this->form_validation->set_rules('email','email','required|trim'); 
-                $this->form_validation->set_rules('subject','subject','required|trim'); 
-                $this->form_validation->set_rules('message','message','required');              
-                $this->form_validation->set_message('required','Campo requerido %s');   
-
                 
-                if ($this->form_validation->run($this)== false){ 
+                if (count($obj_data) > 0){ 
                     $data['message'] = "false";
                     $data['print'] = "Complete todos los datos correctamente";
-                }else{
-                    //status_value 0 means (not read)
-                    $data = array(
-                        'name' => $name,
-                        'email' => $email,
-                        'comment' => $message,
-                        'subject' => $subject,
-                        'date_comment' => date("Y-m-d H:i:s"),
-                        'status_value' => 0,
-                    );
-                    $this->obj_comments->insert($data);
+                }else{                    
+                //SEND MESSAGES
+                
+                // Si cualquier línea es más larga de 70 caracteres, se debería usar wordwrap()
+                $mensaje = wordwrap("<html><body><h1>Recuperar Contraseña</h1><p>Bienvenido ahora eres parte de la revolución CRIPTOWIN estamos muy contentos de que hayas tomado la mejor decisión en este tiempo.</p><p>Estamos para poyarte en todo lo que necesites. Te dejamos tus datos de ingreso.</p><h3>Usuario: $usuario</h3><h3>Contraseña: $clave</h3></body></html>", 70, "\n", true);
+                //Titulo
+                $titulo = "Bienvenido a Criptowin";
+                //cabecera
+                $headers = "MIME-Version: 1.0\r\n"; 
+                $headers .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
+                $headers .= "From: CRIPTOWIN - The best Investment < noreplay@criptowin.com >\r\n";
+                //Enviamos el mensaje a tu_dirección_email 
+                $bool = mail("$email",$titulo,$mensaje,$headers);
+                    
+                    
+                    
                     $data['print'] = "Mensaje enviado correctamente";
                     $data['message'] = "true";       
                 }         

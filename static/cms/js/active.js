@@ -7,7 +7,7 @@ function active_financiada(customer_id){
             "callback": function() {
            $.ajax({
                type: "post",
-               url: site+"dashboard/activaciones/active_customer",
+               url: site+"dashboard/activaciones/active_financy",
                dataType: "json",
                data: {customer_id : customer_id},
                success:function(data){                             
