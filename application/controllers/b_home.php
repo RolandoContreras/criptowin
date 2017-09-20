@@ -34,6 +34,7 @@ class B_home extends CI_Controller {
                                     customer.point_left,
                                     customer.point_rigth,
                                     customer.date_start,
+                                    customer.date_stand_by,
                                     customer.date_end,
                                     customer.created_at,
                                     customer.address,
@@ -53,9 +54,8 @@ class B_home extends CI_Controller {
                 //GET TOTAL AMOUNT
                 $params_total = array(
                         "select" =>"sum(amount) as total,
-                                    (select sum(amount) FROM commissions WHERE status_value <= 2 and customer_id = $customer_id) as balance,"
-                        . "         (select sum(mandatory_account) FROM commissions WHERE customer_id = $customer_id) as mandatory",
-                         "where" => "commissions.customer_id = $customer_id and bonus_id <> 2",
+                                    (select sum(amount) FROM commissions WHERE status_value <= 2 and customer_id = $customer_id) as balance",
+                         "where" => "commissions.customer_id = $customer_id",
                     );
              $obj_commissions = $this->obj_commissions->get_search_row($params_total); 
              
