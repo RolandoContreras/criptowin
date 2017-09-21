@@ -65,22 +65,46 @@
                                                                     <?php
                                                                     switch ($obj_customer->franchise_id) {
                                                                         case 1:
-                                                                            $images = "beginner.png";
+                                                                                if($obj_customer->active == 1){
+                                                                                    $images = "beginner_act.png";
+                                                                                }else{
+                                                                                    $images = "beginner_inac.png";
+                                                                                }
                                                                             break;
                                                                         case 2:
-                                                                            $images = "start.png";
+                                                                                if($$obj_customer->active == 1){
+                                                                                    $images = "start_act.png";
+                                                                                }else{
+                                                                                    $images = "start_inac.png";
+                                                                                }
                                                                             break;
                                                                         case 3:
-                                                                            $images = "general.png";
+                                                                                if($obj_customer->active == 1){
+                                                                                    $images = "general_act.png";
+                                                                                }else{
+                                                                                    $images = "general_inac.png";
+                                                                                }
                                                                             break;
                                                                         case 4:
-                                                                            $images = "vip.png";
+                                                                                if($obj_customer->active == 1){
+                                                                                    $images = "vip_act.png";
+                                                                                }else{
+                                                                                    $images = "vip_inac.png";
+                                                                                }
                                                                             break;
                                                                         case 5:
-                                                                            $images = "premium.png";
+                                                                                if($obj_customer->active == 1){
+                                                                                    $images = "premiun_act.png";
+                                                                                }else{
+                                                                                    $images = "premiun_inac.png";
+                                                                                }
                                                                             break;
                                                                         case 6:
-                                                                            $images = "master.png";
+                                                                                 if($obj_customer->active == 1){
+                                                                                    $images = "master_act.png";
+                                                                                }else{
+                                                                                    $images = "master_inac.png";
+                                                                                }
                                                                             break;
                                                                         case 7:
                                                                             $images = "membership.png";
@@ -103,24 +127,48 @@
                                                             <div class="row imagen-profile">
                                                                     <div class="div-img">
                                                                         <?php
-                                                                        switch ($n2_iz[10]) {
+                                                                       switch ($n2_iz[10]) {    
                                                                             case 1:
-                                                                            $images = "beginner.png";
+                                                                                if($n2_iz[7] == 1){
+                                                                                    $images = "beginner_act.png";
+                                                                                }else{
+                                                                                    $images = "beginner_inac.png";
+                                                                                }
                                                                             break;
                                                                         case 2:
-                                                                            $images = "start.png";
+                                                                                if($n2_iz[7] == 1){
+                                                                                    $images = "start_act.png";
+                                                                                }else{
+                                                                                    $images = "start_inac.png";
+                                                                                }
                                                                             break;
                                                                         case 3:
-                                                                            $images = "general.png";
+                                                                                if($n2_iz[7] == 1){
+                                                                                    $images = "general_act.png";
+                                                                                }else{
+                                                                                    $images = "general_inac.png";
+                                                                                }
                                                                             break;
                                                                         case 4:
-                                                                            $images = "vip.png";
+                                                                                if($n2_iz[7] == 1){
+                                                                                    $images = "vip_act.png";
+                                                                                }else{
+                                                                                    $images = "vip_inac.png";
+                                                                                }
                                                                             break;
                                                                         case 5:
-                                                                            $images = "premium.png";
+                                                                                if($n2_iz[7] == 1){
+                                                                                    $images = "premiun_act.png";
+                                                                                }else{
+                                                                                    $images = "premiun_inac.png";
+                                                                                }
                                                                             break;
                                                                         case 6:
-                                                                            $images = "master.png";
+                                                                                 if($n2_iz[7] == 1){
+                                                                                    $images = "master_act.png";
+                                                                                }else{
+                                                                                    $images = "master_inac.png";
+                                                                                }
                                                                             break;
                                                                         case 7:
                                                                             $images = "membership.png";
@@ -132,7 +180,7 @@
                                                             </div>
                                                         </a>
                                                         <!--USERNAME-->
-                                                        <span class="tree_text"><a href="<?php echo site_url().'backoffice/binario/'.$n2_iz[2];?>" class=""><?php echo $n2_iz[6];?></a></span>
+                                                        <span><a href="<?php echo site_url().'backoffice/binario/'.$n2_iz[2];?>" class=""><?php echo $n2_iz[6];?></a></span><br>
                                                      <?php }else{ ?>
                                                         <img src="<?php echo site_url().'static/backoffice/images/blank.png';?>" alt="paquete blank" width="96"/>                                                            
                                                     <?php } ?>
@@ -149,29 +197,53 @@
                                                                             <?php
                                                                         switch ($n3_iz[10]) {    
                                                                             case 1:
-                                                                            $images = "beginner.png";
+                                                                                if($n3_iz[7] == 1){
+                                                                                    $images = "beginner_act.png";
+                                                                                }else{
+                                                                                    $images = "beginner_inac.png";
+                                                                                }
                                                                             break;
                                                                         case 2:
-                                                                            $images = "start.png";
+                                                                                if($n3_iz[7] == 1){
+                                                                                    $images = "start_act.png";
+                                                                                }else{
+                                                                                    $images = "start_inac.png";
+                                                                                }
                                                                             break;
                                                                         case 3:
-                                                                            $images = "general.png";
+                                                                                if($n3_iz[7] == 1){
+                                                                                    $images = "general_act.png";
+                                                                                }else{
+                                                                                    $images = "general_inac.png";
+                                                                                }
                                                                             break;
                                                                         case 4:
-                                                                            $images = "vip.png";
+                                                                                if($n3_iz[7] == 1){
+                                                                                    $images = "vip_act.png";
+                                                                                }else{
+                                                                                    $images = "vip_inac.png";
+                                                                                }
                                                                             break;
                                                                         case 5:
-                                                                            $images = "premium.png";
+                                                                                if($n3_iz[7] == 1){
+                                                                                    $images = "premiun_act.png";
+                                                                                }else{
+                                                                                    $images = "premiun_inac.png";
+                                                                                }
                                                                             break;
                                                                         case 6:
-                                                                            $images = "master.png";
+                                                                                 if($n3_iz[7] == 1){
+                                                                                    $images = "master_act.png";
+                                                                                }else{
+                                                                                    $images = "master_inac.png";
+                                                                                }
                                                                             break;
                                                                         case 7:
                                                                             $images = "membership.png";
                                                                             break;
                                                                         }
                                                                             ?>
-                                                                            <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" width="96">
+                                                                            <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" style="color_active" alt="paquete" width="96">
                                                                         </div>
                                                                 </div>
                                                                 </a>
@@ -191,24 +263,48 @@
                                                                             <div class="row imagen-profile">
                                                                                     <div class="div-img">
                                                                                         <?php
-                                                                                        switch ($n4_iz[10]) {
-                                                                                            case 1:
-                                                                                                $images = "beginner.png";
+                                                                                         switch ($n4_iz[10]) {    
+                                                                                                case 1:
+                                                                                                    if($n4_iz[7] == 1){
+                                                                                                        $images = "beginner_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "beginner_inac.png";
+                                                                                                    }
                                                                                                 break;
                                                                                             case 2:
-                                                                                                $images = "start.png";
+                                                                                                    if($n4_iz[7] == 1){
+                                                                                                        $images = "start_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "start_inac.png";
+                                                                                                    }
                                                                                                 break;
                                                                                             case 3:
-                                                                                                $images = "general.png";
+                                                                                                    if($n4_iz[7] == 1){
+                                                                                                        $images = "general_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "general_inac.png";
+                                                                                                    }
                                                                                                 break;
                                                                                             case 4:
-                                                                                                $images = "vip.png";
+                                                                                                    if($n4_iz[7] == 1){
+                                                                                                        $images = "vip_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "vip_inac.png";
+                                                                                                    }
                                                                                                 break;
                                                                                             case 5:
-                                                                                                $images = "premium.png";
+                                                                                                    if($n4_iz[7] == 1){
+                                                                                                        $images = "premiun_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "premiun_inac.png";
+                                                                                                    }
                                                                                                 break;
                                                                                             case 6:
-                                                                                                $images = "master.png";
+                                                                                                     if($n4_iz[7] == 1){
+                                                                                                        $images = "master_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "master_inac.png";
+                                                                                                    }
                                                                                                 break;
                                                                                             case 7:
                                                                                                 $images = "membership.png";
@@ -237,28 +333,52 @@
                                                                                 <div class="div-img">
                                                                                     <?php
                                                                                     switch ($n4_2_iz[10]) {
-                                                                                        case 1:
-                                                                                            $images = "beginner.png";
-                                                                                            break;
-                                                                                        case 2:
-                                                                                            $images = "start.png";
-                                                                                            break;
-                                                                                        case 3:
-                                                                                            $images = "general.png";
-                                                                                            break;
-                                                                                        case 4:
-                                                                                            $images = "vip.png";
-                                                                                            break;
-                                                                                        case 5:
-                                                                                            $images = "premium.png";
-                                                                                            break;
-                                                                                        case 6:
-                                                                                            $images = "master.png";
-                                                                                            break;
-                                                                                        case 7:
-                                                                                            $images = "membership.png";
-                                                                                            break;
-                                                                                        }
+                                                                                                case 1:
+                                                                                                    if($n4_2_iz[7] == 1){
+                                                                                                        $images = "beginner_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "beginner_inac.png";
+                                                                                                    }
+                                                                                                break;
+                                                                                            case 2:
+                                                                                                    if($n4_2_iz[7] == 1){
+                                                                                                        $images = "start_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "start_inac.png";
+                                                                                                    }
+                                                                                                break;
+                                                                                            case 3:
+                                                                                                    if($n4_2_iz[7] == 1){
+                                                                                                        $images = "general_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "general_inac.png";
+                                                                                                    }
+                                                                                                break;
+                                                                                            case 4:
+                                                                                                    if($n4_2_iz[7] == 1){
+                                                                                                        $images = "vip_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "vip_inac.png";
+                                                                                                    }
+                                                                                                break;
+                                                                                            case 5:
+                                                                                                    if($n4_2_iz[7] == 1){
+                                                                                                        $images = "premiun_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "premiun_inac.png";
+                                                                                                    }
+                                                                                                break;
+                                                                                            case 6:
+                                                                                                     if($n4_2_iz[7] == 1){
+                                                                                                        $images = "master_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "master_inac.png";
+                                                                                                    }
+                                                                                                break;
+                                                                                            case 7:
+                                                                                                $images = "membership.png";
+                                                                                                break;
+                                                                                            }
                                                                                     ?>
                                                                                     <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" width="96">
                                                                                 </div>
@@ -284,28 +404,52 @@
                                                                 <div class="div-img">
                                                                     <?php
                                                                     switch ($n3_2_iz[10]) {
-                                                                        case 1:
-                                                                            $images = "beginner.png";
-                                                                            break;
-                                                                        case 2:
-                                                                            $images = "start.png";
-                                                                            break;
-                                                                        case 3:
-                                                                            $images = "general.png";
-                                                                            break;
-                                                                        case 4:
-                                                                            $images = "vip.png";
-                                                                            break;
-                                                                        case 5:
-                                                                            $images = "premium.png";
-                                                                            break;
-                                                                        case 6:
-                                                                            $images = "master.png";
-                                                                            break;
-                                                                        case 7:
-                                                                            $images = "membership.png";
-                                                                            break;
-                                                                        }
+                                                                                case 1:
+                                                                                            if($n3_2_iz[7] == 1){
+                                                                                                $images = "beginner_act.png";
+                                                                                            }else{
+                                                                                                $images = "beginner_inac.png";
+                                                                                            }
+                                                                                        break;
+                                                                                            case 2:
+                                                                                                    if($n3_2_iz[7] == 1){
+                                                                                                        $images = "start_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "start_inac.png";
+                                                                                                    }
+                                                                                                break;
+                                                                                            case 3:
+                                                                                                    if($n3_2_iz[7] == 1){
+                                                                                                        $images = "general_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "general_inac.png";
+                                                                                                    }
+                                                                                                break;
+                                                                                            case 4:
+                                                                                                    if($n3_2_iz[7] == 1){
+                                                                                                        $images = "vip_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "vip_inac.png";
+                                                                                                    }
+                                                                                                break;
+                                                                                            case 5:
+                                                                                                    if($n3_2_iz[7] == 1){
+                                                                                                        $images = "premiun_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "premiun_inac.png";
+                                                                                                    }
+                                                                                                break;
+                                                                                            case 6:
+                                                                                                     if($n3_2_iz[7] == 1){
+                                                                                                        $images = "master_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "master_inac.png";
+                                                                                                    }
+                                                                                                break;
+                                                                                            case 7:
+                                                                                                $images = "membership.png";
+                                                                                                break;
+                                                                                            }
                                                                     ?>
                                                                     <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" width="96">
                                                                 </div>
@@ -329,22 +473,46 @@
                                                                                         <?php
                                                                                         switch ($n4_3_iz[10]) {
                                                                                            case 1:
-                                                                                                $images = "beginner.png";
+                                                                                                    if($n4_3_iz[7] == 1){
+                                                                                                        $images = "beginner_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "beginner_inac.png";
+                                                                                                    }
                                                                                                 break;
                                                                                             case 2:
-                                                                                                $images = "start.png";
+                                                                                                    if($n4_3_iz[7] == 1){
+                                                                                                        $images = "start_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "start_inac.png";
+                                                                                                    }
                                                                                                 break;
                                                                                             case 3:
-                                                                                                $images = "general.png";
+                                                                                                    if($n4_3_iz[7] == 1){
+                                                                                                        $images = "general_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "general_inac.png";
+                                                                                                    }
                                                                                                 break;
                                                                                             case 4:
-                                                                                                $images = "vip.png";
+                                                                                                    if($n4_3_iz[7] == 1){
+                                                                                                        $images = "vip_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "vip_inac.png";
+                                                                                                    }
                                                                                                 break;
                                                                                             case 5:
-                                                                                                $images = "premium.png";
+                                                                                                    if($n4_3_iz[7] == 1){
+                                                                                                        $images = "premiun_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "premiun_inac.png";
+                                                                                                    }
                                                                                                 break;
                                                                                             case 6:
-                                                                                                $images = "master.png";
+                                                                                                     if($n4_3_iz[7] == 1){
+                                                                                                        $images = "master_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "master_inac.png";
+                                                                                                    }
                                                                                                 break;
                                                                                             case 7:
                                                                                                 $images = "membership.png";
@@ -373,27 +541,51 @@
                                                                                 <div class="div-img">
                                                                                     <?php
                                                                                     switch ($n4_4_iz[10]) {
-                                                                                        case 1:
-                                                                                            $images = "beginner.png";
-                                                                                            break;
-                                                                                        case 2:
-                                                                                            $images = "start.png";
-                                                                                            break;
-                                                                                        case 3:
-                                                                                            $images = "general.png";
-                                                                                            break;
-                                                                                        case 4:
-                                                                                            $images = "vip.png";
-                                                                                            break;
-                                                                                        case 5:
-                                                                                            $images = "premium.png";
-                                                                                            break;
-                                                                                        case 6:
-                                                                                            $images = "master.png";
-                                                                                            break;
-                                                                                        case 7:
-                                                                                            $images = "membership.png";
-                                                                                            break;
+                                                                                            case 1:
+                                                                                                    if($n4_4_iz[7] == 1){
+                                                                                                        $images = "beginner_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "beginner_inac.png";
+                                                                                                    }
+                                                                                                break;
+                                                                                            case 2:
+                                                                                                    if($n4_4_iz[7] == 1){
+                                                                                                        $images = "start_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "start_inac.png";
+                                                                                                    }
+                                                                                                break;
+                                                                                            case 3:
+                                                                                                    if($n4_4_iz[7] == 1){
+                                                                                                        $images = "general_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "general_inac.png";
+                                                                                                    }
+                                                                                                break;
+                                                                                            case 4:
+                                                                                                    if($n4_4_iz[7] == 1){
+                                                                                                        $images = "vip_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "vip_inac.png";
+                                                                                                    }
+                                                                                                break;
+                                                                                            case 5:
+                                                                                                    if($n4_4_iz[7] == 1){
+                                                                                                        $images = "premiun_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "premiun_inac.png";
+                                                                                                    }
+                                                                                                break;
+                                                                                            case 6:
+                                                                                                     if($n4_4_iz[7] == 1){
+                                                                                                        $images = "master_act.png";
+                                                                                                    }else{
+                                                                                                        $images = "master_inac.png";
+                                                                                                    }
+                                                                                                break;
+                                                                                            case 7:
+                                                                                                $images = "membership.png";
+                                                                                                break;
                                                                                         }
                                                                                     ?>
                                                                                     <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" width="96">
@@ -427,22 +619,46 @@
                                                                         <?php
                                                                         switch ($n2_de[10]) {
                                                                             case 1:
-                                                                                $images = "beginner.png";
+                                                                                    if($n2_de[7] == 1){
+                                                                                        $images = "beginner_act.png";
+                                                                                    }else{
+                                                                                        $images = "beginner_inac.png";
+                                                                                    }
                                                                                 break;
                                                                             case 2:
-                                                                                $images = "start.png";
+                                                                                    if($n2_de[7] == 1){
+                                                                                        $images = "start_act.png";
+                                                                                    }else{
+                                                                                        $images = "start_inac.png";
+                                                                                    }
                                                                                 break;
                                                                             case 3:
-                                                                                $images = "general.png";
+                                                                                    if($n2_de[7] == 1){
+                                                                                        $images = "general_act.png";
+                                                                                    }else{
+                                                                                        $images = "general_inac.png";
+                                                                                    }
                                                                                 break;
                                                                             case 4:
-                                                                                $images = "vip.png";
+                                                                                    if($n2_de[7] == 1){
+                                                                                        $images = "vip_act.png";
+                                                                                    }else{
+                                                                                        $images = "vip_inac.png";
+                                                                                    }
                                                                                 break;
                                                                             case 5:
-                                                                                $images = "premium.png";
+                                                                                    if($n2_de[7] == 1){
+                                                                                        $images = "premiun_act.png";
+                                                                                    }else{
+                                                                                        $images = "premiun_inac.png";
+                                                                                    }
                                                                                 break;
                                                                             case 6:
-                                                                                $images = "master.png";
+                                                                                     if($n2_de[7] == 1){
+                                                                                        $images = "master_act.png";
+                                                                                    }else{
+                                                                                        $images = "master_inac.png";
+                                                                                    }
                                                                                 break;
                                                                             case 7:
                                                                                 $images = "membership.png";
@@ -470,28 +686,52 @@
                                                                         <div class="div-img">
                                                                             <?php
                                                                             switch ($n3_2_de[10]) {
-                                                                                case 1:
-                                                                                    $images = "beginner.png";
-                                                                                    break;
-                                                                                case 2:
-                                                                                    $images = "start.png";
-                                                                                    break;
-                                                                                case 3:
-                                                                                    $images = "general.png";
-                                                                                    break;
-                                                                                case 4:
-                                                                                    $images = "vip.png";
-                                                                                    break;
-                                                                                case 5:
-                                                                                    $images = "premium.png";
-                                                                                    break;
-                                                                                case 6:
-                                                                                    $images = "master.png";
-                                                                                    break;
-                                                                                case 7:
-                                                                                    $images = "membership.png";
-                                                                                    break;
+                                                                            case 1:
+                                                                                if($n3_2_de[7] == 1){
+                                                                                    $images = "beginner_act.png";
+                                                                                }else{
+                                                                                    $images = "beginner_inac.png";
                                                                                 }
+                                                                                break;
+                                                                            case 2:
+                                                                                    if($n3_2_de[7] == 1){
+                                                                                        $images = "start_act.png";
+                                                                                    }else{
+                                                                                        $images = "start_inac.png";
+                                                                                    }
+                                                                                break;
+                                                                            case 3:
+                                                                                    if($n3_2_de[7] == 1){
+                                                                                        $images = "general_act.png";
+                                                                                    }else{
+                                                                                        $images = "general_inac.png";
+                                                                                    }
+                                                                                break;
+                                                                            case 4:
+                                                                                    if($n3_2_de[7] == 1){
+                                                                                        $images = "vip_act.png";
+                                                                                    }else{
+                                                                                        $images = "vip_inac.png";
+                                                                                    }
+                                                                                break;
+                                                                            case 5:
+                                                                                    if($n3_2_de[7] == 1){
+                                                                                        $images = "premiun_act.png";
+                                                                                    }else{
+                                                                                        $images = "premiun_inac.png";
+                                                                                    }
+                                                                                break;
+                                                                            case 6:
+                                                                                     if($n3_2_de[7] == 1){
+                                                                                        $images = "master_act.png";
+                                                                                    }else{
+                                                                                        $images = "master_inac.png";
+                                                                                    }
+                                                                                break;
+                                                                            case 7:
+                                                                                $images = "membership.png";
+                                                                                break;
+                                                                            }
                                                                             ?>
                                                                             <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" width="96">
                                                                         </div>
@@ -513,28 +753,52 @@
                                                                             <div class="row imagen-profile">
                                                                                     <div class="div-img">
                                                                                         <?php
-                                                                                        switch ($n4_4_de[10]) {
-                                                                                             case 1:
-                                                                                                $images = "beginner.png";
-                                                                                                break;
-                                                                                            case 2:
-                                                                                                $images = "start.png";
-                                                                                                break;
-                                                                                            case 3:
-                                                                                                $images = "general.png";
-                                                                                                break;
-                                                                                            case 4:
-                                                                                                $images = "vip.png";
-                                                                                                break;
-                                                                                            case 5:
-                                                                                                $images = "premium.png";
-                                                                                                break;
-                                                                                            case 6:
-                                                                                                $images = "master.png";
-                                                                                                break;
-                                                                                            case 7:
-                                                                                                $images = "membership.png";
-                                                                                                break;
+                                                                        switch ($n4_4_de[10]) {
+                                                                             case 1:
+                                                                                if($n4_4_de[7] == 1){
+                                                                                    $images = "beginner_act.png";
+                                                                                }else{
+                                                                                    $images = "beginner_inac.png";
+                                                                                }
+                                                                                break;
+                                                                            case 2:
+                                                                                    if($n4_4_de[7] == 1){
+                                                                                        $images = "start_act.png";
+                                                                                    }else{
+                                                                                        $images = "start_inac.png";
+                                                                                    }
+                                                                                break;
+                                                                            case 3:
+                                                                                    if($n4_4_de[7] == 1){
+                                                                                        $images = "general_act.png";
+                                                                                    }else{
+                                                                                        $images = "general_inac.png";
+                                                                                    }
+                                                                                break;
+                                                                            case 4:
+                                                                                    if($n4_4_de[7] == 1){
+                                                                                        $images = "vip_act.png";
+                                                                                    }else{
+                                                                                        $images = "vip_inac.png";
+                                                                                    }
+                                                                                break;
+                                                                            case 5:
+                                                                                    if($n4_4_de[7] == 1){
+                                                                                        $images = "premiun_act.png";
+                                                                                    }else{
+                                                                                        $images = "premiun_inac.png";
+                                                                                    }
+                                                                                break;
+                                                                            case 6:
+                                                                                     if($n4_4_de[7] == 1){
+                                                                                        $images = "master_act.png";
+                                                                                    }else{
+                                                                                        $images = "master_inac.png";
+                                                                                    }
+                                                                                break;
+                                                                            case 7:
+                                                                                $images = "membership.png";
+                                                                                break;
                                                                                             }
                                                                                         ?>
                                                                                         <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" width="96">
@@ -558,28 +822,52 @@
                                                                         <div class="row imagen-profile">
                                                                                 <div class="div-img">
                                                                                     <?php
-                                                                                    switch ($n4_3_de[10]) {
-                                                                                        case 1:
-                                                                                            $images = "beginner.png";
-                                                                                            break;
-                                                                                        case 2:
-                                                                                            $images = "start.png";
-                                                                                            break;
-                                                                                        case 3:
-                                                                                            $images = "general.png";
-                                                                                            break;
-                                                                                        case 4:
-                                                                                            $images = "vip.png";
-                                                                                            break;
-                                                                                        case 5:
-                                                                                            $images = "premium.png";
-                                                                                            break;
-                                                                                        case 6:
-                                                                                            $images = "master.png";
-                                                                                            break;
-                                                                                        case 7:
-                                                                                            $images = "membership.png";
-                                                                                            break;
+                                                                            switch ($n4_3_de[10]) {
+                                                                                case 1:
+                                                                                if($n4_3_de[7] == 1){
+                                                                                    $images = "beginner_act.png";
+                                                                                }else{
+                                                                                    $images = "beginner_inac.png";
+                                                                                }
+                                                                                break;
+                                                                            case 2:
+                                                                                    if($n4_3_de[7] == 1){
+                                                                                        $images = "start_act.png";
+                                                                                    }else{
+                                                                                        $images = "start_inac.png";
+                                                                                    }
+                                                                                break;
+                                                                            case 3:
+                                                                                    if($n4_3_de[7] == 1){
+                                                                                        $images = "general_act.png";
+                                                                                    }else{
+                                                                                        $images = "general_inac.png";
+                                                                                    }
+                                                                                break;
+                                                                            case 4:
+                                                                                    if($n4_3_de[7] == 1){
+                                                                                        $images = "vip_act.png";
+                                                                                    }else{
+                                                                                        $images = "vip_inac.png";
+                                                                                    }
+                                                                                break;
+                                                                            case 5:
+                                                                                    if($n4_3_de[7] == 1){
+                                                                                        $images = "premiun_act.png";
+                                                                                    }else{
+                                                                                        $images = "premiun_inac.png";
+                                                                                    }
+                                                                                break;
+                                                                            case 6:
+                                                                                     if($n4_3_de[7] == 1){
+                                                                                        $images = "master_act.png";
+                                                                                    }else{
+                                                                                        $images = "master_inac.png";
+                                                                                    }
+                                                                                break;
+                                                                            case 7:
+                                                                                $images = "membership.png";
+                                                                                break;
                                                                                         }
                                                                                     ?>
                                                                                     <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" width="96">
@@ -606,27 +894,51 @@
                                                                 <div class="div-img">
                                                                     <?php
                                                                     switch ($n3_de[10]) {
-                                                                         case 1:
-                                                                            $images = "beginner.png";
-                                                                            break;
-                                                                        case 2:
-                                                                            $images = "start.png";
-                                                                            break;
-                                                                        case 3:
-                                                                            $images = "general.png";
-                                                                            break;
-                                                                        case 4:
-                                                                            $images = "vip.png";
-                                                                            break;
-                                                                        case 5:
-                                                                            $images = "premium.png";
-                                                                            break;
-                                                                        case 6:
-                                                                            $images = "master.png";
-                                                                            break;
-                                                                        case 7:
-                                                                            $images = "membership.png";
-                                                                            break;
+                                                                            case 1:
+                                                                                if($n3_de[7] == 1){
+                                                                                    $images = "beginner_act.png";
+                                                                                }else{
+                                                                                    $images = "beginner_inac.png";
+                                                                                }
+                                                                                break;
+                                                                            case 2:
+                                                                                    if($n3_de[7] == 1){
+                                                                                        $images = "start_act.png";
+                                                                                    }else{
+                                                                                        $images = "start_inac.png";
+                                                                                    }
+                                                                                break;
+                                                                            case 3:
+                                                                                    if($n3_de[7] == 1){
+                                                                                        $images = "general_act.png";
+                                                                                    }else{
+                                                                                        $images = "general_inac.png";
+                                                                                    }
+                                                                                break;
+                                                                            case 4:
+                                                                                    if($n3_de[7] == 1){
+                                                                                        $images = "vip_act.png";
+                                                                                    }else{
+                                                                                        $images = "vip_inac.png";
+                                                                                    }
+                                                                                break;
+                                                                            case 5:
+                                                                                    if($n3_de[7] == 1){
+                                                                                        $images = "premiun_act.png";
+                                                                                    }else{
+                                                                                        $images = "premiun_inac.png";
+                                                                                    }
+                                                                                break;
+                                                                            case 6:
+                                                                                     if($n3_de[7] == 1){
+                                                                                        $images = "master_act.png";
+                                                                                    }else{
+                                                                                        $images = "master_inac.png";
+                                                                                    }
+                                                                                break;
+                                                                            case 7:
+                                                                                $images = "membership.png";
+                                                                                break;
                                                                         }
                                                                     ?>
                                                                     <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" width="96">
@@ -649,28 +961,52 @@
                                                                             <div class="row imagen-profile">
                                                                                     <div class="div-img">
                                                                                         <?php
-                                                                                        switch ($n4_2_de[10]) {
-                                                                                             case 1:
-                                                                                                    $images = "beginner.png";
-                                                                                                    break;
-                                                                                                case 2:
-                                                                                                    $images = "start.png";
-                                                                                                    break;
-                                                                                                case 3:
-                                                                                                    $images = "general.png";
-                                                                                                    break;
-                                                                                                case 4:
-                                                                                                    $images = "vip.png";
-                                                                                                    break;
-                                                                                                case 5:
-                                                                                                    $images = "premium.png";
-                                                                                                    break;
-                                                                                                case 6:
-                                                                                                    $images = "master.png";
-                                                                                                    break;
-                                                                                                case 7:
-                                                                                                    $images = "membership.png";
-                                                                                                    break;
+                                                                        switch ($n4_2_de[10]) {
+                                                                             case 1:
+                                                                                if($n4_2_de[7] == 1){
+                                                                                    $images = "beginner_act.png";
+                                                                                }else{
+                                                                                    $images = "beginner_inac.png";
+                                                                                }
+                                                                                break;
+                                                                            case 2:
+                                                                                    if($n4_2_de[7] == 1){
+                                                                                        $images = "start_act.png";
+                                                                                    }else{
+                                                                                        $images = "start_inac.png";
+                                                                                    }
+                                                                                break;
+                                                                            case 3:
+                                                                                    if($n4_2_de[7] == 1){
+                                                                                        $images = "general_act.png";
+                                                                                    }else{
+                                                                                        $images = "general_inac.png";
+                                                                                    }
+                                                                                break;
+                                                                            case 4:
+                                                                                    if($n4_2_de[7] == 1){
+                                                                                        $images = "vip_act.png";
+                                                                                    }else{
+                                                                                        $images = "vip_inac.png";
+                                                                                    }
+                                                                                break;
+                                                                            case 5:
+                                                                                    if($n4_2_de[7] == 1){
+                                                                                        $images = "premiun_act.png";
+                                                                                    }else{
+                                                                                        $images = "premiun_inac.png";
+                                                                                    }
+                                                                                break;
+                                                                            case 6:
+                                                                                     if($n4_2_de[7] == 1){
+                                                                                        $images = "master_act.png";
+                                                                                    }else{
+                                                                                        $images = "master_inac.png";
+                                                                                    }
+                                                                                break;
+                                                                            case 7:
+                                                                                $images = "membership.png";
+                                                                                break;
                                                                                                 }
                                                                                         ?>
                                                                                         <img src="<?php echo site_url().'static/backoffice/images/'."$images";?>" alt="paquete" width="96">
@@ -696,22 +1032,46 @@
                                                                                     <?php
                                                                                     switch ($n4_de[10]) {
                                                                                          case 1:
-                                                                                            $images = "beginner.png";
+                                                                                            if($n4_de[7] == 1){
+                                                                                                $images = "beginner_act.png";
+                                                                                            }else{
+                                                                                                $images = "beginner_inac.png";
+                                                                                            }
                                                                                             break;
                                                                                         case 2:
-                                                                                            $images = "start.png";
+                                                                                                if($n4_de[7] == 1){
+                                                                                                    $images = "start_act.png";
+                                                                                                }else{
+                                                                                                    $images = "start_inac.png";
+                                                                                                }
                                                                                             break;
                                                                                         case 3:
-                                                                                            $images = "general.png";
+                                                                                                if($n4_de[7] == 1){
+                                                                                                    $images = "general_act.png";
+                                                                                                }else{
+                                                                                                    $images = "general_inac.png";
+                                                                                                }
                                                                                             break;
                                                                                         case 4:
-                                                                                            $images = "vip.png";
+                                                                                                if($n4_de[7] == 1){
+                                                                                                    $images = "vip_act.png";
+                                                                                                }else{
+                                                                                                    $images = "vip_inac.png";
+                                                                                                }
                                                                                             break;
                                                                                         case 5:
-                                                                                            $images = "premium.png";
+                                                                                                if($n4_de[7] == 1){
+                                                                                                    $images = "premiun_act.png";
+                                                                                                }else{
+                                                                                                    $images = "premiun_inac.png";
+                                                                                                }
                                                                                             break;
                                                                                         case 6:
-                                                                                            $images = "master.png";
+                                                                                                 if($n4_de[7] == 1){
+                                                                                                    $images = "master_act.png";
+                                                                                                }else{
+                                                                                                    $images = "master_inac.png";
+                                                                                                }
                                                                                             break;
                                                                                         case 7:
                                                                                             $images = "membership.png";
@@ -749,9 +1109,7 @@
     </main>
 </div>
 </section>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
 $('[data-toggle="popover"]').popover({ html : true });
