@@ -23,7 +23,7 @@
                         <header>
                                 <h2><?php echo replace_vocales_voculeshtml("Recuperar contraseña");?></h2>
                                 <p>
-                                        <?php echo replace_vocales_voculeshtml("Ingrese su correo electrónico registrador para poder enviarle su contraseña.");?>
+                                        <?php echo replace_vocales_voculeshtml("Ingrese su usuario electrónico registrador para poder enviarle su contraseña.");?>
                                 </p>
                         </header>
 				<form class="contact-formm">

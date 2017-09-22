@@ -52,7 +52,7 @@ function send_messages(){
 function enviado_correcto(){
     w2popup.open({
         title: 'Mensaje',
-        body: '<div class="w2ui-centered">Mensaje enviado correctamente</div>'
+        body: '<div class="w2ui-centered">Se ha enviado un mensaje al correo registrado con la contraseña actual.</div>'
     });
 }
 function no_enviado() {
@@ -60,4 +60,10 @@ function no_enviado() {
         title: 'Mensaje',
         body: '<div class="w2ui-centered">Usuario ingresado incorrecto.</div>'
 });
+}
+function llene_campos() {
+    w2popup.open({
+        title: 'Mensaje',
+        body: '<div class="w2ui-centered">Debe llenar todos los campos.</div>'
+    });
 }

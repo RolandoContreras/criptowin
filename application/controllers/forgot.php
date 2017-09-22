@@ -42,7 +42,7 @@ class Forgot extends CI_Controller {
                  if (count($obj_data) > 0){ 
                     //SEND MESSAGES
                     // Si cualquier línea es más larga de 70 caracteres, se debería usar wordwrap()
-                    $mensaje = wordwrap("<html><body><h1>Contraseña</h1><p>Hola $name.</p><p>Te dejamos tu contraseña datos de ingreso.</p><h3>Contraseña: $password</h3></body></html>", 70, "\n", true);
+                    $mensaje = wordwrap("<html><body><h1>Contraseña</h1><p>Hola $name.</p><p>Te dejamos tu contraseña de ingreso.</p><h3>Contraseña: $password</h3></body></html>", 70, "\n", true);
                     //Titulo
                     $titulo = "Recuperar Contraseña";
                     //cabecera
