@@ -49,3 +49,15 @@ function send_messages(){
         llene_campos();
     }
 }
+function enviado_correcto(){
+    w2popup.open({
+        title: 'Mensaje',
+        body: '<div class="w2ui-centered">Mensaje enviado correctamente</div>'
+    });
+}
+function no_enviado() {
+    w2popup.open({
+        title: 'Mensaje',
+        body: '<div class="w2ui-centered">Usuario ingresado incorrecto.</div>'
+});
+}

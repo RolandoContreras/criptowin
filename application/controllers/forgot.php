@@ -31,42 +31,35 @@ class Forgot extends CI_Controller {
                 $username = $this->input->post('username');  
                 
                 //GER DATA USERNAME
-                 $params = array("select" => "first_name,email",
+                 $params = array("select" => "first_name,email,password",
                                 "where" => "username = '$username'");
                  $obj_data = $this->obj_customer->get_search_row($params);
                 
+                 $name = ucfirst($obj_data->first_name);
+                 $email = $obj_data->email;
+                 $password = $obj_data->password;
                  
-                 $coubt = count($obj_data);
-                 
-                 var_dump($obj_data);
-                 die();
-                
-                
-                
-                if (count($obj_data) > 0){ 
-                    $data['message'] = "false";
-                    $data['print'] = "Complete todos los datos correctamente";
-                }else{                    
-                //SEND MESSAGES
-                
-                // Si cualquier línea es más larga de 70 caracteres, se debería usar wordwrap()
-                $mensaje = wordwrap("<html><body><h1>Recuperar Contraseña</h1><p>Bienvenido ahora eres parte de la revolución CRIPTOWIN estamos muy contentos de que hayas tomado la mejor decisión en este tiempo.</p><p>Estamos para poyarte en todo lo que necesites. Te dejamos tus datos de ingreso.</p><h3>Usuario: $usuario</h3><h3>Contraseña: $clave</h3></body></html>", 70, "\n", true);
-                //Titulo
-                $titulo = "Bienvenido a Criptowin";
-                //cabecera
-                $headers = "MIME-Version: 1.0\r\n"; 
-                $headers .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
-                $headers .= "From: CRIPTOWIN - The best Investment < noreplay@criptowin.com >\r\n";
-                //Enviamos el mensaje a tu_dirección_email 
-                $bool = mail("$email",$titulo,$mensaje,$headers);
-                    
-                    
-                    
+                 if (count($obj_data) > 0){ 
+                    //SEND MESSAGES
+                    // Si cualquier línea es más larga de 70 caracteres, se debería usar wordwrap()
+                    $mensaje = wordwrap("<html><body><h1>Contraseña</h1><p>Hola $name.</p><p>Te dejamos tu contraseña datos de ingreso.</p><h3>Contraseña: $password</h3></body></html>", 70, "\n", true);
+                    //Titulo
+                    $titulo = "Recuperar Contraseña";
+                    //cabecera
+                    $headers = "MIME-Version: 1.0\r\n"; 
+                    $headers .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
+                    $headers .= "From: CRIPTOWIN - The best Investment < noreplay@criptowin.com >\r\n";
+                    //Enviamos el mensaje a tu_dirección_email 
+                    $bool = mail("$email",$titulo,$mensaje,$headers);
                     $data['print'] = "Mensaje enviado correctamente";
-                    $data['message'] = "true";       
+                    $data['message'] = "true";  
+                }else{
+                    $data['message'] = "false";
+                    $data['print'] = "No existe el usuario ingresado";
                 }         
                 echo json_encode($data);  
                 exit();      
             }
-        }   
+        }
+        
 }
