@@ -94,9 +94,11 @@ $today = date("Y-m-d");
                      
                   </div>  
 
-               
+              <!--SPINNER-->
+        <div id="spinner"></div>
+    <!--END SPINNER--> 
             </div>
-            
+            <script src="<?php echo site_url().'static/assets/spin/js/spin.min.js';?>"></script>  
          <!--</div>-->
       </section>
 </body>

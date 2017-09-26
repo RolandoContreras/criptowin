@@ -97,36 +97,15 @@ class B_pay extends CI_Controller {
             //GET CUSTOMER_ID FROM $_SESSION
             $customer_id = $_SESSION['customer']['customer_id'];
             
-            //1 BALANCE RED
-            if($monto == 1){
-                //SELECT PARAM TO TOTAL
-               $params_total = array(
-                            "select" =>"sum(amount) as total",
-                             "where" => "commissions.customer_id = $customer_id and status_value <= 2 and bonus_id != 3",
-                        );
-               $obj_amount_validate = $this->obj_commissions->get_search_row($params_total);
-               $obj_amount_validate = $obj_amount_validate->total;
-               
-            //2 BALANCE USUFRUCT
-            }elseif($monto == 2){
+            if ($monto == 3) {
                 $params_total = array(
-                            "select" =>"sum(normal_account) as normal_account",
-                             "where" => "commissions.customer_id = $customer_id and status_value = 2",
-                        );
-               $obj_amount_validate = $this->obj_commissions->get_search_row($params_total);
-               $obj_amount_validate = $obj_amount_validate->normal_account;
-               
-               
-            //3 BOTH   
-            } elseif ($monto == 3) {
-                $params_total = array(
-                        "select" =>"sum(mandatory_account) as mandatory_account,      
-                                    sum(amount) as total",
+                        "select" =>"sum(amount) as total",
                          "where" => "commissions.customer_id = $customer_id and status_value <= 2",
                     );
                 $obj_commission_total = $this->obj_commissions->get_search_row($params_total);
-                //SELECT AMOUNT - MANDAROTY ACCOUNT
-                $obj_amount_validate = $obj_commission_total->total - $obj_commission_total->mandatory_account;
+                
+                //SELECT AMOUNT 
+                $obj_total = $obj_commission_total->total;
             }
             
            //GET TODAY DATE
@@ -138,150 +117,20 @@ class B_pay extends CI_Controller {
         if($s_and_s == 6 || $s_and_s == 0){
             exit(); 
         }else{
-             if($obj_amount_validate >= 15){
-                if($monto == 1){
-                    //GET TOTAL AMOUNT
-                    $params = array(
-                            "select" =>"commissions_id,
-                                        bonus_id,
-                                        date,
-                                        status_value,",
-                             "where" => "commissions.customer_id = $customer_id and status_value <= 2 and bonus_id != 3",
-                        );
-
-               $obj_commission = $this->obj_commissions->search($params); 
-               
-               //SELECT PARAM TO TOTAL
-               $params_total = array(
-                            "select" =>"sum(amount) as total",
-                             "where" => "commissions.customer_id = $customer_id and status_value <= 2 and bonus_id != 3",
-                        );
-               $obj_total = $this->obj_commissions->get_search_row($params_total);
-               
-               //FEE OR COMISION BY DO PAYOUT
-               $fee = $obj_total->total * 0.07;
-               //AMOUNT TOTAL TO PAY
-               $amount_total  = $obj_total->total - $fee;
-
-               //CREATE DATA IN PAY
-                    $data = array(
-                        'status_value' => 3,
-                        'amount' => $obj_total->total,
-                        'descount' => $fee,
-                        'amount_total' => $amount_total,
-                        'customer_id' => $_SESSION['customer']['customer_id'],
-                        'date' => date("Y-m-d H:i:s"),
-                        'created_at' => date("Y-m-d H:i:s"),
-                        'created_by' => $_SESSION['customer']['customer_id'],
-                    ); 
-                    $pay_id = $this->obj_pay->insert($data);
-
-
-               foreach ($obj_commission as $value) {
-                        //UPDATE TABLE COMMISSIONS
-                        $data = array(
-                            'status_value' => 3,
-                            'updated_at' => date("Y-m-d H:i:s"),
-                            'updated_by' => $_SESSION['customer']['customer_id'],
-                        ); 
-                        $this->obj_commissions->update($value->commissions_id,$data);
-
-                        //CREATE DATA IN PAY_COMMISSION
-                        $data_pay_commission = array(
-                            'pay_id' => $pay_id,
-                            'commissions_id' => $value->commissions_id,
-                            'status_value' => 3,
-                            'created_at' => date("Y-m-d H:i:s"),
-                            'created_by' => $_SESSION['customer']['customer_id'],
-                        ); 
-                        $this->obj_pay_commission->insert($data_pay_commission);
-               }
-                        echo json_encode($data);   
-                        exit();   
-                }elseif($monto == 2){
-
+             if($obj_total >= 10){
                     //GET TOTAL AMOUNT AND TO BE PAGOS DIARIOS "3"
                     $params = array(
                             "select" =>"commissions_id,
                                         bonus_id,
                                         date,
                                         status_value,",
-                             "where" => "commissions.customer_id = $customer_id and status_value = 2 and bonus_id = 3",
-                        );
-
-               $obj_commission = $this->obj_commissions->search($params); 
-
-               //SELECT PARAM TO TOTAL
-               $params_total = array(
-                            "select" =>"sum(normal_account) as normal_account",
-                             "where" => "commissions.customer_id = $customer_id and status_value = 2",
-                        );
-               $obj_total = $this->obj_commissions->get_search_row($params_total);
-               //FEE OR COMISION BY DO PAYOUT
-               $fee = $obj_total->normal_account * 0.07;
-               //AMOUNT TOTAL TO PAY
-               $amount_total  = $obj_total->normal_account - $fee;
-
-               //CREATE DATA IN PAY
-                    $data = array(
-                        'status_value' => 3,
-                        'amount' => $obj_total->normal_account,
-                        'descount' => $fee,
-                        'amount_total' => $amount_total,
-                        'customer_id' => $_SESSION['customer']['customer_id'],
-                        'date' => date("Y-m-d H:i:s"),
-                        'created_at' => date("Y-m-d H:i:s"),
-                        'created_by' => $_SESSION['customer']['customer_id'],
-                    ); 
-                    $pay_id = $this->obj_pay->insert($data);
-
-
-               foreach ($obj_commission as $value) {
-                        //UPDATE TABLE COMMISSIONS
-                        $data = array(
-                            'status_value' => 3,
-                            'updated_at' => date("Y-m-d H:i:s"),
-                            'updated_by' => $_SESSION['customer']['customer_id'],
-                        ); 
-                        $this->obj_commissions->update($value->commissions_id,$data);
-
-                        //CREATE DATA IN PAY_COMMISSION
-                        $data_pay_commission = array(
-                            'pay_id' => $pay_id,
-                            'commissions_id' => $value->commissions_id,
-                            'status_value' => 3,
-                            'created_at' => date("Y-m-d H:i:s"),
-                            'created_by' => $_SESSION['customer']['customer_id'],
-                        ); 
-                        $this->obj_pay_commission->insert($data_pay_commission);
-               }
-                        echo json_encode($data);   
-                        exit();   
-
-
-
-                }elseif($monto == 3){
-                      //GET TOTAL AMOUNT AND TO BE PAGOS DIARIOS "3"
-                    $params = array(
-                            "select" =>"commissions_id,
-                                        bonus_id,
-                                        date,
-                                        status_value,",
                              "where" => "commissions.customer_id = $customer_id and status_value <= 2",
                         );
 
                $obj_commission = $this->obj_commissions->search($params); 
 
-               //SELECT PARAM TO TOTAL
-               $params_total = array(
-                            "select" =>"sum(mandatory_account) as mandatory_account,      
-                                        sum(amount) as total",
-                             "where" => "commissions.customer_id = $customer_id and status_value <= 2",
-                        );
-               $obj_commission_total = $this->obj_commissions->get_search_row($params_total);
-               $obj_total = $obj_commission_total->total - $obj_commission_total->mandatory_account;
                //FEE OR COMISION BY DO PAYOUT
-               $fee = $obj_total * 0.07;
+               $fee = $obj_total * 0.05;
                //AMOUNT TOTAL TO PAY
                $amount_total  = $obj_total - $fee;
 
@@ -320,12 +169,9 @@ class B_pay extends CI_Controller {
                }
                         echo json_encode($data);   
                         exit();   
-
-                }
-                echo json_encode($data);   
-                        exit(); 
+               
            }
-           echo "no es mayor a 15";
+           echo json_encode($data);   
            exit();
          }
        } 
