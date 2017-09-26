@@ -30,7 +30,7 @@
                         <div class="well media media-badges box-height box">
                             <div class="media-body media-middle">
                             <h5 class="media-heading text-uppercase title-small">BALANCE POR DISPONER</h5>
-                            <p class="title"><?php if(count($obj_balance)>0){echo "$".number_format($obj_balance,'2','.',',');}else{echo "$0.00";}?></p>
+                            <p class="title"><?php if(count($obj_balance_disponible)>0){echo "$".number_format($obj_balance_disponible,'2','.',',');}else{echo "$0.00";}?></p>
                             <div class="mt-10">
                             </div>
                             </div>
@@ -74,7 +74,7 @@
                                           <td>Concepto &nbsp;<?php echo $value->bonus;?></td> 
                                           <td>
                                                    <?php 
-                                                   if($value->status_value == 1 || $value->status_value == 2){ ?>
+                                                   if($value->status_value <= 4){ ?>
                                                        <span class="label label-success">Pagado</span>
                                                    <?php }else{ ?>
                                                        <span class="label label-danger">Salida a billetera externa</span>
