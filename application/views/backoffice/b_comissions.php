@@ -1,4 +1,4 @@
-      <!-- Main section-->
+<!-- Main section-->
       <section>
          <!-- Page content-->
         <div class="section-heading row">
@@ -27,10 +27,9 @@
                                           <div class="col-lg-9">
                                              <select class="form-control" name="concepto" id="concepto" required>
                                                 <option value="">***Seleccione***</option>
-                                                <option value="1">Bono Referido Directo</option>
-                                                <option value="2">Bono Rentabilidad</option>
-                                                <option value="3">Bono Binario</option>
-                                                <option value="4">Bono Apuestas</option>
+                                                <option value="1" <?php if($bonus_id==1){echo "selected";}?>>Bono Referido Directo</option>
+                                                <option value="2" <?php if($bonus_id==2){echo "selected";}?>>Bono Rentabilidad</option>
+                                                <option value="3" <?php if($bonus_id==3){echo "selected";}?>>Bono Binario</option>
                                              </select>
                                           </div>
                                        </div>
@@ -51,18 +50,31 @@
                                     <tr>
                                        <th class="all">Fecha</th>
                                          <th>Concepto</th>
-                                         <th>Calificaci&oacute;n</th>
-                                         <th>Monto</th>
+                                         <th>Monto<th>
+                                         <th>Estado</th>
                                     </tr>
                                  </thead>
+                                 
+                                 
                                  <tbody id="resultado">
-                                     <tr>
-                                         <td colspan="5" align="center">No data available in table</td>
-                                         <td style="display: none;"></td>
-                                         <td style="display: none;"></td>
-                                         <td style="display: none;"></td>
-                                         <td style="display: none;"></td>
-                                     </tr>
+                                     <?php if(count($obj_commissions) > 0){ 
+                                                foreach ($obj_commissions as $value) { ?>
+                                                    <tr>
+                                                        <td><?php echo formato_fecha($value->date);?></td>
+                                                        <td><?php echo $value->bonus;?></td>
+                                                        <td><span class="text-success"><?php echo $value->amount;?></span></td>
+                                                        <td><span class="label label-success">Procesado</span></td>
+                                                    </tr>
+                                                 <?php }
+                                          }else{ ?>
+                                                <tr>
+                                                   <td colspan="4" align="center"><?php echo replace_vocales_voculeshtml("No hay Registros");?></td>
+                                                   <td style="display: none;"></td>
+                                                   <td style="display: none;"></td>
+                                                   <td style="display: none;"></td>
+                                                   <td style="display: none;"></td>
+                                               </tr>
+                                    <?php } ?>
                                  </tbody>
                               </table>
                            </div>

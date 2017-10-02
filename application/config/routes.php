@@ -49,8 +49,13 @@ $route['backoffice/profile'] = "b_data";
 $route['backoffice/upgrade'] = "b_upgrade";
 $route['backoffice/binario'] = "b_binario";
 $route['backoffice/binario/([0-9a-z_-]+)'] = "b_binario/index/$1";
+
 $route['backoffice/comisiones'] = "b_comissions";
-$route['backoffice/comisiones/consultar'] = "b_comissions/consultar";
+//$route['backoffice/comisiones/consultar'] = "b_comissions/consultar";
+$route['backoffice/comisiones/pay_dialy'] = "b_comissions/index/$1";
+$route['backoffice/comisiones/binary'] = "b_comissions/index/$1";
+$route['backoffice/comisiones/referred'] = "b_comissions/index/$1";
+
 $route['backoffice/billetera'] = "b_wallet";
 $route['backoffice/cobros'] = "b_pay";
 $route['backoffice/pagos/validar'] = "b_pay/validate";
