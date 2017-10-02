@@ -6,14 +6,14 @@
                                                 <p><?php echo replace_vocales_voculeshtml("Grupo de analistas de la reconocida firma Empire Capital Holdings;");?></p>
 						<ul>
 							<li>
-								<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="https://www.facebook.com/CRIPTOWIN/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 							</li>
 							</li>
 							<li>
 								<a href="" ><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 							</li>
 							<li>
-								<a href="" ><i class="fa fa-youtube" aria-hidden="true"></i></a>
+								<a href="https://www.youtube.com/channel/UCmz-4XW8Fk--7Lxx9SPuq0w" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
 							</li>
 						</ul>
 					</div>
