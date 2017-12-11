@@ -74,6 +74,9 @@ $route['dashboard/clientes/no_active_customer'] = "d_customer/no_active_customer
 $route['dashboard/clientes/load/([0-9]+)'] = "d_customer/load/$1";
 $route['dashboard/clientes/validate'] = "d_customer/validate";
 
+$route['dashboard/pagos_diarios'] = "d_pay_dialy";
+$route['dashboard/pagos_diarios/hacer_pago'] = "d_pay_dialy/hacer_pago";
+
 $route['dashboard/comentarios'] = "d_comments";
 $route['dashboard/comentarios/cambiar_status'] = "d_comments/change_status";
 $route['dashboard/comentarios/cambiar_status_no'] = "d_comments/change_status_no";
